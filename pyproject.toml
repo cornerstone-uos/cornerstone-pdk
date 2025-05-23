@@ -1,0 +1,15 @@
+[project]
+name = "pdk-data-template"
+version = "0.1.0"
+description = "Template for PDK data repos"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "pdk-data-verifier>=0.4.1",
+    "pre-commit>=4.2.0",
+    "pytest>=8.3.5",
+]
+
+[[tool.uv.index]]
+name = "wp-public"
+url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/"

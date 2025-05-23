@@ -1,0 +1,24 @@
+name: EdgeCoupler
+component_type: EdgeCoupler
+designers:
+- Max Mustermann
+publications:
+- https://some.publication-link.com
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0
+  - 0
+  orientation: 180
+  cross_section: strip_1550nm_TE
+- name: edge1
+  port_type: edge
+  center:
+    - 120.0
+    - 0.0
+  width: 2
+  orientation: 0
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550

@@ -1,0 +1,31 @@
+name: Heater
+component_type: TOPM
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0
+  - 0
+  orientation: 180
+  cross_section: strip_1550nm_TE
+- name: o2
+  port_type: optical
+  center:
+    - 75.0
+    - 0.0
+  orientation: 0
+  cross_section: strip_1550nm_TE
+- name: e1
+  port_type: electrical_dc
+  center:
+  - 0.9
+  - 15.0
+  orientation: 90
+  cross_section: dc
+- name: e2
+  port_type: electrical_dc
+  center:
+  - 74.1
+  - 15.0
+  orientation: 90
+  cross_section: dc
