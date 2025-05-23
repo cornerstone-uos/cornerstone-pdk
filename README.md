@@ -1,5 +1,5 @@
-# *designer*-pdk
-To keep track of the *designer* PDK and allow Wave Photonics to create PDK packages from this for various layout tools.
+# cornerstone-pdk
+To keep track of the CORNERSTONE PDK and allow Wave Photonics to create PDK packages from this for various layout tools.
 
 Please use the following structure in the repo (unless otherwise specified all length values should be given in um):
 
