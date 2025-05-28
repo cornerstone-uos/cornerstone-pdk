@@ -1,4 +1,62 @@
 process_name: SiN_300nm
-material: SiN
 foundry: CORNERSTONE
-description: An SOI platform with doped layers. Starting thickness is 220 nm. Standard MPW process.
+description: SiN platform with heaters
+material: SiN
+includes_heaters: true
+gds_layers:
+  - name: SiN_Etch1_LF_300nm
+    layer: [203, 0]
+    description: Full SiN etch to BOX (light) for waveguides, layer will be protected. No max feature length @0.35um features.
+    drc: { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+  - name: SiN_Etch1_DF_300nm
+    layer: [204, 0]
+    description: Full SiN etch to BOX (dark) for waveguides, layer will be etched. No max feature length @0.35um features.
+    drc: { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+  - name: Heat_Fil_LF
+    layer: [39, 0]
+    description: Heater filaments (light), layer will become metal.
+    drc: { min_feature_size: 0.6, min_gap: 10.0 }
+  - name: Heat_CP_LF
+    layer: [41, 0]
+    description: Heater contact pads (light), layer will become metal.
+    drc: { min_feature_size: 2.0, min_gap: 10.0 }
+  - name: Clad_Open_DF
+    layer: [22, 0]
+    description: Area for oxide etching (dark), layer will be etched. 
+    drc: { min_feature_size: 20.0, min_gap: 20.0 }
+  - name: Floorplan
+    layer: [99, 0]
+    is_info_only: true
+    description: Cell outline
+  - name: Label_Etch_DF
+    layer: [100, 0]
+    description: Labels (dark), will be etched, has no DRC
+    drc: { min_feature_size: 0.25, min_gap: 0.25 }
+layer_stack:
+  - name: BOX
+    description: BOX - buried oxide
+    material: SiO2
+    thickness: { value: 3.0 }
+    gds_layer: null
+  - name: Waveguide
+    description: Full thickness SiN layer
+    material: SiN
+    thickness: { value: 0.3, tol: 0.015 }
+    gds_layer: SiN_Etch1_LF_300nm, not SiN_Etch1_DF_300nm
+  - name: TOX
+    description: Top cladding layer
+    material: SiO2
+    thickness: { value: 2.0, tol: 0.2 }
+    gds_layer: null
+  - name: Heater_filament
+    description: Heater filament layer
+    material: metal1
+    is_metal_layer: true
+    thickness: { value: 0.22, tol: 0.01}
+    gds_layer: Heat_Fil_LF
+  - name: Contact_pads
+    description: Metal layer for contact pads and electrical routing
+    material: metal2
+    is_metal_layer: true
+    thickness: { value: 0.22, tol: 0.01}
+    gds_layer: Heat_CP_LF
