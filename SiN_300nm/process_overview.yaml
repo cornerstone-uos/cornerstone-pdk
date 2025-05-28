@@ -1,0 +1,4 @@
+process_name: SiN_300nm
+material: SiN
+foundry: CORNERSTONE
+description: An SOI platform with doped layers. Starting thickness is 220 nm. Standard MPW process.
