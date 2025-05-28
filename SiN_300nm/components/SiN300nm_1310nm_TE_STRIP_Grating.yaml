@@ -1,0 +1,32 @@
+cells:
+  SiN300nm_1310nm_TE_STRIP_Grating: {}
+function: ''
+info: {}
+module: ''
+name: SiN300nm_1310nm_TE_STRIP_Grating
+ports:
+  o1:
+    center:
+    - 0.0
+    - 0.0
+    layer:
+    - 1
+    - 10
+    name: o1
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+  vertical_te:
+    center:
+    - 229.0
+    - 0.0
+    layer:
+    - 81
+    - 0
+    name: vertical_te
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+settings: {}

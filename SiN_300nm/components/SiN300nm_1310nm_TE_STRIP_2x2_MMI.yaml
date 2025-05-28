@@ -1,0 +1,56 @@
+cells:
+  SiN300nm_1310nm_TE_STRIP_2x2_MMI_CS64db5244778c280b39ae39d8: {}
+function: ''
+info: {}
+module: ''
+name: SiN300nm_1310nm_TE_STRIP_2x2_MMI_CS64db5244778c280b39ae39d8
+ports:
+  o1:
+    center:
+    - 0.0
+    - -2.1
+    layer:
+    - 1
+    - 10
+    name: o1
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+  o2:
+    center:
+    - 0.0
+    - 2.1
+    layer:
+    - 1
+    - 10
+    name: o2
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+  o3:
+    center:
+    - 186.0
+    - 2.1
+    layer:
+    - 1
+    - 10
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+  o4:
+    center:
+    - 186.0
+    - -2.1
+    layer:
+    - 1
+    - 10
+    name: o4
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+settings: {}

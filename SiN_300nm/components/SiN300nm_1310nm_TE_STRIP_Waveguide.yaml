@@ -1,0 +1,32 @@
+cells:
+  SiN300nm_1310nm_TE_STRIP_Waveguide: {}
+function: ''
+info: {}
+module: ''
+name: SiN300nm_1310nm_TE_STRIP_Waveguide
+ports:
+  o1:
+    center:
+    - 0.0
+    - 0.0
+    layer:
+    - 1
+    - 10
+    name: o1
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+  o2:
+    center:
+    - 440.0
+    - 0.0
+    layer:
+    - 1
+    - 10
+    name: o2
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.95
+settings: {}
