@@ -14,7 +14,7 @@ ports:
   - 371.405
   - 0.0
   orientation: 0.0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
+  - fibre_type: SMF-28
     wavelength: 1310.0

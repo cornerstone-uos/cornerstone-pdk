@@ -105,160 +105,160 @@ ports:
   - 5290.0
   - 1650.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te10
   port_type: vertical_te
   center:
   - 5290.0
   - -600.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te11
   port_type: vertical_te
   center:
   - 5290.0
   - -850.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te12
   port_type: vertical_te
   center:
   - 5290.0
   - -1100.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te13
   port_type: vertical_te
   center:
   - 5290.0
   - -1350.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te14
   port_type: vertical_te
   center:
   - 5290.0
   - -1600.0
   orientation: 0
-  cross_section: 10 
+  width: 10 
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te2
   port_type: vertical_te
   center:
   - 5290.0
   - 1400.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te3
   port_type: vertical_te
   center:
   - 5290.0
   - 1150.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 10
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te4
   port_type: vertical_te
   center:
   - 5290.0
   - 900.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te5
   port_type: vertical_te
   center:
   - 5290.0
   - 650.0
   orientation: 0
-  cross_section: 10 
+  width: 10 
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te6
   port_type: vertical_te
   center:
   - 5290.0
   - 400.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te7
   port_type: vertical_te
   center:
   - 5290.0
   - 150.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te8
   port_type: vertical_te
   center:
   - 5290.0
   - -100.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te9
   port_type: vertical_te
   center:
   - 5290.0
   - -350.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te_lb1
   port_type: vertical_te
   center:
   - 5290.0
   - 1900.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: e_vertical_te_lb2
   port_type: vertical_te
   center:
   - 5290.0
   - -1850.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: n_e1
   port_type: electrical_dc
   center:
@@ -699,7 +699,7 @@ ports:
   - -4922.173
   - 1650.0
   orientation: 0
-  cross_section: 10
+  cross_section: strip_1550nm_TE
 - name: w_o10
   port_type: optical
   center:
@@ -797,157 +797,157 @@ ports:
   - -5290.0
   - 1650.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te10
   port_type: vertical_te
   center:
   - -5290.0
   - -600.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te11
   port_type: vertical_te
   center:
   - -5290.0
   - -850.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te12
   port_type: vertical_te
   center:
   - -5290.0
   - -1100.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te13
   port_type: vertical_te
   center:
   - -5290.0
   - -1350.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te14
   port_type: vertical_te
   center:
   - -5290.0
   - -1600.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te2
   port_type: vertical_te
   center:
   - -5290.0
   - 1400.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te3
   port_type: vertical_te
   center:
   - -5290.0
   - 1150.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te4
   port_type: vertical_te
   center:
   - -5290.0
   - 900.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te5
   port_type: vertical_te
   center:
   - -5290.0
   - 650.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te6
   port_type: vertical_te
   center:
   - -5290.0
   - 400.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te7
   port_type: vertical_te
   center:
   - -5290.0
   - 150.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te8
   port_type: vertical_te
   center:
   - -5290.0
   - -100.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te9
   port_type: vertical_te
   center:
   - -5290.0
   - -350.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te_lb1
   port_type: vertical_te
   center:
   - -5290.0
   - 1900.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
 - name: w_vertical_te_lb2
   port_type: vertical_te
   center:
   - -5290.0
   - -1850.0
   orientation: 0
-  cross_section: 10
+  width: 10
   fibre_modes:
-    fibre_type: SMF-28
-    wavelength: 1550.0
+  - fibre_type: SMF-28
+    wavelength: 1550
