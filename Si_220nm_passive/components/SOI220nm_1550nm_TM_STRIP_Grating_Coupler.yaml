@@ -1,0 +1,20 @@
+name: SOI220nm_1550nm_TM_STRIP_Grating_Coupler
+component_type: GratingCoupler1D
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  cross_section: strip_1550nm_TE
+- name: vertical_tm
+  port_type: vertical_tm
+  center:
+  - 368.405
+  - 0.0
+  orientation: 0.0
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0
