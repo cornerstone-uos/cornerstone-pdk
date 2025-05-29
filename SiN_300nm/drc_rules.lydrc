@@ -8,6 +8,7 @@
  <doc/>
  <autorun>false</autorun>
  <autorun-early>false</autorun-early>
+ <priority>0</priority>
  <shortcut/>
  <show-in-menu>true</show-in-menu>
  <group-name>drc_scripts</group-name>
@@ -122,20 +123,6 @@ sin_clado_layer.width(20.0, angle_limit(angle_lim)).output("Minimum width violat
 
 # Minimum gap for cladding opening
 sin_clado_layer.space(20.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS22 &lt; 20um)")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
