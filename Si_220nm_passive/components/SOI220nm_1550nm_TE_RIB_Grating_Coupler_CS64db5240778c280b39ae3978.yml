@@ -1,0 +1,32 @@
+cells:
+  SOI220nm_1550nm_TE_RIB_Grating_Coupler_CS64db5240778c280b39ae3978: {}
+function: ''
+info: {}
+module: ''
+name: SOI220nm_1550nm_TE_RIB_Grating_Coupler_CS64db5240778c280b39ae3978
+ports:
+  o1:
+    center:
+    - 0.0
+    - 0.0
+    layer:
+    - 1
+    - 10
+    name: o1
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.45
+  vertical_te:
+    center:
+    - 368.405
+    - 0.0
+    layer:
+    - 81
+    - 0
+    name: vertical_te
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+settings: {}

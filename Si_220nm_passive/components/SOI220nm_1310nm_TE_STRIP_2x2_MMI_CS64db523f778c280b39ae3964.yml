@@ -1,0 +1,56 @@
+cells:
+  SOI220nm_1310nm_TE_STRIP_2x2_MMI_CS64db523f778c280b39ae3964: {}
+function: ''
+info: {}
+module: ''
+name: SOI220nm_1310nm_TE_STRIP_2x2_MMI_CS64db523f778c280b39ae3964
+ports:
+  o1:
+    center:
+    - 0.0
+    - -1.015
+    layer:
+    - 1
+    - 10
+    name: o1
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  o2:
+    center:
+    - 0.0
+    - 1.015
+    layer:
+    - 1
+    - 10
+    name: o2
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  o3:
+    center:
+    - 122.1
+    - 1.015
+    layer:
+    - 1
+    - 10
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  o4:
+    center:
+    - 122.1
+    - -1.015
+    layer:
+    - 1
+    - 10
+    name: o4
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+settings: {}

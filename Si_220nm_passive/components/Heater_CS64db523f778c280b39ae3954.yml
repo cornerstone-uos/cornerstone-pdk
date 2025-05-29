@@ -1,0 +1,32 @@
+cells:
+  Heater_CS64db523f778c280b39ae3954: {}
+function: ''
+info: {}
+module: ''
+name: Heater_CS64db523f778c280b39ae3954
+ports:
+  e1:
+    center:
+    - 50.501
+    - 234.55
+    layer:
+    - 1
+    - 11
+    name: e1
+    orientation: 90
+    port_type: electrical
+    shear_angle: null
+    width: 80
+  e2:
+    center:
+    - 150.501
+    - 234.55
+    layer:
+    - 1
+    - 11
+    name: e2
+    orientation: 90
+    port_type: electrical
+    shear_angle: null
+    width: 80
+settings: {}

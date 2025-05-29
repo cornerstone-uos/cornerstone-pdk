@@ -1,0 +1,32 @@
+cells:
+  SOI220nm_1310nm_TM_STRIP_Grating_Coupler_CS64db523e778c280b39ae3936: {}
+function: ''
+info: {}
+module: ''
+name: SOI220nm_1310nm_TM_STRIP_Grating_Coupler_CS64db523e778c280b39ae3936
+ports:
+  o1:
+    center:
+    - 0.0
+    - 0.0
+    layer:
+    - 1
+    - 10
+    name: o1
+    orientation: 180
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  vertical_tm:
+    center:
+    - 370.405
+    - 0.0
+    layer:
+    - 81
+    - 0
+    name: vertical_tm
+    orientation: 0.0
+    port_type: vertical_tm
+    shear_angle: null
+    width: 10.0
+settings: {}

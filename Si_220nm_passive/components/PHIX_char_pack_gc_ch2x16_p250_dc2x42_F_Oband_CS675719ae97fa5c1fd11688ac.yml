@@ -1,0 +1,1736 @@
+cells:
+  PHIX_char_pack_gc_ch2x16_p250_dc2x42_F_Oband_CS675719ae97fa5c1fd11688ac: {}
+function: ''
+info: {}
+module: ''
+name: PHIX_char_pack_gc_ch2x16_p250_dc2x42_F_Oband_CS675719ae97fa5c1fd11688ac
+ports:
+  e_o1:
+    center:
+    - 10324.595
+    - 825.0
+    layer:
+    - 1
+    - 10
+    name: e_o1
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o10:
+    center:
+    - 10324.595
+    - 3075.0
+    layer:
+    - 1
+    - 10
+    name: e_o10
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o11:
+    center:
+    - 10324.595
+    - 3325.0
+    layer:
+    - 1
+    - 10
+    name: e_o11
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o12:
+    center:
+    - 10324.595
+    - 3575.0
+    layer:
+    - 1
+    - 10
+    name: e_o12
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o13:
+    center:
+    - 10324.595
+    - 3825.0
+    layer:
+    - 1
+    - 10
+    name: e_o13
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o14:
+    center:
+    - 10324.595
+    - 4075.0
+    layer:
+    - 1
+    - 10
+    name: e_o14
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o2:
+    center:
+    - 10324.595
+    - 1075.0
+    layer:
+    - 1
+    - 10
+    name: e_o2
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o3:
+    center:
+    - 10324.595
+    - 1325.0
+    layer:
+    - 1
+    - 10
+    name: e_o3
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o4:
+    center:
+    - 10324.595
+    - 1575.0
+    layer:
+    - 1
+    - 10
+    name: e_o4
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o5:
+    center:
+    - 10324.595
+    - 1825.0
+    layer:
+    - 1
+    - 10
+    name: e_o5
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o6:
+    center:
+    - 10324.595
+    - 2075.0
+    layer:
+    - 1
+    - 10
+    name: e_o6
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o7:
+    center:
+    - 10324.595
+    - 2325.0
+    layer:
+    - 1
+    - 10
+    name: e_o7
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o8:
+    center:
+    - 10324.595
+    - 2575.0
+    layer:
+    - 1
+    - 10
+    name: e_o8
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_o9:
+    center:
+    - 10324.595
+    - 2825.0
+    layer:
+    - 1
+    - 10
+    name: e_o9
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  e_vertical_te1:
+    center:
+    - 10695.0
+    - 825.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te1
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te10:
+    center:
+    - 10695.0
+    - 3075.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te10
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te11:
+    center:
+    - 10695.0
+    - 3325.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te11
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te12:
+    center:
+    - 10695.0
+    - 3575.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te12
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te13:
+    center:
+    - 10695.0
+    - 3825.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te13
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te14:
+    center:
+    - 10695.0
+    - 4075.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te14
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te2:
+    center:
+    - 10695.0
+    - 1075.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te2
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te3:
+    center:
+    - 10695.0
+    - 1325.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te3
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te4:
+    center:
+    - 10695.0
+    - 1575.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te4
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te5:
+    center:
+    - 10695.0
+    - 1825.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te5
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te6:
+    center:
+    - 10695.0
+    - 2075.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te6
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te7:
+    center:
+    - 10695.0
+    - 2325.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te7
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te8:
+    center:
+    - 10695.0
+    - 2575.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te8
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te9:
+    center:
+    - 10695.0
+    - 2825.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te9
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te_lb1:
+    center:
+    - 10695.0
+    - 575.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te_lb1
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  e_vertical_te_lb2:
+    center:
+    - 10695.0
+    - 4325.0
+    layer:
+    - 81
+    - 0
+    name: e_vertical_te_lb2
+    orientation: 0.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  n_e1:
+    center:
+    - 1635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e1
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e10:
+    center:
+    - 3435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e10
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e11:
+    center:
+    - 3635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e11
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e12:
+    center:
+    - 3835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e12
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e13:
+    center:
+    - 4035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e13
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e14:
+    center:
+    - 4235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e14
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e15:
+    center:
+    - 4435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e15
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e16:
+    center:
+    - 4635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e16
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e17:
+    center:
+    - 4835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e17
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e18:
+    center:
+    - 5035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e18
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e19:
+    center:
+    - 5235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e19
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e2:
+    center:
+    - 1835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e2
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e20:
+    center:
+    - 5435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e20
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e21:
+    center:
+    - 5635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e21
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e22:
+    center:
+    - 5835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e22
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e23:
+    center:
+    - 6035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e23
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e24:
+    center:
+    - 6235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e24
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e25:
+    center:
+    - 6435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e25
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e26:
+    center:
+    - 6635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e26
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e27:
+    center:
+    - 6835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e27
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e28:
+    center:
+    - 7035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e28
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e29:
+    center:
+    - 7235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e29
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e3:
+    center:
+    - 2035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e3
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e30:
+    center:
+    - 7435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e30
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e31:
+    center:
+    - 7635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e31
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e32:
+    center:
+    - 7835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e32
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e33:
+    center:
+    - 8035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e33
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e34:
+    center:
+    - 8235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e34
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e35:
+    center:
+    - 8435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e35
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e36:
+    center:
+    - 8635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e36
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e37:
+    center:
+    - 8835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e37
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e38:
+    center:
+    - 9035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e38
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e39:
+    center:
+    - 9235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e39
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e4:
+    center:
+    - 2235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e4
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e40:
+    center:
+    - 9435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e40
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e41:
+    center:
+    - 9635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e41
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e42:
+    center:
+    - 9835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e42
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e5:
+    center:
+    - 2435.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e5
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e6:
+    center:
+    - 2635.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e6
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e7:
+    center:
+    - 2835.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e7
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e8:
+    center:
+    - 3035.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e8
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  n_e9:
+    center:
+    - 3235.0
+    - 4480.0
+    layer:
+    - 41
+    - 0
+    name: n_e9
+    orientation: 270.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e1:
+    center:
+    - 1635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e1
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e10:
+    center:
+    - 3435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e10
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e11:
+    center:
+    - 3635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e11
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e12:
+    center:
+    - 3835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e12
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e13:
+    center:
+    - 4035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e13
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e14:
+    center:
+    - 4235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e14
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e15:
+    center:
+    - 4435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e15
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e16:
+    center:
+    - 4635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e16
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e17:
+    center:
+    - 4835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e17
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e18:
+    center:
+    - 5035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e18
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e19:
+    center:
+    - 5235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e19
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e2:
+    center:
+    - 1835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e2
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e20:
+    center:
+    - 5435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e20
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e21:
+    center:
+    - 5635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e21
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e22:
+    center:
+    - 5835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e22
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e23:
+    center:
+    - 6035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e23
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e24:
+    center:
+    - 6235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e24
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e25:
+    center:
+    - 6435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e25
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e26:
+    center:
+    - 6635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e26
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e27:
+    center:
+    - 6835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e27
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e28:
+    center:
+    - 7035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e28
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e29:
+    center:
+    - 7235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e29
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e3:
+    center:
+    - 2035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e3
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e30:
+    center:
+    - 7435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e30
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e31:
+    center:
+    - 7635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e31
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e32:
+    center:
+    - 7835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e32
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e33:
+    center:
+    - 8035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e33
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e34:
+    center:
+    - 8235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e34
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e35:
+    center:
+    - 8435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e35
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e36:
+    center:
+    - 8635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e36
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e37:
+    center:
+    - 8835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e37
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e38:
+    center:
+    - 9035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e38
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e39:
+    center:
+    - 9235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e39
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e4:
+    center:
+    - 2235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e4
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e40:
+    center:
+    - 9435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e40
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e41:
+    center:
+    - 9635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e41
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e42:
+    center:
+    - 9835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e42
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e5:
+    center:
+    - 2435.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e5
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e6:
+    center:
+    - 2635.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e6
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e7:
+    center:
+    - 2835.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e7
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e8:
+    center:
+    - 3035.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e8
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  s_e9:
+    center:
+    - 3235.0
+    - 420.0
+    layer:
+    - 41
+    - 0
+    name: s_e9
+    orientation: 90.0
+    port_type: electrical
+    shear_angle: null
+    width: 120.0
+  w_o1:
+    center:
+    - 1145.405
+    - 4075.0
+    layer:
+    - 1
+    - 10
+    name: w_o1
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o10:
+    center:
+    - 1145.405
+    - 1825.0
+    layer:
+    - 1
+    - 10
+    name: w_o10
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o11:
+    center:
+    - 1145.405
+    - 1575.0
+    layer:
+    - 1
+    - 10
+    name: w_o11
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o12:
+    center:
+    - 1145.405
+    - 1325.0
+    layer:
+    - 1
+    - 10
+    name: w_o12
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o13:
+    center:
+    - 1145.405
+    - 1075.0
+    layer:
+    - 1
+    - 10
+    name: w_o13
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o14:
+    center:
+    - 1145.405
+    - 825.0
+    layer:
+    - 1
+    - 10
+    name: w_o14
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o2:
+    center:
+    - 1145.405
+    - 3825.0
+    layer:
+    - 1
+    - 10
+    name: w_o2
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o3:
+    center:
+    - 1145.405
+    - 3575.0
+    layer:
+    - 1
+    - 10
+    name: w_o3
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o4:
+    center:
+    - 1145.405
+    - 3325.0
+    layer:
+    - 1
+    - 10
+    name: w_o4
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o5:
+    center:
+    - 1145.405
+    - 3075.0
+    layer:
+    - 1
+    - 10
+    name: w_o5
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o6:
+    center:
+    - 1145.405
+    - 2825.0
+    layer:
+    - 1
+    - 10
+    name: w_o6
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o7:
+    center:
+    - 1145.405
+    - 2575.0
+    layer:
+    - 1
+    - 10
+    name: w_o7
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o8:
+    center:
+    - 1145.405
+    - 2325.0
+    layer:
+    - 1
+    - 10
+    name: w_o8
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_o9:
+    center:
+    - 1145.405
+    - 2075.0
+    layer:
+    - 1
+    - 10
+    name: w_o9
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.4
+  w_vertical_te1:
+    center:
+    - 775.0
+    - 4075.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te1
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te10:
+    center:
+    - 775.0
+    - 1825.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te10
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te11:
+    center:
+    - 775.0
+    - 1575.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te11
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te12:
+    center:
+    - 775.0
+    - 1325.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te12
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te13:
+    center:
+    - 775.0
+    - 1075.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te13
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te14:
+    center:
+    - 775.0
+    - 825.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te14
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te2:
+    center:
+    - 775.0
+    - 3825.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te2
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te3:
+    center:
+    - 775.0
+    - 3575.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te3
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te4:
+    center:
+    - 775.0
+    - 3325.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te4
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te5:
+    center:
+    - 775.0
+    - 3075.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te5
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te6:
+    center:
+    - 775.0
+    - 2825.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te6
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te7:
+    center:
+    - 775.0
+    - 2575.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te7
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te8:
+    center:
+    - 775.0
+    - 2325.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te8
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te9:
+    center:
+    - 775.0
+    - 2075.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te9
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te_lb1:
+    center:
+    - 775.0
+    - 4325.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te_lb1
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+  w_vertical_te_lb2:
+    center:
+    - 775.0
+    - 575.0
+    layer:
+    - 81
+    - 0
+    name: w_vertical_te_lb2
+    orientation: 180.0
+    port_type: vertical_te
+    shear_angle: null
+    width: 10.0
+settings: {}
