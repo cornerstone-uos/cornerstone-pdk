@@ -1,4 +1,5 @@
-name: SiN300nm_1310nm_TE_STRIP_1x2_MMI
+name: SiN300nm_1550nm_TE_STRIP_1x2_MMI
+component_type: 1x2MMI
 ports:
   o1:
     center:
@@ -10,30 +11,30 @@ ports:
     name: o1
     orientation: 180
     port_type: optical
-    shear_angle: null
-    width: 0.95
+    width: 1.2
+    cross_section: strip_1550nm_TE
   o2:
     center:
-    - 102.0
-    - 2.0
+    - 164.7
+    - 2.95
     layer:
     - 1
     - 10
     name: o2
     orientation: 0.0
     port_type: optical
-    shear_angle: null
-    width: 0.95
+    width: 1.2
+    cross_section: strip_1550nm_TE
   o3:
     center:
-    - 102.0
-    - -2.0
+    - 164.7
+    - -2.95
     layer:
     - 1
     - 10
     name: o3
     orientation: 0.0
     port_type: optical
-    shear_angle: null
-    width: 0.95
-settings: {}
+    width: 1.2
+    cross_section: strip_1550nm_TE
+
