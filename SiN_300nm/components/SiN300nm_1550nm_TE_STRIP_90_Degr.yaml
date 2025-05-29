@@ -1,28 +1,20 @@
 name: SiN300nm_1550nm_TE_STRIP_90_Degr
 component_type: Bend
 ports:
-  o1:
-    center:
+
+  - center:
     - 0.0
     - 0.0
-    layer:
-    - 1
-    - 10
     name: o1
     orientation: 180
     port_type: optical
-    width: 1.2
     cross_section: strip_1550nm_TE
-  o2:
-    center:
+
+  - center:
     - 80.0
     - 80.0
-    layer:
-    - 1
-    - 10
     name: o2
     orientation: 90
     port_type: optical
-    width: 1.2
     cross_section: strip_1550nm_TE
 

@@ -1,28 +1,25 @@
 name: SiN300nm_1310nm_TE_STRIP_Grating
 component_type: GratingCoupler1D
 ports:
-  o1:
-    center:
+
+  - center:
     - 0.0
     - 0.0
-    layer:
-    - 1
-    - 10
     name: o1
     orientation: 180
-    port_type: optica
-    width: 0.95
+    port_type: optical
     cross_section: strip_1310nm_TE
-  vertical_te:
-    center:
+
+
+  - center:
     - 229.0
     - 0.0
-    layer:
-    - 81
-    - 0
+
     name: vertical_te
     orientation: 0.0
     port_type: vertical_te
     width: 10.0
-    cross_section: strip_1310nm_TE
+    fibre_modes:
+    - fibre_type: SMF-28
+      wavelength: 1310
 
