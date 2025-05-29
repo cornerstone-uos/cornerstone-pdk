@@ -1,32 +1,21 @@
-cells:
-  SiN300nm_1550nm_TE_STRIP_Waveguide: {}
-function: ''
-info: {}
-module: ''
 name: SiN300nm_1550nm_TE_STRIP_Waveguide
+component_type: Waveguide
 ports:
-  o1:
-    center:
+
+  - center:
     - 0.0
     - 0.0
-    layer:
-    - 1
-    - 10
     name: o1
     orientation: 180
     port_type: optical
-    shear_angle: null
-    width: 1.2
-  o2:
-    center:
+    cross_section: strip_1550nm_TE
+
+  - center:
     - 440.0
     - 0.0
-    layer:
-    - 1
-    - 10
     name: o2
     orientation: 0.0
     port_type: optical
-    shear_angle: null
-    width: 1.2
-settings: {}
+    cross_section: strip_1550nm_TE
+
+    
