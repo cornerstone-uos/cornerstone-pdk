@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category>drc</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
+ <text>#CORNERSTONE Proprietary
+#Released: 16/09/2024
+#Version: 2.2
+#Author: Emre Kaplan
+#Report any issue to cornerstone@soton.ac.uk
+#Technology Platform: All Passive active Silicon on Insulator platforms with Heaters and p-n junction
+#Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
+
+
+# Use a tile size of 20mm
+tiles(20.mm)
+# Use 4 threads
+threads(4)
+
+block_size=1   # Select 1 for Full block and 0 for Half block
+
+
+if block_size==1
+design_area = 4900.0.um*11470.0.um
+else
+design_area = 4900.0.um*5500.0.um
+end
+
+max_feature_length_etch1 = 20.01.um
+min_feature_size_etch1_dark = 0.25.um
+min_feature_size_etch2_light = 0.35.um
+min_feature_size_etch2_dark = 0.20.um
+min_feature_size_etch3_light = 0.25.um
+min_feature_size_etch1_ebl_dark = 0.06.um
+
+max_area_etch1 = max_feature_length_etch1*min_feature_size_etch1_dark.um2
+
+
+angle_lim= 1
+
+report ('DRC_SOI')
+
+
+#GDS layers 
+
+#SOI Etch 1- EBL - Dark field (GDS 60)
+soi_etch1_ebl_dark_layer = input(60,0)
+
+#SOI Etch 1 - Dark field (GDS 6)
+soi_etch1_dark_layer = input(6,0)
+
+#SOI Etch 2 - Light field (GDS 3)
+soi_etch2_light_layer = input(3, 0)
+
+#SOI Etch 2 - Dark field (GDS 4)
+soi_etch2_dark_layer = input(4, 0)
+
+#SOI Etch 3 - Light field (GDS 5)
+soi_etch3_light_layer = input(5, 0)
+
+#Heater Filaments (GDS 39)
+fil = input(39, 0)
+
+#Heater Contact Pads (GDS 41)
+pad = input(41, 0)
+
+#Label (GDS 100)
+label = input(100,0)
+
+#Cell Outline (Design area) (GDS 99)
+cell = input(99, 0)
+
+design_grid = 0.001
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}
+
+
+#Check correct design area is used
+cell.without_area(design_area).output("Correct desing area violation")
+
+
+# Minimum feature size etch1 for dark field
+soi_etch1_dark_layer.width(0.20, angle_limit(angle_lim)).output("Minimum feature size violation (GDS6 &lt; 200 nm)")
+
+# Minimum feature size etch1 EBL for dark field
+soi_etch1_ebl_dark_layer.width(0.06, angle_limit(angle_lim)).output("Minimum feature size violation (GDS60 &lt; 60 nm)")
+
+
+# Minimum feature size etch2 for light field
+soi_etch2_light_layer.width(0.35, angle_limit(angle_lim)).output("Minimum feature size violation (GDS3 &lt; 350 nm)")
+
+# Minimum feature size etch2 for dark field
+soi_etch2_dark_layer.width(0.20, angle_limit(angle_lim)).output("Minimum feature size violation (GDS4 &lt; 200 nm)")
+
+# Minimum feature size etch3 for light field
+soi_etch3_light_layer.width(0.25, angle_limit(angle_lim)).output("Minimum feature size violation (GDS5 &lt; 250 nm)")
+
+
+# Minimum gap for etch1 for dark field
+soi_etch1_dark_layer.space(0.35, angle_limit(angle_lim)).without_area(0.0.um2..max_area_etch1).output("Minimum gap violation (GDS6 &lt; 350 nm and shorter than &lt; max. length)")
+soi_etch1_dark_layer.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS6 &lt; 250 nm)")
+
+
+# Minimum gap for etch1 EBL for dark field
+soi_etch1_ebl_dark_layer.space(0.06, angle_limit(angle_lim)).output("Minimum feature size violation (GDS60 &lt; 60 nm)")
+
+
+# Minimum gap for etch2 for light field
+soi_etch2_light_layer.space(0.20, angle_limit(angle_lim)).output("Minimum gap violation (GDS3 &lt; 200 nm)")
+
+# Minimum gap for etch2 for dark field
+soi_etch2_dark_layer.space(0.35, angle_limit(angle_lim)).output("Minimum gap violation (GDS4 &lt; 350 nm)")
+
+
+# Minimum gap for etch3 for light field
+soi_etch3_light_layer.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS5 &lt; 250 nm)")
+
+
+# Minimum feature size for Heater Filaments
+fil.width(0.6, angle_limit(angle_lim)).output("Minimum width violation (GDS39 &lt; 600 nm)")
+
+# Minimum gap for Heater Filaments
+fil.space(10.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS39 &lt; 10 um)")
+
+
+# Minimum feature size for Contact Pad
+pad.width(2.0, angle_limit(angle_lim)).output("Minimum width violation (GDS41 &lt; 2 um)")
+
+# Minimum gap for Contact Pad
+pad.space(10.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS41 &lt; 10 um)")
+
+
+# Minimum feature size for Label
+label.width(0.25, angle_limit(angle_lim)).output("Minimum width violation (GDS100 &lt; 250 nm)")
+
+# Minimum feature size for Label
+label.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS100 &lt; 250 nm)")
+
+
+# Overlap check between GDS 6 &amp; GDS39
+soi_etch1_dark_layer.overlapping(fil).output("Overlapping violation (GDS6 &amp; GDS39")
+
+# Overlap check between GDS 6 &amp; GDS41
+soi_etch1_dark_layer.overlapping(pad).output("Overlapping violation (GDS6 &amp; GDS41")
+
+</text>
+</klayout-macro>

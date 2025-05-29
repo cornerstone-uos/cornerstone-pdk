@@ -1,0 +1,20 @@
+name: SOI340nm_1310nm_TE_STRIP_Grating_Coupler
+component_type: TODO
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  cross_section: TODO
+- name: vertical_te
+  port_type: vertical_te
+  center:
+  - 371.405
+  - 0.0
+  orientation: 0.0
+  fibre_modes:
+  - fibre_type: TODO
+    wavelength: TODO
+  width: 10.0

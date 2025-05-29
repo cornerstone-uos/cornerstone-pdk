@@ -1,0 +1,17 @@
+name: SOI340nm_1310nm_TE_STRIP_90_Degree_Bend
+component_type: TODO
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  cross_section: TODO
+- name: o2
+  port_type: optical
+  center:
+  - 10.0
+  - 10.0
+  orientation: 90
+  cross_section: TODO

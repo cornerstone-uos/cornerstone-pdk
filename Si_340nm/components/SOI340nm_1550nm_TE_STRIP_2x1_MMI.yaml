@@ -1,0 +1,24 @@
+name: SOI340nm_1550nm_TE_STRIP_2x1_MMI
+component_type: TODO
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  cross_section: TODO
+- name: o2
+  port_type: optical
+  center:
+  - 94.7
+  - 1.575
+  orientation: 0.0
+  cross_section: TODO
+- name: o3
+  port_type: optical
+  center:
+  - 94.7
+  - -1.575
+  orientation: 0.0
+  cross_section: TODO
