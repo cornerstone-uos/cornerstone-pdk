@@ -1,7 +1,7 @@
 process_name: Si_220nm_passive
 foundry: CORNERSTONE
 description: SOI 220nm passive process with heaters
-material: Si
+material: SOI
 includes_heaters: true
 gds_layers:
   - name: Si_Etch1_EBL_DF_94nm
@@ -48,7 +48,7 @@ layer_stack:
     gds_layer: null
   - name: Waveguide
     description: Full thickness SiN layer
-    material: Si
+    material: SOI
     thickness: { value: 0.22, tol: 0.02 }
     gds_layer: Si_Etch3_LF_120nm, Si_Etch4_LF_100nm_to_BOX, not Si_Etch2_DF_70nm, not Si_Etch3_DF_120nm, not Si_Etch1_EBL_DF_94nm
   - name: TOX
