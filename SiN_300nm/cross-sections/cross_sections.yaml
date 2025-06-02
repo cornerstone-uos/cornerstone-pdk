@@ -1,7 +1,7 @@
 - name: strip_1550nm_TE
   xs_type: strip
   width: 1.2
-  minimum_bend_radius: 80
+  minimum_bend_radius: 30
   layers:
   - layer:
     - 203
@@ -17,7 +17,7 @@
 - name: strip_1310nm_TE
   xs_type: strip
   width: 0.95
-  minimum_bend_radius: 60
+  minimum_bend_radius: 30
   layers:
   - layer:
     - 203
