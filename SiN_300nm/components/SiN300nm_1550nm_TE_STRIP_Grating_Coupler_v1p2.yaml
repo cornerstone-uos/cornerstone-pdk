@@ -1,4 +1,4 @@
-name: SiN300nm_1550nm_TE_STRIP_Grating
+name: SiN300nm_1550nm_TE_STRIP_Grating_Coupler_v1p2
 component_type: GratingCoupler1D
 ports:
   - center:
@@ -10,7 +10,7 @@ ports:
     cross_section: strip_1550nm_TE
 
   - center:
-    - 225.0
+    - 325.0
     - -15.802
     name: vertical_te
     port_type: vertical_te

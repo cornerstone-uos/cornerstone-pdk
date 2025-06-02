@@ -4,23 +4,23 @@ component_type: MMI2x2
 ports:
 
   - center:
-    - 0.0
-    - -3.05
+    - -166.0
+    - 3.05
     name: o1
     orientation: 180
     port_type: optical
     cross_section: strip_1550nm_TE
 
   - center:
-    - 0.0
-    - 3.05
+    - -166.0
+    - -3.05
     name: o2
     orientation: 180
     port_type: optical
     cross_section: strip_1550nm_TE
 
   - center:
-    - 332.0
+    - 166.0
     - 3.05
     name: o3
     orientation: 0.0
@@ -28,7 +28,7 @@ ports:
     cross_section: strip_1550nm_TE
 
   - center:
-    - 332.0
+    - 166.0
     - -3.05
     name: o4
     orientation: 0.0
