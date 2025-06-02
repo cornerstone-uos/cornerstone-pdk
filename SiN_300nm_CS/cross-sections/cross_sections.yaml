@@ -1,0 +1,44 @@
+- name: strip_1550nm_TE
+  xs_type: strip
+  width: 1.2
+  minimum_bend_radius: 80
+  layers:
+  - layer:
+    - 203
+    - 0
+    offset: 0
+    width: 1.2
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: strip_1310nm_TE
+  xs_type: strip
+  width: 0.95
+  minimum_bend_radius: 60
+  layers:
+  - layer:
+    - 203
+    - 0
+    offset: 0
+    width: 0.95
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
+- name: dc
+  xs_type: dc
+  width: 80
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 41
+    - 0
+    offset: 0
+    width: 80
+
+
