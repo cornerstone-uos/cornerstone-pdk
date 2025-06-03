@@ -1,17 +1,17 @@
-process_name: Si_220nm_passive
+process_name: Si_500nm
 foundry: CORNERSTONE
-description: SOI 220nm passive process with heaters
+description: SOI 500nm passive process with heaters
 material: SOI
 includes_heaters: true
 gds_layers:
   - name: Si_Etch1_EBL_DF_94nm
     layer: [60, 0]
     description: EBL-defined grating couplers. Layer will be etched. For gaps > 0.35, there is no max feature size.
-    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }    
+    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }    
   - name: Si_Etch2_DF_70nm
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched.
-    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }
+    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
   - name: Si_Etch3_LF_120nm
     layer: [3, 0]
     description: Waveguide layer, defines both strip and rib. Layer will be protected.
