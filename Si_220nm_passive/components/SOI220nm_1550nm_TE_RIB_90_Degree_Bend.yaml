@@ -12,6 +12,6 @@ ports:
   port_type: optical
   center:
   - 35.22500
-  - 25.4500
+  - 25.0
   orientation: 0
   cross_section: rib_1550nm_TE

@@ -18,14 +18,14 @@ ports:
 - name: o3
   port_type: optical
   center:
-  - 489.62
-  - 795.38
+  - 494.24
+  - 800
   orientation: 0.0
   cross_section: strip_1550nm_TE
 - name: o4
   port_type: optical
   center:
-  - 494.24
-  - 800
+  - 489.62
+  - 795.38
   orientation: 270
   cross_section: strip_1550nm_TE
