@@ -4,14 +4,14 @@ ports:
 - name: e1
   port_type: electrical_dc
   center:
-  - 50.501
-  - 234.55
+  - -50.08600
+  - 93.82600
   orientation: 90
   cross_section: dc
 - name: e2
   port_type: electrical_dc
   center:
-  - 150.501
-  - 234.55
+  - 49.91400
+  - 93.82600
   orientation: 90
   cross_section: dc
