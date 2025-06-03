@@ -1,0 +1,24 @@
+name: SOI220nm_1310nm_TE_STRIP_2x1_MMI
+component_type: MMI1x2
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 61.45000
+  - 0.0
+  orientation: 0
+  cross_section: strip_1310nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - -61.45000
+  - 1.525
+  orientation: 180.0
+  cross_section: strip_1310nm_TE
+- name: o3
+  port_type: optical
+  center:
+  - -61.45000
+  - -1.525
+  orientation: 180.0
+  cross_section: strip_1310nm_TE
