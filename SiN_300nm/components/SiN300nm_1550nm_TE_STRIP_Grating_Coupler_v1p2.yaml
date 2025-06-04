@@ -10,13 +10,13 @@ ports:
     cross_section: strip_1550nm_TE
 
   - center:
-    - 325.0
-    - -15.802
+    - 325.81
+    - 0
     name: vertical_te
     port_type: vertical_te
     orientation: 0.0
     width:  10.0
     fibre_modes:
     - fibre_type: SMF-28
-      wavelength: 1500
+      wavelength: 1550
 
