@@ -4,21 +4,21 @@ ports:
 - name: o1
   port_type: optical
   center:
-  - 46.70000
+  - 0
   - 0.0
-  orientation: 0
+  orientation: 180
   cross_section: rib_1550nm_TE
 - name: o2
   port_type: optical
   center:
-  - -46.00000
+  - 92.7
   - 1.57
-  orientation: 180.0
+  orientation: 0
   cross_section: rib_1550nm_TE
 - name: o3
   port_type: optical
   center:
-  - -46.00000
+  - 92.7
   - -1.57
-  orientation: 180.0
+  orientation: 0
   cross_section: rib_1550nm_TE

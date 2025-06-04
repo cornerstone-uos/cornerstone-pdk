@@ -4,16 +4,16 @@ ports:
 - name: o1
   port_type: optical
   center:
-  - 26.50000
+  - 0
   - 0.0
-  orientation: 0
+  orientation: 180
   cross_section: rib_1550nm_TE
 - name: vertical_te
   port_type: vertical_te
   center:
-  - -8.387
+  - 34.886
   - 0.0
-  orientation: 180
+  orientation: 0
   width: 16
   fibre_modes:
   - fibre_type: SMF-28
