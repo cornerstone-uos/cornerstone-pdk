@@ -1,0 +1,17 @@
+name: SOI220nm_1310nm_TE_RIB_90_Degree_Bend
+component_type: Bend
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 10.2
+  orientation: 270
+  cross_section: rib_1310nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - 35.2
+  - 25.0
+  orientation: 0
+  cross_section: rib_1310nm_TE

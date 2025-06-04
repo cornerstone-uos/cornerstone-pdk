@@ -1,0 +1,31 @@
+name: SOI220nm_1310nm_TE_RIB_2x2_MMI
+component_type: MMI2x2
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - -62.50000
+  - -1.01500
+  orientation: 180
+  cross_section: rib_1310nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - -62.50000
+  - 1.01500
+  orientation: 180
+  cross_section: rib_1310nm_TE
+- name: o3
+  port_type: optical
+  center:
+  - 61.10000
+  - 1.015
+  orientation: 0.0
+  cross_section: rib_1310nm_TE
+- name: o4
+  port_type: optical
+  center:
+  - 61.10000
+  - -1.015
+  orientation: 0.0
+  cross_section: rib_1310nm_TE

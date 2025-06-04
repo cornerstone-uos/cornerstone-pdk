@@ -1,0 +1,31 @@
+name: SOI220nm_1550nm_TE_RIB_Waveguide_Crossing
+component_type: Crossing
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 395
+  - 0.0
+  orientation: 180
+  cross_section: rib_1550nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - 399.62
+  - 4.62
+  orientation: 90
+  cross_section: rib_1550nm_TE
+- name: o3
+  port_type: optical
+  center:
+  - 404.24
+  - 0.0
+  orientation: 0.0
+  cross_section: rib_1550nm_TE
+- name: o4
+  port_type: optical
+  center:
+  - 399.62
+  - -4.62
+  orientation: 270
+  cross_section: rib_1550nm_TE

@@ -1,0 +1,47 @@
+name: SOI220nm_1550nm_TE_RIB_MZI
+component_type: AmplitudeModulator
+ports:
+- name: e1
+  port_type: electrical_dc
+  center:
+  - 91.00000
+  - -461.22500
+  orientation: 90
+  cross_section: dc
+- name: e2
+  port_type: electrical_dc
+  center:
+  - 311.00000
+  - -461.22500
+  orientation: 90
+  cross_section: dc
+- name: vertical_te_w1
+  port_type: vertical_te
+  center:
+  - -52.085
+  - -118.5
+  orientation: 180
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0
+- name: vertical_te_w2
+  port_type: vertical_te
+  center:
+  - -52.085
+  - -171.5
+  orientation: 180
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0  
+- name: vertical_te_e1
+  port_type: vertical_te
+  center:
+  - 374.084
+  - 0
+  orientation: 0
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0
