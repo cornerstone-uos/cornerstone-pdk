@@ -1,25 +1,25 @@
-name: SOI220nm_1550nm_TE_RIB_MZI
+name: SOI220nm_1550nm_TE_STRIP_MZI
 component_type: AmplitudeModulator
 ports:
 - name: e1
   port_type: electrical_dc
   center:
-  - 104.07500
-  - -458.00000
+  - -75.17500
+  - -236.86300
   orientation: 90
   cross_section: dc
 - name: e2
   port_type: electrical_dc
   center:
-  - 324.07500
-  - -461.22500
+  - 144.82500
+  - -236.86300
   orientation: 90
   cross_section: dc
 - name: vertical_te_w1
   port_type: vertical_te
   center:
-  - -41.258
-  - -118.5
+  - -220.508
+  - 49.638
   orientation: 180
   width: 10
   fibre_modes:
@@ -28,8 +28,8 @@ ports:
 - name: vertical_te_w2
   port_type: vertical_te
   center:
-  - -52.085
-  - -171.5
+  - -220.508
+  - 102.638
   orientation: 180
   width: 10
   fibre_modes:
@@ -38,8 +38,8 @@ ports:
 - name: vertical_te_e1
   port_type: vertical_te
   center:
-  - 389.407
-  - 0
+  - 210.157
+  - 221.138
   orientation: 0
   width: 10
   fibre_modes:

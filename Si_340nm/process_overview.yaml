@@ -4,34 +4,40 @@ description: SOI 340nm passive process with heaters
 material: SOI
 includes_heaters: true
 gds_layers:
-  - name: Si_Etch1_EBL_DF_94nm
-    layer: [60, 0]
-    description: EBL-defined grating couplers. Layer will be etched. For gaps > 0.35, there is no max feature size.
-    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }    
-  - name: Si_Etch2_DF_70nm
-    layer: [6, 0]
-    description: DUV-defined grating couplers. Layer will be etched.
-    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
-  - name: Si_Etch3_LF_120nm
+  - name: Si_Etch1_LF_140nm
     layer: [3, 0]
     description: Waveguide layer, defines both strip and rib. Layer will be protected.
     drc: { min_feature_size: 0.35, min_gap: 0.2}
-  - name: Si_Etch3_DF_120nm
+    alias: wg_lf
+  - name: Si_Etch1_DF_140nm
     layer: [4, 0]
     description: Waveguide layer, defines both strip and rib. Layer will be etched.
     drc: { min_feature_size: 0.2, min_gap: 0.35}
-  - name: Si_Etch4_LF_100nm_to_BOX
+    alias: wg_df
+  - name: Si_Etch1_Grating_DF
+    layer: [6, 0]
+    description: Shallow etch to define gratings. Same etch depth as Si_Etch1s (140nm). No limits on feature size for gaps >0.35.
+    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_size: 20 }
+    alias: grating_duv
+  - name: Si_Etch2_LF_200nm_to_BOX
     layer: [5, 0]
     description: Rib protect layer. Layer will be protected.
-    drc: { min_feature_size: 0.25, min_gap: 0.25}    
+    drc: { min_feature_size: 0.35, min_gap: 0.20}
+    alias: rib_slab    
   - name: Heat_Fil_LF
     layer: [39, 0]
     description: Heater filaments (light), layer will become metal.
     drc: { min_feature_size: 0.6, min_gap: 10.0 }
+    alias: heater_fil
   - name: Heat_CP_LF
     layer: [41, 0]
     description: Heater contact pads (light), layer will become metal.
     drc: { min_feature_size: 2.0, min_gap: 10.0 }
+    alias: contact_pad
+  - name: Isolation_DF
+    layer: [46, 0]
+    description: Etch layer to isolate heater filaments. BOX on this layer will be etched.
+    drc: { min_feature_size: 5.0, min_gap: 2.0 }
   - name: Floorplan
     layer: [99, 0]
     is_info_only: true
@@ -45,26 +51,36 @@ layer_stack:
     description: BOX - buried oxide
     material: SiO2
     thickness: { value: 3.0 }
-    gds_layer: null
+    gds_layer: not Isolation_DF
   - name: Waveguide
-    description: Full thickness SiN layer
+    description: Waveguides (rib/strip)
     material: SOI
-    thickness: { value: 0.22, tol: 0.02 }
-    gds_layer: Si_Etch3_LF_120nm, Si_Etch4_LF_100nm_to_BOX, not Si_Etch2_DF_70nm, not Si_Etch3_DF_120nm, not Si_Etch1_EBL_DF_94nm
+    thickness: { value: 0.34, tol: 0.02 }
+    gds_layer: (wg_lf or not wg_df) and not grating_duv
+  - name: Rib_Slab
+    description: Slab portion of the rib waveguide
+    material: SOI
+    thickness: { value: 0.2, tol: 0.02 }
+    gds_layer: rib_slab
+  - name: duv_gratings
+    description: Etched portion of DUV gratings
+    material: SOI
+    thickness: { value: 0.2, tol: 0.01 }
+    gds_layer: (wg_lf or not wg_df) and grating_duv
   - name: TOX
     description: Top cladding layer
     material: SiO2
     thickness: { value: 2.0, tol: 0.2 }
-    gds_layer: null
+    gds_layer: not Isolation_DF
   - name: Heater_filament
-    description: Heater filament layer
+    description: Heater filament layer (TiN)
     material: metal1
     is_metal_layer: true
-    thickness: { value: 0.22, tol: 0.01}
+    thickness: { value: 0.15, tol: 0.01}
     gds_layer: Heat_Fil_LF
   - name: Contact_pads
-    description: Metal layer for contact pads and electrical routing
-    material: metal1
+    description: Al layer for contact pads and electrical routing
+    material: metal2
     is_metal_layer: true
     thickness: { value: 0.22, tol: 0.01}
     gds_layer: Heat_CP_LF

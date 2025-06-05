@@ -52,12 +52,12 @@ report ('DRC_SOI')
 
 # layers definitions
 ###################################
-soi_etch_ebeam_layer = polygons(60,0) #SOI e-beam Etch - Dark field (GDS 60)
 soi_etch1_dark_layer = input(6,0) #SOI Etch 1 - Dark field (GDS 6)
 soi_etch2_light_layer = polygons(3, 0) #SOI Etch 2 - Light field (GDS 3)
 soi_etch2_dark_layer = input(4, 0) #SOI Etch 2 - Dark field (GDS 4)
 soi_etch3_light_layer = input(5, 0)#SOI Etch 3 - Light field (GDS 5)
 fil= input(39, 0) #Heater Filaments (GDS 39)
+iso = input(46, 0) #Heater isolation trench(GDS 46)
 pad = input(41, 0) #Heater Contact Pads (GDS 41)
 label =input(100,0) #Label (GDS 100)
 cell = input(99, 0) #Cell Outline (Design area) (GDS 99)
@@ -95,12 +95,6 @@ max_feature_area = min_feature_width*max_feature_length
 max_ebeam_perimeter=2*(min_ebeam_width+max_feature_length)
 max_ebeam_area = min_ebeam_width*max_feature_length
 
-# SOI_Ebeam_layer
-soi_etch_ebeam_layer.width(0.06.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size vilation (GDS60&lt;60 nm)')#minimum width
-soi_etch_ebeam_layer_feature = check_minimum_feature(soi_etch_ebeam_layer,0.06,max_ebeam_perimeter,max_ebeam_area)
-soi_etch_ebeam_layer_feature.output('Minimum feature size violation (GDS60 short than max feature length)') # maximum length
-soi_etch_ebeam_layer.space(0.06.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS60&lt;60nm)')# minimum gap
-soi_etch_ebeam_layer.inside(soi_etch2_light_layer.raw.sized(0.2.um)).output('Minimum overlap violation (GDS60 in GDS3 &lt;200nm)')#minimum overlap
 
 # soi_etch1_dark_layer
 soi_etch1_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS6&lt; 200nm)') # minimum width 
@@ -132,6 +126,14 @@ fil.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('
 # heater contact pad
 pad.width(2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS41&lt;2micro)') # minimum width
 pad.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS41&lt;10micro)') # minimum space
+
+# isolation rules
+iso.width(5.0, angle_limit(angle_lim)).output("Minimum width violation (GDS46 &lt; 5 um)")
+iso.space(2.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS46 &lt; 2 um)")
+# Overlap check between GDS 39 &amp; GDS46
+iso.overlapping(fil).output("Overlapping violation (GDS46 &amp; GDS39")
+# Overlap check between GDS 41 &amp; GDS46
+iso.overlapping(pad).output("Overlapping violation (GDS46 &amp; GDS39")
 
 #labels
 label.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS100&lt;250nm)') # minimum width

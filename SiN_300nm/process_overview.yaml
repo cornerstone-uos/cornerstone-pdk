@@ -8,10 +8,12 @@ gds_layers:
     layer: [203, 0]
     description: Full SiN etch to BOX (light) for waveguides, layer will be protected. No max feature length @0.35um features.
     drc: { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+    alias: wg_lf
   - name: SiN_Etch1_DF_300nm
     layer: [204, 0]
-    description: Full SiN etch to BOX (dark) for waveguides, layer will be etched. No max feature length @0.35um features.
+    description: Full SiN etch to BOX (dark) for waveguides, layer will be etched. No max feature length @0.35um gaps
     drc: { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+    alias: wg_df
   - name: Heat_Fil_LF
     layer: [39, 0]
     description: Heater filaments (light), layer will become metal.
@@ -42,21 +44,21 @@ layer_stack:
     description: Full thickness SiN layer
     material: SiN
     thickness: { value: 0.3, tol: 0.015 }
-    gds_layer: SiN_Etch1_LF_300nm, not SiN_Etch1_DF_300nm
+    gds_layer: wg_lf or not wg_df
   - name: TOX
     description: Top cladding layer
     material: SiO2
     thickness: { value: 2.0, tol: 0.2 }
-    gds_layer: null
+    gds_layer: not Clad_Open_DF
   - name: Heater_filament
-    description: Heater filament layer
+    description: Heater filament layer (TiN)
     material: metal1
     is_metal_layer: true
-    thickness: { value: 0.22, tol: 0.01}
+    thickness: { value: 0.15, tol: 0.01}
     gds_layer: Heat_Fil_LF
   - name: Contact_pads
-    description: Metal layer for contact pads and electrical routing
-    material: metal1
+    description: Al layer for contact pads and electrical routing
+    material: metal2
     is_metal_layer: true
     thickness: { value: 0.22, tol: 0.01}
     gds_layer: Heat_CP_LF
