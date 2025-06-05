@@ -1,37 +1,57 @@
-process_name: Si_220nm_passive
+process_name: Si_220nm_active
 foundry: CORNERSTONE
-description: SOI 220nm passive process with heaters
+description: SOI 220nm active process
 material: SOI
 includes_heaters: true
-gds_layers:
-  - name: Si_Etch1_EBL_DF_94nm
-    layer: [60, 0]
-    description: EBL-defined grating couplers. Layer will be etched. For gaps > 0.35, there is no max feature size.
-    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }    
-  - name: Si_Etch2_DF_70nm
+gds_layers:  
+  - name: Si_Etch1_DUV_DF_70nm
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched.
     drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
-  - name: Si_Etch3_LF_120nm
+    alias: grating
+  - name: Si_Etch2_LF_120nm
     layer: [3, 0]
     description: Waveguide layer, defines both strip and rib. Layer will be protected.
     drc: { min_feature_size: 0.35, min_gap: 0.2}
-  - name: Si_Etch3_DF_120nm
+    alias: wg_lf
+  - name: Si_Etch2_DF_120nm
     layer: [4, 0]
     description: Waveguide layer, defines both strip and rib. Layer will be etched.
     drc: { min_feature_size: 0.2, min_gap: 0.35}
-  - name: Si_Etch4_LF_100nm_to_BOX
+    alias: wg_df
+  - name: Si_Etch3_LF_100nm_to_BOX
     layer: [5, 0]
     description: Rib protect layer. Layer will be protected.
-    drc: { min_feature_size: 0.25, min_gap: 0.25}    
-  - name: Heat_Fil_LF
-    layer: [39, 0]
-    description: Heater filaments (light), layer will become metal.
-    drc: { min_feature_size: 0.6, min_gap: 10.0 }
-  - name: Heat_CP_LF
-    layer: [41, 0]
-    description: Heater contact pads (light), layer will become metal.
-    drc: { min_feature_size: 2.0, min_gap: 10.0 }
+    drc: { min_feature_size: 0.25, min_gap: 0.25}
+    alias: rib_slab    
+  - name: P_Implant_Low_DF
+    layer: [7, 0]
+    description: Background low-dose p-type implant. Layer will be implanted with 5.7e17cm-3 dose.
+    drc: { min_feature_size: 0.5, min_gap: 0.5 }
+  - name: N_Implant_Low_DF
+    layer: [8, 0]
+    description: Background low-dose n-type implant. Layer will be implanted with 1.1e18cm-3 dose.
+    drc: { min_feature_size: 0.5, min_gap: 0.5 }  
+  - name: P_Implant_Hi_DF
+    layer: [9, 0]
+    description: Hi-dose p regions for ohmic Si contacts. Layer will be implanted with 1e20cm-3 dose.
+    drc: { min_feature_size: 0.5, min_gap: 0.5 }
+  - name: N_Implant_Hi_DF
+    layer: [11, 0]
+    description: Hi-dose n regions for ohmic Si contacts. Layer will be implanted with 1e20cm-3 dose.
+    drc: { min_feature_size: 0.5, min_gap: 0.5 } 
+  - name: Via_DF
+    layer: [12, 0]
+    description: Via for ohmic contacts. Layer will be metallicized
+    drc: { min_feature_size: 3.0, min_gap: 5.0 }
+  - name: Electrode_LF
+    layer: [13, 0]
+    description: Metal electrodes. Layer will be metallicized
+    drc: { min_feature_size: 6.0, min_gap: 4.0 }
+  - name: Detector_Implant_DF
+    layer: [23, 0]
+    description: Metal electrodes. Layer will be metallicized
+    drc: { min_feature_size: 5.0, min_gap: 5.0 }
   - name: Floorplan
     layer: [99, 0]
     is_info_only: true
@@ -47,24 +67,34 @@ layer_stack:
     thickness: { value: 3.0 }
     gds_layer: null
   - name: Waveguide
-    description: Full thickness SiN layer
+    description: Waveguides (rib/strip)
     material: SOI
     thickness: { value: 0.22, tol: 0.02 }
-    gds_layer: Si_Etch3_LF_120nm, Si_Etch4_LF_100nm_to_BOX, not Si_Etch2_DF_70nm, not Si_Etch3_DF_120nm, not Si_Etch1_EBL_DF_94nm
-  - name: TOX
+    gds_layer: (wg_lf and not wg_df) and not grating
+  - name: Rib_Slab
+    description: Slab portion of the rib waveguide
+    material: SOI
+    thickness: { value: 0.1, tol: 0.02 }
+    gds_layer: rib_slab
+  - name: Grating_etched
+    description: Etched portion of the gratings
+    material: SOI
+    thickness: { value: 0.15, tol: 0.02 }
+    gds_layer: (wg_lf and not wg_df) and grating
+  - name: TOX_full
     description: Top cladding layer
     material: SiO2
     thickness: { value: 2.0, tol: 0.2 }
-    gds_layer: null
-  - name: Heater_filament
-    description: Heater filament layer
+    gds_layer: not Via_DF or not Detector_Implant_DF
+  - name: TOX_thin
+    description: Detector oxide cladding
+    material: SiO2
+    thickness: { value: 0.2 }
+    gds_layer: Detector_Implant_DF
+  - name: Electrode
+    description: Al electrodes connecting to vias, also forms heaters
     material: metal1
     is_metal_layer: true
-    thickness: { value: 0.22, tol: 0.01}
-    gds_layer: Heat_Fil_LF
-  - name: Contact_pads
-    description: Metal layer for contact pads and electrical routing
-    material: metal1
-    is_metal_layer: true
-    thickness: { value: 0.22, tol: 0.01}
-    gds_layer: Heat_CP_LF
+    thickness: { value: 1.6, tol: 0.01}
+    gds_layer: Electrode_LF
+

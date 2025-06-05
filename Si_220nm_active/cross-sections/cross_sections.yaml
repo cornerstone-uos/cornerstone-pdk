@@ -89,9 +89,38 @@
   minimum_bend_radius: 0
   layers:
   - layer:
-    - 41
+    - 13
     - 0
     offset: 0
     width: 80
-
+- name: detector
+  xs_type: dc
+  width: 100
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 13
+    - 0
+    offset: 0
+    width: 100
+- name: modulator_tri
+  xs_type: dc
+  width: 269
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 13
+    - 0
+    offset: -100
+    width: 69
+  - layer:
+    - 13
+    - 0
+    offset: 0
+    width: 69
+  - layer:
+    - 13
+    - 0
+    offset: 100
+    width: 69
 
