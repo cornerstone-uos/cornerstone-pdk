@@ -1,0 +1,44 @@
+- name: rib_Ge_3800nm_TE
+  xs_type: rib
+  width: 3.2
+  minimum_bend_radius: 300.0
+  layers:
+  - layer:
+    - 303
+    - 0
+    offset: 0
+    width: 3.2
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
+- name: ec_xs
+  xs_type: rib
+  width: 51
+  minimum_bend_radius: 300.0
+  layers:
+  - layer:
+    - 303
+    - 0
+    offset: 0
+    width: 11
+  - layer:
+    - 98
+    - 0
+    offset: 0
+    width: 51  
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 3800
+
+

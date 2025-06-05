@@ -1,0 +1,17 @@
+name: Ge_on_Si_3800nm_TE_RIB_Waveguide
+component_type: Waveguide
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0
+  - 0.0
+  orientation: 180
+  cross_section: rib_Ge_3800nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - 200
+  - 0.0
+  orientation: 0.0
+  cross_section: rib_Ge_3800nm_TE
