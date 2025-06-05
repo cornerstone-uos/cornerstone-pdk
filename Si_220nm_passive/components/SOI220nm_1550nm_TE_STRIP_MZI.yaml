@@ -1,4 +1,4 @@
-name: SOI220nm_1550nm_TE_RIB_MZI
+name: SOI220nm_1550nm_TE_STRIP_MZI
 component_type: AmplitudeModulator
 ports:
 - name: e1

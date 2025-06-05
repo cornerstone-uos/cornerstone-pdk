@@ -50,7 +50,7 @@
   <marked>false</marked>
   <xfill>false</xfill>
   <animation>0</animation>
-  <name>Si_Etch1_EBL_DF_94nm</name>
+  <name>Si_Etch0_EBL_DF_94nm</name>
   <source>60/0@1</source>
   </group-members>
   <group-members>
@@ -68,7 +68,7 @@
    <marked>false</marked>
    <xfill>false</xfill>
    <animation>0</animation>
-   <name>Si_Etch2_DF_70nm</name>
+   <name>Si_Etch1_DUV_DF_70nm</name>
    <source>6/0@1</source>
   </group-members>
   <group-members>
@@ -86,7 +86,7 @@
    <marked>false</marked>
    <xfill>false</xfill>
    <animation>0</animation>
-   <name>Si_Etch3_LF_120nm</name>
+   <name>Si_Etch2_LF_120nm</name>
    <source>3/0@1</source>
   </group-members>
   <group-members>
@@ -104,7 +104,7 @@
    <marked>false</marked>
    <xfill>false</xfill>
    <animation>0</animation>
-   <name>Si_Etch3_DF_120nm</name>
+   <name>Si_Etch2_DF_120nm</name>
    <source>4/0@1</source>
   </group-members>
   <group-members>
@@ -122,7 +122,7 @@
    <marked>false</marked>
    <xfill>false</xfill>
    <animation>0</animation>
-   <name>Si_Etch4_LF_100nm_to_BOX</name>
+   <name>Si_Etch3_LF_100nm_to_BOX</name>
    <source>5/0@1</source>
   </group-members>
  </properties>
