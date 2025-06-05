@@ -2,7 +2,7 @@ name: SiN300nm_1310nm_TE_STRIP_2x2_MMI
 component_type: MMI2x2
 ports:
   - center:
-    - -93.0
+    - 0
     - 2.1
     name: o1
     orientation: 180
@@ -10,7 +10,7 @@ ports:
     cross_section: strip_1310nm_TE
 
   - center:
-    - -93.0
+    - 0
     - -2.1
     name: o2
     orientation: 180
@@ -18,7 +18,7 @@ ports:
     cross_section: strip_1310nm_TE
 
   - center:
-    - 93.0
+    - 186.00000
     - 2.1
     name: o3
     orientation: 0.0
@@ -26,7 +26,7 @@ ports:
     cross_section: strip_1310nm_TE
 
   - center:
-    - 93.0
+    - 186.00000
     - -2.1
     name: o4
     orientation: 0.0

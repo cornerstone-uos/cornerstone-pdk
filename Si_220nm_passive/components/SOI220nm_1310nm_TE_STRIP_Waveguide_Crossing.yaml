@@ -4,28 +4,28 @@ ports:
 - name: o1
   port_type: optical
   center:
-  - 485
+  - 0
   - 0.0
   orientation: 180
   cross_section: strip_1310nm_TE
 - name: o2
   port_type: optical
   center:
-  - 489.23500
+  - 4.235
   - 4.235
   orientation: 90
   cross_section: strip_1310nm_TE
 - name: o3
   port_type: optical
   center:
-  - 493.47000
+  - 8.47
   - 0.0
   orientation: 0.0
   cross_section: strip_1310nm_TE
 - name: o4
   port_type: optical
   center:
-  - 489.23500
+  - 4.235
   - -4.235
   orientation: 270
   cross_section: strip_1310nm_TE
