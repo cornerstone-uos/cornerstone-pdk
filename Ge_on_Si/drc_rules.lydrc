@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category>drc</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
+ <text>#CORNERSTONE Proprietary
+#Released: 25/05/2023
+#Version: 1.0
+#Author: Emre Kaplan
+#Report any issue to cornerstone@soton.ac.uk
+#Technology Platform: Germanium on Silicon
+#Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
+
+report ("DRC GeoSi")
+
+# Use a tile size of 20mm
+tiles(20.mm)
+# Use 4 threads
+threads(4)
+
+
+min_feature_size = 0.70.um
+min_gap = 0.70.um 
+
+
+design_area = 15450.0.um*11470.0.um
+
+angle_lim= 45
+
+
+#GDS layers 
+
+#GeoSi Etch 1 - Light field (GDS 303)
+geosi_light_layer = input(303,0)
+
+#GeoSi Etch 1 - Dark field (GDS 304)
+geosi_dark_layer = input(304, 0)
+
+#Label (GDS 100)
+label =input(100,0)
+
+#Cell Outline (Design area) (GDS 99)
+cell = input(99, 0)
+
+
+design_grid = 0.001
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}
+
+
+#Check correct design area is used
+
+cell.without_area(design_area).output("Correct desing area violation")
+
+
+# Use a tile size of 1mm
+tiles(1.mm)
+
+# Minimum feature size for light field
+geosi_light_layer.width(min_feature_size, angle_limit(angle_lim)).output("Minimum feature size violation (GDS303 &lt; 700nm)")
+
+# Minimum feature size for dark field
+geosi_dark_layer.width(min_feature_size, angle_limit(angle_lim)).output("Minimum feature size violation (GDS304 &lt; 700nm)")
+
+
+# Minimum gap for light field
+geosi_light_layer.space(min_gap, angle_limit(angle_lim)).output("Minimum gap violation (GDS303 &lt; 700nm)")
+
+# Minimum gap for dark field
+geosi_dark_layer.space(min_gap, angle_limit(angle_lim)).output("Minimum gap violation (GDS303 &lt; 700nm)")
+
+
+# Minimum feature size for Label
+label.width(min_feature_size, angle_limit(angle_lim)).output("Minimum width violation (GDS100 &lt; 700nm)")
+
+# Minimum feature size for Label
+label.space(min_feature_size, angle_limit(angle_lim)).output("Minimum gap violation (GDS100 &lt; 700nm)")
+
+
+
+
+
+
+
+</text>
+</klayout-macro>
