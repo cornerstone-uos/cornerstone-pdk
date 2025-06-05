@@ -70,7 +70,7 @@ layer_stack:
     description: Waveguides (rib/strip)
     material: SOI
     thickness: { value: 0.22, tol: 0.02 }
-    gds_layer: (wg_lf and not wg_df) and not grating_duv
+    gds_layer: (wg_lf or not wg_df) and not grating_duv
   - name: Rib_Slab
     description: Slab portion of the rib waveguide
     material: SOI
@@ -80,7 +80,7 @@ layer_stack:
     description: Etched portion of the gratings
     material: SOI
     thickness: { value: 0.15, tol: 0.02 }
-    gds_layer: (wg_lf and not wg_df) and grating_duv
+    gds_layer: (wg_lf or not wg_df) and grating_duv
   - name: TOX_full
     description: Top cladding layer
     material: SiO2
