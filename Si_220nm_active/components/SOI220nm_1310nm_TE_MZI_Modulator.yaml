@@ -1,0 +1,61 @@
+name: SOI220nm_1310nm_TE_MZI_Modulator
+component_type: AmplitudeModulator
+ports:
+- name: top_arm_n_bus
+  port_type: electrical_rf
+  center:
+  - 2270.985
+  - 360
+  orientation: 90
+  cross_section: modulator_tri
+- name: bot_arm_n_bus
+  port_type: electrical_rf
+  center:
+  - 2470.985
+  - 360
+  orientation: 90
+  cross_section: modulator_tri
+- name: top_arm_s_bus
+  port_type: electrical_rf
+  center:
+  - 280.985
+  - -360
+  orientation: 270
+  cross_section: modulator_tri
+- name: bot_arm_s_bus
+  port_type: electrical_rf
+  center:
+  - 480.985
+  - -360
+  orientation: 270
+  cross_section: modulator_tri
+- name: vertical_te_w1
+  port_type: vertical_te
+  center:
+  - 25.446
+  - 146.55
+  orientation: 180
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1310.0
+- name: vertical_te2_w2
+  port_type: vertical_te
+  center:
+  - 25.446
+  - 196.55
+  orientation: 180
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1310.0
+- name: vertical_te1_e
+  port_type: vertical_te
+  center:
+  - 2726.524
+  - -132.435
+  orientation: 0
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1310.0

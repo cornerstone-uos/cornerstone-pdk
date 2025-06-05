@@ -1,0 +1,37 @@
+name: SOI220nm_1550nm_TE_Defect_Detector
+component_type: Photodiode
+ports:
+- name: e1
+  port_type: electrical_rf
+  center:
+  - 542
+  - -92.5
+  orientation: 270
+  cross_section: detector
+- name: e2
+  port_type: electrical_rf
+  center:
+  - 742
+  - -92.5
+  orientation: 270
+  cross_section: detector
+- name: vertical_te_w
+  port_type: vertical_te
+  center:
+  - 27.915
+  - 50
+  orientation: 180
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0
+- name: vertical_te1_e
+  port_type: vertical_te
+  center:
+  - 2766.084
+  - 50
+  orientation: 0
+  width: 10
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0
