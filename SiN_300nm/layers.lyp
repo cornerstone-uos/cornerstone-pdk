@@ -36,58 +36,58 @@
   <name>Waveguides</name>
   <source>*/*@*</source>
   <group-members>
-   <expanded>false</expanded>
-   <frame-color>#ff80a8</frame-color>
-   <fill-color>#ff80a8</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I6</dither-pattern>
-   <line-style/>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>true</transparent>
-   <width>2</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>SiN_Etch1_LF_300nm</name>
-   <source>203/0@1</source>
+    <expanded>false</expanded>
+    <frame-color>#ffa080</frame-color>
+    <fill-color>#ffa080</fill-color>
+    <frame-brightness>0</frame-brightness>
+    <fill-brightness>0</fill-brightness>
+    <dither-pattern>I5</dither-pattern>
+    <line-style/>
+    <valid>true</valid>
+    <visible>true</visible>
+    <transparent>false</transparent>
+    <width/>
+    <marked>false</marked>
+    <xfill>false</xfill>
+    <animation>0</animation>
+    <name>SiN_Etch1_LF_300nm</name>
+    <source>203/0@1</source>
   </group-members>
   <group-members>
-   <expanded>false</expanded>
-   <frame-color>#8183ff</frame-color>
-   <fill-color>#8183ff</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I6</dither-pattern>
-   <line-style/>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>true</transparent>
-   <width>1</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>SiN_Etch1_DF_300nm</name>
-   <source>204/0@1</source>
+    <expanded>false</expanded>
+    <frame-color>#00ffff</frame-color>
+    <fill-color>#00ffff</fill-color>
+    <frame-brightness>0</frame-brightness>
+    <fill-brightness>0</fill-brightness>
+    <dither-pattern>I9</dither-pattern>
+    <line-style/>
+    <valid>true</valid>
+    <visible>true</visible>
+    <transparent>false</transparent>
+    <width/>
+    <marked>false</marked>
+    <xfill>false</xfill>
+    <animation>0</animation>
+    <name>SiN_Etch1_DF_300nm</name>
+    <source>204/0@1</source>
   </group-members>
   <group-members>
-   <expanded>false</expanded>
-   <frame-color>#ffae00</frame-color>
-   <fill-color>#ffae00</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I6</dither-pattern>
-   <line-style/>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>true</transparent>
-   <width>1</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>Clad_Open_DF</name>
-   <source>22/0@1</source>
+    <expanded>false</expanded>
+    <frame-color>#ffc280</frame-color>
+    <fill-color>#ffc280</fill-color>
+    <frame-brightness>0</frame-brightness>
+    <fill-brightness>0</fill-brightness>
+    <dither-pattern>I9</dither-pattern>
+    <line-style/>
+    <valid>true</valid>
+    <visible>true</visible>
+    <transparent>false</transparent>
+    <width/>
+    <marked>false</marked>
+    <xfill>false</xfill>
+    <animation>0</animation>
+    <name>Clad_Open_DF</name>
+    <source>22/0@1</source>
   </group-members>
  </properties>
  <properties>
@@ -108,40 +108,40 @@
   <name>Metal</name>
   <source>*/*@*</source>
   <group-members>
-   <expanded>false</expanded>
-   <frame-color>#9580ff</frame-color>
-   <fill-color>#9580ff</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I5</dither-pattern>
-   <line-style/>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>false</transparent>
-   <width>1</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>Heat_Fil_LF</name>
-   <source>39/0@1</source>
+    <expanded>false</expanded>
+    <frame-color>#9580ff</frame-color>
+    <fill-color>#9580ff</fill-color>
+    <frame-brightness>0</frame-brightness>
+    <fill-brightness>0</fill-brightness>
+    <dither-pattern>I5</dither-pattern>
+    <line-style/>
+    <valid>true</valid>
+    <visible>true</visible>
+    <transparent>false</transparent>
+    <width/>
+    <marked>false</marked>
+    <xfill>false</xfill>
+    <animation>0</animation>
+    <name>Heat_Fil_LF</name>
+    <source>39/0@1</source>
   </group-members>
   <group-members>
-   <expanded>false</expanded>
-   <frame-color>#80a8ff</frame-color>
-   <fill-color>#80a8ff</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I9</dither-pattern>
-   <line-style/>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>false</transparent>
-   <width>1</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>Heat_CP_LF</name>
-   <source>41/0@1</source>
+    <expanded>false</expanded>
+    <frame-color>#80a8ff</frame-color>
+    <fill-color>#80a8ff</fill-color>
+    <frame-brightness>0</frame-brightness>
+    <fill-brightness>0</fill-brightness>
+    <dither-pattern>I9</dither-pattern>
+    <line-style/>
+    <valid>true</valid>
+    <visible>true</visible>
+    <transparent>false</transparent>
+    <width/>
+    <marked>false</marked>
+    <xfill>false</xfill>
+    <animation>0</animation>
+    <name>Heat_CP_LF</name>
+    <source>41/0@1</source>
   </group-members>
  </properties>
  <properties>
