@@ -1,12 +1,12 @@
-process_name: Si_sus_not_bias
+process_name: Si_sus_bias
 foundry: CORNERSTONE
-description: Suspended Si platform for 3800nm wavelength. Unbiased, will be biased by CORNERSTONE team.
+description: Suspended Si platform for 3800nm wavelength. Biased by 35nm in each direction.
 material: SOI
 includes_heaters: false
 gds_layers:
   - name: Si_Etch1_300nm_DF
     layer: [404, 0]
-    description: Partial Si etch for gratings and waveguides. Layer will be etched. Not biased. Islands <20um are not permitted.
+    description: Partial Si etch for gratings and waveguides. Layer will be etched. Biased. Islands <20um are not permitted.
     drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
     alias: wg_df
   - name: Si_Etch2_LF_200nm_to_BOX
