@@ -1,7 +1,7 @@
 process_name: Ge_on_Si
 foundry: CORNERSTONE
 description: Germanium on Silicon Platform for Mid-IR wavelengths 
-material: AlN
+material: Ge-on-Si
 includes_heaters: false
 gds_layers:
 
@@ -30,16 +30,16 @@ gds_layers:
 layer_stack:
   - name: Si_Substrate
     description: Si substrate
-    material: SOI
+    material: Si
     thickness: { value: 500.0 }
     gds_layer: null
   - name: Slab
     description: Slab part of Ge waveguides
-    material: AlN
+    material: Ge
     thickness: { value: 1.2, tol: 0.2 }
     gds_layer: null
   - name: Waveguide
     description: Rib part of Ge waveguides. 
-    material: AlN
+    material: Ge
     thickness: { value: 1.8, tol: 0.2 }
     gds_layer: wg_lf or not wg_df
