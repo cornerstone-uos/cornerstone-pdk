@@ -1,0 +1,17 @@
+- name: sus_si_unbiased
+  xs_type: strip
+  width: 0.45
+  minimum_bend_radius: 20
+  is_suspended: true
+  layers:
+  - layer:
+    - 404
+    - 0
+    offset: 0
+    width: 8.5
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
