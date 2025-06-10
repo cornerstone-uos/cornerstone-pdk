@@ -1,0 +1,17 @@
+name: Suspendedsilicon500nm_3800nm_TE_SBend
+component_type: Bend
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0
+  - 4.25
+  orientation: 180
+  cross_section: sus_si_unbiased
+- name: o2
+  port_type: optical
+  center:
+  - 39.35
+  - 12.25
+  orientation: 0
+  cross_section: sus_si_unbiased

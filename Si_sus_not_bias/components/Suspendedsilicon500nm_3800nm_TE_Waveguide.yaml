@@ -1,0 +1,17 @@
+name: Suspendedsilicon500nm_3800nm_TE_Waveguide
+component_type: Waveguide
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  cross_section: sus_si_unbiased
+- name: o2
+  port_type: optical
+  center:
+  - 500
+  - 0.0
+  orientation: 0.0
+  cross_section: sus_si_unbiased
