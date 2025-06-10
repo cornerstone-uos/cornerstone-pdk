@@ -1,6 +1,6 @@
-- name: sus_si_unbiased
+- name: sus_si_biased
   xs_type: strip
-  width: 8.5
+  width: 8.57
   minimum_bend_radius: 20
   is_suspended: true
   layers:
@@ -8,12 +8,12 @@
     - 404
     - 0
     offset: -2.5
-    width: 3.5
+    width: 3.57
   - layer:
     - 404
     - 0
     offset: 2.5
-    width: 3.5
+    width: 3.57
   modes:
   - mode_numbers:
     - 0
