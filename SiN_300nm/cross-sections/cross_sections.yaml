@@ -1,6 +1,7 @@
 - name: strip_1550nm_TE
   xs_type: strip
   width: 1.2
+  materials: SiN
   minimum_bend_radius: 30
   layers:
   - layer:
@@ -17,6 +18,7 @@
 - name: strip_1310nm_TE
   xs_type: strip
   width: 0.95
+  materials: SiN
   minimum_bend_radius: 30
   layers:
   - layer:
@@ -33,6 +35,7 @@
 - name: dc
   xs_type: dc
   width: 80
+  materials: metal2
   minimum_bend_radius: 0
   layers:
   - layer:

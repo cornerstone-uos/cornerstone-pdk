@@ -1,6 +1,7 @@
 - name: rib_1550nm_TE
   xs_type: rib
   width: 0.45
+  materials: SOI
   minimum_bend_radius: 25
   layers:
   - layer:
@@ -17,6 +18,7 @@
 - name: dc
   xs_type: dc
   width: 80
+  materials: metal2
   minimum_bend_radius: 0
   layers:
   - layer:
