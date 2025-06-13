@@ -2,6 +2,7 @@
   xs_type: strip
   width: 0.45
   minimum_bend_radius: 20
+  materials: Si
   layers:
   - layer:
     - 3
@@ -18,6 +19,7 @@
   xs_type: dc
   width: 7.5
   minimum_bend_radius: 0
+  materials: metal2
   layers:
   - layer:
     - 41
