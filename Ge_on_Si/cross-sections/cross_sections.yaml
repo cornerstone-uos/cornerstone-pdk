@@ -1,6 +1,7 @@
 - name: rib_Ge_3800nm_TE
   xs_type: rib
   width: 3.2
+  materials: Ge
   minimum_bend_radius: 300.0
   layers:
   - layer:
@@ -17,6 +18,7 @@
 - name: ec_xs
   xs_type: rib
   width: 51
+  materials: Ge
   minimum_bend_radius: 300.0
   layers:
   - layer:

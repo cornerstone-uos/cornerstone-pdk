@@ -1,6 +1,7 @@
 - name: strip_1310nm_TE
   xs_type: strip
   width: 0.4
+  materials: SOI
   minimum_bend_radius: 10
   layers:
   - layer:
@@ -17,6 +18,7 @@
 - name: strip_1550nm_TE
   xs_type: strip
   width: 0.45
+  materials: SOI
   minimum_bend_radius: 10
   layers:
   - layer:
@@ -33,6 +35,7 @@
 - name: rib_1550nm_TE
   xs_type: rib
   width: 0.8
+  materials: SOI
   minimum_bend_radius: 25
   layers:
   - layer:
@@ -54,6 +57,7 @@
 - name: dc
   xs_type: dc
   width: 80
+  materials: metal2
   minimum_bend_radius: 0
   layers:
   - layer:
