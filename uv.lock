@@ -429,15 +429,15 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
-    { name = "pdk-data-verifier", editable = "../pdk-data-verifier" },
+    { name = "pdk-data-verifier", specifier = ">=0.4.3" },
     { name = "pre-commit", specifier = ">=4.2.0" },
     { name = "pytest", specifier = ">=8.3.5" },
 ]
 
 [[package]]
 name = "pdk-data-verifier"
-version = "0.4.1"
-source = { editable = "../pdk-data-verifier" }
+version = "0.4.3"
+source = { registry = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/" }
 dependencies = [
     { name = "pandas" },
     { name = "pdk-hosting-models" },
@@ -446,29 +446,8 @@ dependencies = [
     { name = "typer" },
     { name = "xmltodict" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "pandas", specifier = ">=2.2.3" },
-    { name = "pdk-hosting-models", specifier = ">=0.4.2", index = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/" },
-    { name = "pydantic", specifier = ">=2.6.0" },
-    { name = "rich" },
-    { name = "typer", specifier = ">=0.15.2" },
-    { name = "xmltodict", specifier = ">=0.14.2" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "ipykernel", specifier = ">=6.29.5" },
-    { name = "pre-commit", specifier = ">=3.8.0" },
-    { name = "pytest", specifier = ">=8.3.2" },
-    { name = "pytest-cov", specifier = ">=6.0.0" },
-    { name = "ruff", specifier = ">=0.6.1" },
-]
-docs = [
-    { name = "mkdocs", specifier = ">=1.6.0" },
-    { name = "mkdocs-material", specifier = ">=9.5.31" },
-    { name = "mkdocstrings", extras = ["python"], specifier = ">=0.25.2" },
+wheels = [
+    { url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/pdk_data_verifier-0.4.3-py3-none-any.whl", hash = "sha256:d6eea00ee23a81c8ea0fa993a749ec02b6f6c304df673276146136650ae471a2" },
 ]
 
 [[package]]

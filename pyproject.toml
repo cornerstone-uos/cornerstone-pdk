@@ -13,6 +13,3 @@ dependencies = [
 [[tool.uv.index]]
 name = "wp-public"
 url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/"
-
-[tool.uv.sources]
-pdk-data-verifier = { path = "../pdk-data-verifier", editable = true}
