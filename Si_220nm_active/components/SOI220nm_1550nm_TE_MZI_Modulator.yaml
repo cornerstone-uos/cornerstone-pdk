@@ -1,5 +1,5 @@
 name: SOI220nm_1310nm_TE_MZI_Modulator
-component_type: AmplitudeModulator
+component_type: MZM
 ports:
 - name: top_arm_n_bus
   port_type: electrical_rf

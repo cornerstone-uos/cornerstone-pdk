@@ -1,5 +1,5 @@
 name: SOI220nm_1550nm_TE_STRIP_MZI
-component_type: AmplitudeModulator
+component_type: MZM
 ports:
 - name: e1
   port_type: electrical_dc
