@@ -1,7 +1,7 @@
 process_name: Si_sus_bias
 foundry: CORNERSTONE
 description: Suspended Si platform for 3800nm wavelength. Biased by 35nm in each direction.
-material: SOI
+material: Susp-Si
 includes_heaters: false
 gds_layers:
   - name: Si_Etch1_300nm_DF
@@ -30,12 +30,12 @@ layer_stack:
     gds_layer: not rib_slab
   - name: Waveguide
     description: Fully etched Si layer
-    material: SOI
+    material: Si
     thickness: { value: 0.45, tol: 0.02 }
     gds_layer: not wg_df and not rib_slab
   - name: Slab
     description: Slab Si layer, part of the rib waveguide
-    material: SOI
+    material: Si
     thickness: { value: 0.15, tol: 0.02 }
     gds_layer: rib_slab
 

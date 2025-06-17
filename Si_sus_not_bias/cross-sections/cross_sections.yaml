@@ -1,7 +1,7 @@
 - name: sus_si_unbiased
   xs_type: strip
   width: 8.5
-  materials: SOI
+  materials: Si
   minimum_bend_radius: 20
   is_suspended: true
   layers:
