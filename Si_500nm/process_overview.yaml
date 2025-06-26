@@ -2,7 +2,11 @@ process_name: Si_500nm
 foundry: CORNERSTONE
 description: SOI 500nm passive process with heaters. All waveguides are ribs.
 material: SOI
+is_public: true
+gds_type: only_real_gds
 includes_heaters: true
+includes_rf_layers: false
+has_a_no_metals_option: true
 gds_layers:
   - name: Si_Etch1_Grating_DF
     layer: [6, 0]

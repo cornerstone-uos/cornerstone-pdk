@@ -2,7 +2,11 @@ process_name: SiN_300nm
 foundry: CORNERSTONE
 description: SiN platform with heaters
 material: SiN
+is_public: true
+gds_type: only_real_gds
 includes_heaters: true
+includes_rf_layers: false
+has_a_no_metals_option: true
 gds_layers:
   - name: SiN_Etch1_LF_300nm
     layer: [203, 0]

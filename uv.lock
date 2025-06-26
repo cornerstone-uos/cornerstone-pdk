@@ -429,14 +429,14 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
-    { name = "pdk-data-verifier", specifier = ">=0.5.0" },
+    { name = "pdk-data-verifier", specifier = ">=0.5.1" },
     { name = "pre-commit", specifier = ">=4.2.0" },
     { name = "pytest", specifier = ">=8.3.5" },
 ]
 
 [[package]]
 name = "pdk-data-verifier"
-version = "0.5.0"
+version = "0.5.1"
 source = { registry = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/" }
 dependencies = [
     { name = "pandas" },
@@ -447,19 +447,19 @@ dependencies = [
     { name = "xmltodict" },
 ]
 wheels = [
-    { url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/pdk_data_verifier-0.5.0-py3-none-any.whl", hash = "sha256:e1eba70f6cb016fd8c0c9eeb3a102b7bc610774ae9f32b70939b69828ba11ff8" },
+    { url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/pdk_data_verifier-0.5.1-py3-none-any.whl", hash = "sha256:4140691ea0708996098d84a6f43b501af46d15c60bac997aafa583e1dde7f5b8" },
 ]
 
 [[package]]
 name = "pdk-hosting-models"
-version = "0.4.3"
+version = "0.5.0"
 source = { registry = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/" }
 dependencies = [
     { name = "pydantic" },
     { name = "xmltodict" },
 ]
 wheels = [
-    { url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/pdk_hosting_models-0.4.3-py3-none-any.whl", hash = "sha256:66ec782bc37e9ff6de53f9fcc244ea6757f58767c3f49ed74aa2b9b16d69f535" },
+    { url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/pdk_hosting_models-0.5.0-py3-none-any.whl", hash = "sha256:426b56a0e12c330f47e8c50593990cf489431375347902ebed780a0bc40210cc" },
 ]
 
 [[package]]

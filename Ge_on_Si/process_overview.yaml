@@ -2,7 +2,11 @@ process_name: Ge_on_Si
 foundry: CORNERSTONE
 description: Germanium on Silicon Platform for Mid-IR wavelengths 
 material: Ge-on-Si
+is_public: true
+gds_type: only_real_gds
 includes_heaters: false
+includes_rf_layers: false
+has_a_no_metals_option: true
 gds_layers:
 
   - name: Ge_Etch1_LF

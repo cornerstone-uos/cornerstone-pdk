@@ -2,7 +2,11 @@ process_name: Si_220nm_passive
 foundry: CORNERSTONE
 description: SOI 220nm passive process with heaters
 material: SOI
+is_public: true
+gds_type: only_real_gds
 includes_heaters: true
+includes_rf_layers: false
+has_a_no_metals_option: true
 gds_layers:
   - name: Si_Etch0_EBL_DF_94nm
     layer: [60, 0]

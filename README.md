@@ -23,7 +23,11 @@ Please create a file called "process_overview.yaml". This file should contain ge
 - `foundry`: the name of the foundry. Ensure you use the correct capitalisation, as you usually spell it.
 - `description`: a short text description of the process to be used on the PDK website. You can include for example the main materials and special features, such as whether heaters or other modulators are included and if this is an MPW process. Description must be <=500 characters length.
 - `material`: the kind of process this is, for example `SOI`, `SiN`, `AlOx`, `AlN`, `GaAs`, `GaN`, `Ge-on-Si`, `InP`, `InP-on-Si`, `TFLN`, `BTO`, `Susp_Si` etc.
+- `is_public`: whether the PDK in this folder is supposed to be used as a public PDK or for an internal use only PDK. A PDK can be public and black-boxed at the same time.
+- `gds_type`: what kind of GDS files are supplied: If you want to use real GDS files in the PDK, please use `only_real_gds`. If you only want to use black boxed components, please use `only_bb_gds`. If you want to supply both real and black-boxed GDS files, please use `real_and_bb_gds`. In the latter case we will use the black boxed components in the PDK, but we can provide black-box swap-out for the real GDS files before tape-out of a design.
 - `includes_heaters`: notes down whether heaters are an option on this process, either `true` or `false`
+- `includes_rf_layers`: notes down whether there are e.g. doped layers included in the platform. If `true`, packaging templates with RF pads will be included in the packages. These won't be included if set to `false`.
+- `has_a_no_metals_option`: whether there is a version of this platform without heaters or other metal layers, e.g. as a cheaper version of an MPW run. If `true` we will include packaging templates that have the optical connections, but no contact pads.
 - `gds_layers`: for every GDS layer, please include:
 
   - `name`: a descriptive, but short name without spaces. Every name must be unique in the process.

@@ -2,7 +2,11 @@ process_name: Si_220nm_active
 foundry: CORNERSTONE
 description: SOI 220nm active process
 material: SOI
+is_public: true
+gds_type: only_real_gds
 includes_heaters: true
+includes_rf_layers: true
+has_a_no_metals_option: false
 gds_layers:  
   - name: Si_Etch1_DUV_DF_70nm
     layer: [6, 0]

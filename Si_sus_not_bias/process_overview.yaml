@@ -2,7 +2,11 @@ process_name: Si_sus_not_bias
 foundry: CORNERSTONE
 description: Suspended Si platform for 3800nm wavelength. Unbiased, will be biased by CORNERSTONE team.
 material: Susp-Si
+is_public: true
+gds_type: only_real_gds
 includes_heaters: false
+includes_rf_layers: false
+has_a_no_metals_option: true
 gds_layers:
   - name: Si_Etch1_300nm_DF
     layer: [404, 0]

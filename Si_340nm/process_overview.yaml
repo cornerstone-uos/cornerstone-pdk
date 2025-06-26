@@ -2,7 +2,11 @@ process_name: Si_340nm
 foundry: CORNERSTONE
 description: SOI 340nm passive process with heaters
 material: SOI
+is_public: true
+gds_type: only_real_gds
 includes_heaters: true
+includes_rf_layers: false
+has_a_no_metals_option: true
 gds_layers:
   - name: Si_Etch1_LF_140nm
     layer: [3, 0]
