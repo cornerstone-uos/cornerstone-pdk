@@ -1,4 +1,4 @@
-name: Heater
+name: Heater_with_isolation_trench
 component_type: ContactPadDC
 ports:
 - name: e1

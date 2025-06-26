@@ -20,8 +20,10 @@ gds_layers:
     alias: wg_df
   - name: Si_Etch1_Grating_DF
     layer: [6, 0]
-    description: Shallow etch to define gratings. Same etch depth as Si_Etch1s (140nm). No limits on feature size for gaps >0.35.
-    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_size: 20 }
+    description: Shallow etch to define gratings. Same etch depth as Si_Etch1s (140nm).
+    drc: 
+    - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
+    - { min_feature_size: 0.2, min_gap: 0.35}
     alias: grating_duv
   - name: Si_Etch2_LF_200nm_to_BOX
     layer: [5, 0]
@@ -58,17 +60,17 @@ layer_stack:
     gds_layer: not Isolation_DF
   - name: Waveguide
     description: Waveguides (rib/strip)
-    material: SOI
+    material: Si
     thickness: { value: 0.34, tol: 0.02 }
     gds_layer: (wg_lf or not wg_df) and not grating_duv
   - name: Rib_Slab
     description: Slab portion of the rib waveguide
-    material: SOI
+    material: Si
     thickness: { value: 0.2, tol: 0.02 }
     gds_layer: rib_slab
   - name: duv_gratings
     description: Etched portion of DUV gratings
-    material: SOI
+    material: Si
     thickness: { value: 0.2, tol: 0.01 }
     gds_layer: (wg_lf or not wg_df) and grating_duv
   - name: TOX

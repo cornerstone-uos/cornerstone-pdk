@@ -1,7 +1,7 @@
 - name: strip_1310nm_TE
   xs_type: strip
   width: 0.4
-  materials: SOI
+  materials: Si
   minimum_bend_radius: 10
   layers:
   - layer:
@@ -15,10 +15,15 @@
     - 0
     polarisation: TE
     wavelength: 1310
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1310
 - name: strip_1550nm_TE
   xs_type: strip
   width: 0.45
-  materials: SOI
+  materials: Si
   minimum_bend_radius: 10
   layers:
   - layer:
@@ -32,10 +37,15 @@
     - 0
     polarisation: TE
     wavelength: 1550
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1550
 - name: rib_1550nm_TE
   xs_type: rib
-  width: 0.8
-  materials: SOI
+  width: 10.8
+  materials: Si
   minimum_bend_radius: 25
   layers:
   - layer:
