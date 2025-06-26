@@ -11,12 +11,16 @@ gds_layers:
   - name: SiN_Etch1_LF_300nm
     layer: [203, 0]
     description: Full SiN etch to BOX (light) for waveguides, layer will be protected. No max feature length @0.35um features.
-    drc: { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+    drc: 
+    - { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+    - { min_feature_size: 0.35, min_gap: 0.25}
     alias: wg_lf
   - name: SiN_Etch1_DF_300nm
     layer: [204, 0]
     description: Full SiN etch to BOX (dark) for waveguides, layer will be etched. No max feature length @0.35um gaps
-    drc: { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+    drc: 
+    - { min_feature_size: 0.25, min_gap: 0.25, max_feature_length: 20.0 }
+    - { min_feature_size: 0.25, min_gap: 0.35}
     alias: wg_df
   - name: Heat_Fil_LF
     layer: [39, 0]

@@ -8,6 +8,12 @@ ports:
     orientation: 180
     port_type: optical
     cross_section: strip_1550nm_TE
+    modes:
+    - mode_numbers:
+      - 0
+      - 0
+      polarisation: TE
+      wavelength: 1550
 
   - center:
     - 325.81
