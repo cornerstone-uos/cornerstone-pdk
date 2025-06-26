@@ -16,7 +16,9 @@ gds_layers:
   - name: Si_Etch1_DUV_DF_70nm
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched.
-    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
+    drc: 
+    - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
+    - { min_feature_size: 0.2, min_gap: 0.35}
     alias: grating_duv
   - name: Si_Etch2_LF_120nm
     layer: [3, 0]
@@ -59,22 +61,22 @@ layer_stack:
     gds_layer: null
   - name: Waveguide
     description: Waveguides (rib/strip)
-    material: SOI
+    material: Si
     thickness: { value: 0.22, tol: 0.02 }
     gds_layer: (wg_lf or not wg_df) and not (grating_ebl or grating_duv)
   - name: Rib_Slab
     description: Slab portion of the rib waveguide
-    material: SOI
+    material: Si
     thickness: { value: 0.1, tol: 0.02 }
     gds_layer: rib_slab
   - name: ebeam_gratings
     description: Etched portion of ebeam gratings
-    material: SOI
+    material: Si
     thickness: { value: 0.125, tol: 0.01 }
     gds_layer: (wg_lf or not wg_df) and grating_ebl
   - name: duv_gratings
     description: Etched portion of DUV gratings
-    material: SOI
+    material: Si
     thickness: { value: 0.15, tol: 0.01 }
     gds_layer: (wg_lf or not wg_df) and grating_duv
   - name: TOX   

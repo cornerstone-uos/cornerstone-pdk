@@ -1,5 +1,11 @@
 name: Cell0_SOI220_Full_1550nm_Packaging_Template
 component_type: PackagingTemplate
+modes:
+- mode_numbers:
+  - 0
+  - 0
+  polarisation: TE
+  wavelength: 1550
 ports:
 - name: e_o1
   port_type: optical

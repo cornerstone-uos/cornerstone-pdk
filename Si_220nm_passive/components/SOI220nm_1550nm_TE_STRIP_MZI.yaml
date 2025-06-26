@@ -1,5 +1,11 @@
 name: SOI220nm_1550nm_TE_STRIP_MZI
 component_type: MZM
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 ports:
 - name: e1
   port_type: electrical_dc
