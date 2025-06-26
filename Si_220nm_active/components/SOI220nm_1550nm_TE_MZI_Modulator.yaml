@@ -1,5 +1,11 @@
-name: SOI220nm_1310nm_TE_MZI_Modulator
+name: SOI220nm_1550nm_TE_MZI_Modulator
 component_type: MZM
+modes:
+- mode_numbers:
+  - 0
+  - 0
+  polarisation: TE
+  wavelength: 1550
 ports:
 - name: top_arm_n_bus
   port_type: electrical_rf

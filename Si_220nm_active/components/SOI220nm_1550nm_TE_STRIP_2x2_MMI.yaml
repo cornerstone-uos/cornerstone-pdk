@@ -1,5 +1,11 @@
 name: SOI220nm_1550nm_TE_STRIP_2x2_MMI
 component_type: MMI2x2
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 ports:
 - name: o1
   port_type: optical
@@ -29,3 +35,4 @@ ports:
   - -1.015
   orientation: 0.0
   cross_section: strip_1550nm_TE
+  
