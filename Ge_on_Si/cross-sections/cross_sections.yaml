@@ -15,6 +15,11 @@
     - 0
     polarisation: TE
     wavelength: 3800
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 3800
 - name: ec_xs
   xs_type: rib
   width: 51

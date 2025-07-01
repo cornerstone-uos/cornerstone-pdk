@@ -1,5 +1,11 @@
 name: Ge_on_Si_3800nm_TE_RIB_Waveguide
 component_type: Waveguide
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
 ports:
 - name: o1
   port_type: optical
