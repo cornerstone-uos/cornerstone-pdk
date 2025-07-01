@@ -7,7 +7,13 @@ ports:
   - 0.0
   - 0.0
   orientation: 180
-  cross_section: sus_si_biased
+  cross_section: sus_si_bias
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
 - name: vertical_te
   port_type: vertical_te
   center:

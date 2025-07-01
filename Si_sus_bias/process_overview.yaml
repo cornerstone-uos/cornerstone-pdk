@@ -1,6 +1,6 @@
 process_name: Si_sus_bias
 foundry: CORNERSTONE
-description: Suspended Si platform for 3800nm wavelength. Biased by 35nm in each direction.
+description: Suspended Si platform for 3800nm wavelength. Will be biased by 35nm in each direction.
 material: Susp-Si
 is_public: true
 gds_type: only_real_gds
@@ -10,13 +10,13 @@ has_a_no_metals_option: true
 gds_layers:
   - name: Si_Etch1_300nm_DF
     layer: [404, 0]
-    description: Partial Si etch for gratings and waveguides. Layer will be etched. Biased. Islands <20um are not permitted.
-    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
+    description: Partial Si etch for gratings and waveguides. Layer will be etched. To be biased. Islands <20um are not permitted.
+    drc: { min_feature_size: 0.27, min_gap: 0.18}
     alias: wg_df
   - name: Si_Etch2_LF_200nm_to_BOX
     layer: [405, 0]
     description: Layer to define rib waveguides. Protected during 200nm etch to BOX.
-    drc: { min_feature_size: 0.35, min_gap: 0.2}
+    drc: { min_feature_size: 0.2, min_gap: 0.25}
     alias: rib_slab
   - name: Floorplan
     layer: [99, 0]

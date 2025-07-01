@@ -1,5 +1,11 @@
 name: Suspendedsilicon500nm_3800nm_TE_Waveguide
 component_type: Waveguide
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
 ports:
 - name: o1
   port_type: optical
@@ -7,11 +13,11 @@ ports:
   - 0.0
   - 0.0
   orientation: 180
-  cross_section: sus_si_biased
+  cross_section: sus_si_bias
 - name: o2
   port_type: optical
   center:
-  - 500.035
+  - 499.7
   - 0.0
   orientation: 0.0
-  cross_section: sus_si_biased
+  cross_section: sus_si_bias

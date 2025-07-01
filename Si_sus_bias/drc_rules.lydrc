@@ -87,10 +87,10 @@ label.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS100 
 
 
 # Minimum feature size for Suspended-Si etch 1 
-soi_etch1_dark_Sus.width(0.20, angle_limit(angle_lim)).output("Minimum width violation (GDS404 &lt; 200 nm)")
+soi_etch1_dark_Sus.width(0.27, angle_limit(angle_lim)).output("Minimum width violation (GDS404 &lt; 270 nm)")
 
 # Minimum gap for Suspended-Si etch 1 
-soi_etch1_dark_Sus.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS404 &lt; 250 nm)")
+soi_etch1_dark_Sus.space(0.18, angle_limit(angle_lim)).output("Minimum gap violation (GDS404 &lt; 180 nm)")
 
 
 
