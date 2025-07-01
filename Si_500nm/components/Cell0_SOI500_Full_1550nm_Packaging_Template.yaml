@@ -1,5 +1,6 @@
 name: Cell0_SOI500_Full_1550nm_Packaging_Template
 component_type: PackagingTemplate
+
 ports:
 - name: e_o1
   port_type: optical
@@ -8,6 +9,12 @@ ports:
   - 1650.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o10
   port_type: optical
   center:
@@ -15,6 +22,12 @@ ports:
   - -600.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o11
   port_type: optical
   center:
@@ -22,6 +35,12 @@ ports:
   - -850.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o12
   port_type: optical
   center:
@@ -29,6 +48,12 @@ ports:
   - -1100.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o13
   port_type: optical
   center:
@@ -36,6 +61,12 @@ ports:
   - -1350.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o14
   port_type: optical
   center:
@@ -43,6 +74,12 @@ ports:
   - -1600.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o2
   port_type: optical
   center:
@@ -50,6 +87,12 @@ ports:
   - 1400.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o3
   port_type: optical
   center:
@@ -57,6 +100,12 @@ ports:
   - 1150.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o4
   port_type: optical
   center:
@@ -64,6 +113,12 @@ ports:
   - 900.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o5
   port_type: optical
   center:
@@ -71,6 +126,12 @@ ports:
   - 650.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o6
   port_type: optical
   center:
@@ -78,6 +139,12 @@ ports:
   - 400.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o7
   port_type: optical
   center:
@@ -85,6 +152,12 @@ ports:
   - 150.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o8
   port_type: optical
   center:
@@ -92,6 +165,12 @@ ports:
   - -100.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_o9
   port_type: optical
   center:
@@ -99,6 +178,12 @@ ports:
   - -350.0
   orientation: 180
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: e_vertical_te1
   port_type: vertical_te
   center:
@@ -700,6 +785,12 @@ ports:
   - 1650.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o10
   port_type: optical
   center:
@@ -707,6 +798,12 @@ ports:
   - -600.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o11
   port_type: optical
   center:
@@ -714,6 +811,12 @@ ports:
   - -850.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o12
   port_type: optical
   center:
@@ -721,6 +824,12 @@ ports:
   - -1100.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o13
   port_type: optical
   center:
@@ -728,6 +837,12 @@ ports:
   - -1350.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o14
   port_type: optical
   center:
@@ -735,6 +850,12 @@ ports:
   - -1600.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o2
   port_type: optical
   center:
@@ -742,6 +863,12 @@ ports:
   - 1400.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o3
   port_type: optical
   center:
@@ -749,6 +876,12 @@ ports:
   - 1150.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o4
   port_type: optical
   center:
@@ -756,6 +889,12 @@ ports:
   - 900.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o5
   port_type: optical
   center:
@@ -763,6 +902,12 @@ ports:
   - 650.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o6
   port_type: optical
   center:
@@ -770,6 +915,12 @@ ports:
   - 400.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o7
   port_type: optical
   center:
@@ -777,6 +928,12 @@ ports:
   - 150.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o8
   port_type: optical
   center:
@@ -784,6 +941,12 @@ ports:
   - -100.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_o9
   port_type: optical
   center:
@@ -791,6 +954,12 @@ ports:
   - -350.0
   orientation: 0
   cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
 - name: w_vertical_te1
   port_type: vertical_te
   center:
