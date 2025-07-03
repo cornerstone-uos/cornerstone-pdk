@@ -1,0 +1,31 @@
+name: SiN200nm_520nm_TE_STRIP_2x1_MMI
+component_type: MMI1x2
+modes:
+- mode_numbers:
+  - 0
+  - 0
+  polarisation: TE
+  wavelength: 520
+ports:
+  - center:
+    - 0
+    - 0.0
+    name: o1
+    orientation: 180.0
+    port_type: optical
+    cross_section: strip_520nm_TE
+  - center:
+    - 101.6
+    - 0.85
+    name: o2
+    orientation: 0.0
+    port_type: optical
+    cross_section: strip_520nm_TE
+  - center:
+    - 101.6
+    - -0.85
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    cross_section: strip_520nm_TE
+
