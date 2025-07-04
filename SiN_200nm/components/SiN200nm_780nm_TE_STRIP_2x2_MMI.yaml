@@ -25,7 +25,7 @@ ports:
     cross_section: strip_780nm_TE
 
   - center:
-    - 168.001
+    - 168.00
     - 1.125
     name: o3
     orientation: 0.0
@@ -33,7 +33,7 @@ ports:
     cross_section: strip_780nm_TE
 
   - center:
-    - 168.001
+    - 168.00
     - -1.125
     name: o4
     orientation: 0.0

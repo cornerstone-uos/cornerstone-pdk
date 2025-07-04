@@ -16,7 +16,7 @@ ports:
     cross_section: strip_520nm_TE
   
   - center:
-    - 220
+    - 440
     - 0.0
     name: o2
     orientation: 0.0
