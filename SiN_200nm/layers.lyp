@@ -50,7 +50,7 @@
     <marked>false</marked>
     <xfill>false</xfill>
     <animation>0</animation>
-    <name>SiN_Etch1_LF_300nm</name>
+    <name>SiN_Etch1_LF_200nm</name>
     <source>203/0@1</source>
   </group-members>
   <group-members>
@@ -68,7 +68,7 @@
     <marked>false</marked>
     <xfill>false</xfill>
     <animation>0</animation>
-    <name>SiN_Etch1_DF_300nm</name>
+    <name>SiN_Etch1_DF_200nm</name>
     <source>204/0@1</source>
   </group-members>
   <group-members>
