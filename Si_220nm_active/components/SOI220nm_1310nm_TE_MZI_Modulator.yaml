@@ -42,6 +42,7 @@ ports:
   - 146.55
   orientation: 180
   width: 10
+  coupling_angle_cladding: 6.8713
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1310.0
@@ -52,6 +53,7 @@ ports:
   - 196.55
   orientation: 180
   width: 10
+  coupling_angle_cladding: 6.8713
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1310.0
@@ -62,6 +64,7 @@ ports:
   - -132.435
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.8713
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1310.0

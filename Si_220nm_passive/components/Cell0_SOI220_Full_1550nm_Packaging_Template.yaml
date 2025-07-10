@@ -112,6 +112,7 @@ ports:
   - 1650.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -122,6 +123,7 @@ ports:
   - -600.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -132,6 +134,7 @@ ports:
   - -850.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -142,6 +145,7 @@ ports:
   - -1100.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -152,6 +156,7 @@ ports:
   - -1350.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -161,7 +166,8 @@ ports:
   - 5290.0
   - -1600.0
   orientation: 0
-  width: 10 
+  width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -172,6 +178,7 @@ ports:
   - 1400.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -182,6 +189,7 @@ ports:
   - 1150.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -192,6 +200,7 @@ ports:
   - 900.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -201,7 +210,8 @@ ports:
   - 5290.0
   - 650.0
   orientation: 0
-  width: 10 
+  width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -212,6 +222,7 @@ ports:
   - 400.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -222,6 +233,7 @@ ports:
   - 150.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -232,6 +244,7 @@ ports:
   - -100.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -242,6 +255,7 @@ ports:
   - -350.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -252,6 +266,7 @@ ports:
   - 1900.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -262,6 +277,7 @@ ports:
   - -1850.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -804,6 +820,7 @@ ports:
   - 1650.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -814,6 +831,7 @@ ports:
   - -600.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -824,6 +842,7 @@ ports:
   - -850.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -834,6 +853,7 @@ ports:
   - -1100.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -844,6 +864,7 @@ ports:
   - -1350.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -854,6 +875,7 @@ ports:
   - -1600.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -864,6 +886,7 @@ ports:
   - 1400.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -874,6 +897,7 @@ ports:
   - 1150.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -884,6 +908,7 @@ ports:
   - 900.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -894,6 +919,7 @@ ports:
   - 650.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -904,6 +930,7 @@ ports:
   - 400.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -914,6 +941,7 @@ ports:
   - 150.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -924,6 +952,7 @@ ports:
   - -100.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -934,6 +963,7 @@ ports:
   - -350.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -944,6 +974,7 @@ ports:
   - 1900.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
@@ -954,6 +985,7 @@ ports:
   - -1850.0
   orientation: 0
   width: 10
+  coupling_angle_cladding: 6.886
   fibre_modes:
   - fibre_type: SMF-28
     wavelength: 1550
