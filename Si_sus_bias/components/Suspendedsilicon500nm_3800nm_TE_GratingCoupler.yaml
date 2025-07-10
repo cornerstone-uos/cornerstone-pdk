@@ -23,5 +23,5 @@ ports:
   width: 20
   coupling_angle_cladding: 19
   fibre_modes:
-  - fibre_type: SMF-28
+  - fibre_type: IRZS23
     wavelength: 3800
