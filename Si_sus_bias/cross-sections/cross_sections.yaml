@@ -1,5 +1,5 @@
 - name: sus_si_bias
-  xs_type: strip
+  xs_type: suspended
   width: 8.5
   materials: Si
   minimum_bend_radius: 20

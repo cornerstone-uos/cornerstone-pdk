@@ -22,7 +22,8 @@ ports:
     port_type: vertical_te
     orientation: 0.0
     width:  10.0
+    coupling_angle_cladding: 16.189
     fibre_modes:
-    - fibre_type: SMF-28
+    - fibre_type: 780HP
       wavelength: 780
 

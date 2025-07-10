@@ -22,7 +22,8 @@ ports:
     port_type: vertical_te
     orientation: 0.0
     width:  10.0
+    coupling_angle_cladding: 12.201
     fibre_modes:
-    - fibre_type: SMF-28
+    - fibre_type: S405-XP
       wavelength: 638
 
