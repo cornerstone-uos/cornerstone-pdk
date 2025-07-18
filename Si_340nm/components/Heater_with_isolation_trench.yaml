@@ -1,5 +1,5 @@
 name: Heater_with_isolation_trench
-component_type: ContactPadDC
+component_type: TOPM
 ports:
 - name: e1
   port_type: electrical_dc
