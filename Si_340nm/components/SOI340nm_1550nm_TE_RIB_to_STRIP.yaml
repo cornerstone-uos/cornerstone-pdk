@@ -20,7 +20,7 @@ ports:
   - 200.01300
   - 0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
   modes:
   - mode_numbers:
     - 0

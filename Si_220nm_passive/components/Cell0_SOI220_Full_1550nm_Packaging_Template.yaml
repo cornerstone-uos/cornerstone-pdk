@@ -13,98 +13,98 @@ ports:
   - 4922.173
   - 1650.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o10
   port_type: optical
   center:
   - 4922.173
   - -600.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o11
   port_type: optical
   center:
   - 4922.173
   - -850.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o12
   port_type: optical
   center:
   - 4922.173
   - -1100.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o13
   port_type: optical
   center:
   - 4922.173
   - -1350.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o14
   port_type: optical
   center:
   - 4922.173
   - -1600.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o2
   port_type: optical
   center:
   - 4922.173
   - 1400.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o3
   port_type: optical
   center:
   - 4922.173
   - 1150.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o4
   port_type: optical
   center:
   - 4922.173
   - 900.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o5
   port_type: optical
   center:
   - 4922.173
   - 650.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o6
   port_type: optical
   center:
   - 4922.173
   - 400.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o7
   port_type: optical
   center:
   - 4922.173
   - 150.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o8
   port_type: optical
   center:
   - 4922.173
   - -100.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_o9
   port_type: optical
   center:
   - 4922.173
   - -350.0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: e_vertical_te1
   port_type: vertical_te
   center:
@@ -721,98 +721,98 @@ ports:
   - -4922.173
   - 1650.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o10
   port_type: optical
   center:
   - -4922.173
   - -600.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o11
   port_type: optical
   center:
   - -4922.173
   - -850.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o12
   port_type: optical
   center:
   - -4922.173
   - -1100.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o13
   port_type: optical
   center:
   - -4922.173
   - -1350.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o14
   port_type: optical
   center:
   - -4922.173
   - -1600.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o2
   port_type: optical
   center:
   - -4922.173
   - 1400.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o3
   port_type: optical
   center:
   - -4922.173
   - 1150.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o4
   port_type: optical
   center:
   - -4922.173
   - 900.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o5
   port_type: optical
   center:
   - -4922.173
   - 650.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o6
   port_type: optical
   center:
   - -4922.173
   - 400.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o7
   port_type: optical
   center:
   - -4922.173
   - 150.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o8
   port_type: optical
   center:
   - -4922.173
   - -100.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_o9
   port_type: optical
   center:
   - -4922.173
   - -350.0
   orientation: 0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: w_vertical_te1
   port_type: vertical_te
   center:

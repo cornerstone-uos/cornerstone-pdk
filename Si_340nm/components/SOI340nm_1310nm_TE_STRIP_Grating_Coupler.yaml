@@ -7,7 +7,7 @@ ports:
   - 0.0
   - 0.0
   orientation: 180
-  cross_section: strip_1310nm_TE
+  cross_section: strip_1310nm
   modes:
   - mode_numbers:
     - 0

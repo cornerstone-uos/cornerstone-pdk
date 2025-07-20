@@ -13,25 +13,25 @@ ports:
   - 0
   - 0
   orientation: 180
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: o2
   port_type: optical
   center:
   - 4.62
   - 4.62
   orientation: 90
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: o3
   port_type: optical
   center:
   - 9.24
   - 0
   orientation: 0.0
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm
 - name: o4
   port_type: optical
   center:
   - 4.62
   - -4.62
   orientation: 270
-  cross_section: strip_1550nm_TE
+  cross_section: strip_1550nm

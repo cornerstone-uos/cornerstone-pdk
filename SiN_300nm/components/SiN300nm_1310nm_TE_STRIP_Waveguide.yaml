@@ -13,7 +13,7 @@ ports:
     name: o1
     orientation: 180
     port_type: optical
-    cross_section: strip_1310nm_TE
+    cross_section: strip_1310nm
   
   - center:
     - 200.0
@@ -21,4 +21,4 @@ ports:
     name: o2
     orientation: 0.0
     port_type: optical
-    cross_section: strip_1310nm_TE
+    cross_section: strip_1310nm

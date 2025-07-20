@@ -1,4 +1,4 @@
-- name: strip_1550nm_TE
+- name: strip_1550nm
   xs_type: strip
   width: 1.2
   materials: SiN
@@ -20,7 +20,7 @@
     - 0
     polarisation: TM
     wavelength: 1550
-- name: strip_1310nm_TE
+- name: strip_1310nm
   xs_type: strip
   width: 0.95
   materials: SiN
