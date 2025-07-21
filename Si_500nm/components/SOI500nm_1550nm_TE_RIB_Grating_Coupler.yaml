@@ -7,7 +7,7 @@ ports:
   - 0.0
   - 0.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
