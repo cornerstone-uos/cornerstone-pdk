@@ -13,11 +13,11 @@ ports:
   - 0.225
   - 0.0
   orientation: 270
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
 - name: o2
   port_type: optical
   center:
   - 25.25100
   - 25.027
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm

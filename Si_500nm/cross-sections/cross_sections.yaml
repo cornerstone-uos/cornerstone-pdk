@@ -1,4 +1,4 @@
-- name: rib_1550nm_TE
+- name: rib_1550nm
   xs_type: rib
   width: 0.45 # Here the cross-section width is not changes to 10.45 becasue everything is rib.
   materials: Si

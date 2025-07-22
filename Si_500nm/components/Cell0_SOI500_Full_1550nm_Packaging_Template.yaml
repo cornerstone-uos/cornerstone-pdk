@@ -8,7 +8,7 @@ ports:
   - 4922.173
   - 1650.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -21,7 +21,7 @@ ports:
   - 4922.173
   - -600.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -34,7 +34,7 @@ ports:
   - 4922.173
   - -850.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -47,7 +47,7 @@ ports:
   - 4922.173
   - -1100.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -60,7 +60,7 @@ ports:
   - 4922.173
   - -1350.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -73,7 +73,7 @@ ports:
   - 4922.173
   - -1600.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -86,7 +86,7 @@ ports:
   - 4922.173
   - 1400.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -99,7 +99,7 @@ ports:
   - 4922.173
   - 1150.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -112,7 +112,7 @@ ports:
   - 4922.173
   - 900.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -125,7 +125,7 @@ ports:
   - 4922.173
   - 650.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -138,7 +138,7 @@ ports:
   - 4922.173
   - 400.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -151,7 +151,7 @@ ports:
   - 4922.173
   - 150.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -164,7 +164,7 @@ ports:
   - 4922.173
   - -100.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -177,7 +177,7 @@ ports:
   - 4922.173
   - -350.0
   orientation: 180
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -800,7 +800,7 @@ ports:
   - -4922.173
   - 1650.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -813,7 +813,7 @@ ports:
   - -4922.173
   - -600.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -826,7 +826,7 @@ ports:
   - -4922.173
   - -850.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -839,7 +839,7 @@ ports:
   - -4922.173
   - -1100.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -852,7 +852,7 @@ ports:
   - -4922.173
   - -1350.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -865,7 +865,7 @@ ports:
   - -4922.173
   - -1600.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -878,7 +878,7 @@ ports:
   - -4922.173
   - 1400.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -891,7 +891,7 @@ ports:
   - -4922.173
   - 1150.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -904,7 +904,7 @@ ports:
   - -4922.173
   - 900.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -917,7 +917,7 @@ ports:
   - -4922.173
   - 650.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -930,7 +930,7 @@ ports:
   - -4922.173
   - 400.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -943,7 +943,7 @@ ports:
   - -4922.173
   - 150.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -956,7 +956,7 @@ ports:
   - -4922.173
   - -100.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
@@ -969,7 +969,7 @@ ports:
   - -4922.173
   - -350.0
   orientation: 0
-  cross_section: rib_1550nm_TE
+  cross_section: rib_1550nm
   modes:
   - mode_numbers:
     - 0
