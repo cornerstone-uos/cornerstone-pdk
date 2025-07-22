@@ -7,6 +7,7 @@
     - 5.3  
   - - 12.5  
     - 5.6 
+  abbreviation: "F"
 - name: Cell0_SOI_Half_Institution_Name
   design_area:
   - 5.5
@@ -16,3 +17,4 @@
     - 5.3  
   - - 12.5  
     - 5.6 
+  abbreviation: "H"

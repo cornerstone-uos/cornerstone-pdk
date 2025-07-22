@@ -79,6 +79,7 @@ This folder should contain a "floorplans.yaml" file that gives a list of floorpl
 - `name`: name of the floorplan
 - `design_area`: size of design area (size in x and y)
 - `final_chip_size`: size of chip after dicing (size in x and y). Can be either be a single size entry or may be a list of them if multiple final chip sizes are possible.
+- `abbreviation`: a 1-3 character long, unique abbreviation for the floorplan size. 
 
 
 You can (optionally) also include gds files with the floorplans here (one gds file per floorplan). In this case, please ensure that the gds file name corresponds to a floorplan name in the yaml as well, giving the corresponding design area and final chip sizes.
