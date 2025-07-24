@@ -21,7 +21,7 @@ ports:
     orientation: 0.0
     port_type: vertical_te
     width: 10.0
-    coupling_angle_cladding: 13.6296
+    coupling_angle_cladding: 5.5
     fibre_modes:
     - fibre_type: SMF-28
       wavelength: 1310
