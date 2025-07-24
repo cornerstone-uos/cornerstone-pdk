@@ -1,4 +1,4 @@
-- name: strip_780nm_TE
+- name: strip_780nm
   xs_type: strip
   width: 0.5
   materials: SiN
@@ -20,7 +20,7 @@
     - 0
     polarisation: TM
     wavelength: 780
-- name: strip_638nm_TE
+- name: strip_638nm
   xs_type: strip
   width: 0.36
   materials: SiN
@@ -42,7 +42,7 @@
     - 0
     polarisation: TM
     wavelength: 638
-- name: strip_520nm_TE
+- name: strip_520nm
   xs_type: strip
   width: 0.27
   materials: SiN
