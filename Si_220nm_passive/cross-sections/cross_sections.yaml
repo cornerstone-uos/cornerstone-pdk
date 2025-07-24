@@ -15,7 +15,6 @@
     - 0
     polarisation: TE
     wavelength: 1310
-  modes:
   - mode_numbers:
     - 0
     - 0
