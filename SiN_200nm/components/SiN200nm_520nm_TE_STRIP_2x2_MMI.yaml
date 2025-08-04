@@ -7,9 +7,10 @@ modes:
   polarisation: TE
   wavelength: 520
 ports:
+
   - center:
     - 0
-    - 0.85
+    - -0.85
     name: o1
     orientation: 180
     port_type: optical
@@ -17,7 +18,7 @@ ports:
 
   - center:
     - 0
-    - -0.85
+    - 0.85
     name: o2
     orientation: 180
     port_type: optical

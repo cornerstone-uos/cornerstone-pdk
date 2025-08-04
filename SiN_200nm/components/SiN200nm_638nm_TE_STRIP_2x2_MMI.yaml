@@ -10,7 +10,7 @@ ports:
 
   - center:
     - 0
-    - 0.875
+    - -0.875
     name: o1
     orientation: 180
     port_type: optical
@@ -18,7 +18,7 @@ ports:
 
   - center:
     - 0
-    - -0.875
+    - 0.875
     name: o2
     orientation: 180
     port_type: optical
