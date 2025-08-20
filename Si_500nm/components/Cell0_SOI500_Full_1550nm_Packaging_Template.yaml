@@ -1,0 +1,1154 @@
+name: Cell0_SOI500_Full_1550nm_Packaging_Template
+component_type: PackagingTemplate
+
+ports:
+- name: e_o1
+  port_type: optical
+  center:
+  - 4922.173
+  - 1650.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o10
+  port_type: optical
+  center:
+  - 4922.173
+  - -600.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o11
+  port_type: optical
+  center:
+  - 4922.173
+  - -850.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o12
+  port_type: optical
+  center:
+  - 4922.173
+  - -1100.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o13
+  port_type: optical
+  center:
+  - 4922.173
+  - -1350.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o14
+  port_type: optical
+  center:
+  - 4922.173
+  - -1600.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o2
+  port_type: optical
+  center:
+  - 4922.173
+  - 1400.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o3
+  port_type: optical
+  center:
+  - 4922.173
+  - 1150.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o4
+  port_type: optical
+  center:
+  - 4922.173
+  - 900.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o5
+  port_type: optical
+  center:
+  - 4922.173
+  - 650.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o6
+  port_type: optical
+  center:
+  - 4922.173
+  - 400.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o7
+  port_type: optical
+  center:
+  - 4922.173
+  - 150.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o8
+  port_type: optical
+  center:
+  - 4922.173
+  - -100.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_o9
+  port_type: optical
+  center:
+  - 4922.173
+  - -350.0
+  orientation: 180
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: e_vertical_te1
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 1650.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te10
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -600.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te11
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -850.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te12
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -1100.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te13
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -1350.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te14
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -1600.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te2
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 1400.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te3
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 1150.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te4
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 900.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te5
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 650.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te6
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 400.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te7
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 150.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te8
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -100.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te9
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -350.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te_lb1
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - 1900.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: e_vertical_te_lb2
+  port_type: vertical_te
+  center:
+  - 5290.0
+  - -1850.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: n_e1
+  port_type: electrical_dc
+  center:
+  - -4615.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e10
+  port_type: electrical_dc
+  center:
+  - -1915.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e11
+  port_type: electrical_dc
+  center:
+  - -1615.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e12
+  port_type: electrical_dc
+  center:
+  - -1315.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e13
+  port_type: electrical_dc
+  center:
+  - -1015.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e14
+  port_type: electrical_dc
+  center:
+  - -715.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e15
+  port_type: electrical_dc
+  center:
+  - -415.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e16
+  port_type: electrical_dc
+  center:
+  - -115.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e17
+  port_type: electrical_dc
+  center:
+  - 185.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e18
+  port_type: electrical_dc
+  center:
+  - 485.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e19
+  port_type: electrical_dc
+  center:
+  - 785.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e2
+  port_type: electrical_dc
+  center:
+  - -4315.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e20
+  port_type: electrical_dc
+  center:
+  - 1085.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e21
+  port_type: electrical_dc
+  center:
+  - 1385.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e22
+  port_type: electrical_dc
+  center:
+  - 1685.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e23
+  port_type: electrical_dc
+  center:
+  - 1985.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e24
+  port_type: electrical_dc
+  center:
+  - 2285.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e25
+  port_type: electrical_dc
+  center:
+  - 2585.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e26
+  port_type: electrical_dc
+  center:
+  - 2885.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e27
+  port_type: electrical_dc
+  center:
+  - 3185.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e28
+  port_type: electrical_dc
+  center:
+  - 3485.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e29
+  port_type: electrical_dc
+  center:
+  - 3785.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e3
+  port_type: electrical_dc
+  center:
+  - -4015.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e30
+  port_type: electrical_dc
+  center:
+  - 4085.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e31
+  port_type: electrical_dc
+  center:
+  - 4385.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e4
+  port_type: electrical_dc
+  center:
+  - -3715.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e5
+  port_type: electrical_dc
+  center:
+  - -3415.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e6
+  port_type: electrical_dc
+  center:
+  - -3115.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e7
+  port_type: electrical_dc
+  center:
+  - -2815.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e8
+  port_type: electrical_dc
+  center:
+  - -2515.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: n_e9
+  port_type: electrical_dc
+  center:
+  - -2215.0
+  - 2200.0
+  orientation: 270
+  cross_section: dc
+- name: s_e1
+  port_type: electrical_dc
+  center:
+  - -4615.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e10
+  port_type: electrical_dc
+  center:
+  - -1915.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e11
+  port_type: electrical_dc
+  center:
+  - -1615.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e12
+  port_type: electrical_dc
+  center:
+  - -1315.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e13
+  port_type: electrical_dc
+  center:
+  - -1015.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e14
+  port_type: electrical_dc
+  center:
+  - -715.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e15
+  port_type: electrical_dc
+  center:
+  - -415.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e16
+  port_type: electrical_dc
+  center:
+  - -115.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e17
+  port_type: electrical_dc
+  center:
+  - 185.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e18
+  port_type: electrical_dc
+  center:
+  - 485.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e19
+  port_type: electrical_dc
+  center:
+  - 785.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e2
+  port_type: electrical_dc
+  center:
+  - -4315.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e20
+  port_type: electrical_dc
+  center:
+  - 1085.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e21
+  port_type: electrical_dc
+  center:
+  - 1385.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e22
+  port_type: electrical_dc
+  center:
+  - 1685.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e23
+  port_type: electrical_dc
+  center:
+  - 1985.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e24
+  port_type: electrical_dc
+  center:
+  - 2285.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e25
+  port_type: electrical_dc
+  center:
+  - 2585.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e26
+  port_type: electrical_dc
+  center:
+  - 2885.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e27
+  port_type: electrical_dc
+  center:
+  - 3185.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e28
+  port_type: electrical_dc
+  center:
+  - 3485.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e29
+  port_type: electrical_dc
+  center:
+  - 3785.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e3
+  port_type: electrical_dc
+  center:
+  - -4015.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e30
+  port_type: electrical_dc
+  center:
+  - 4085.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e31
+  port_type: electrical_dc
+  center:
+  - 4385.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e4
+  port_type: electrical_dc
+  center:
+  - -3715.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e5
+  port_type: electrical_dc
+  center:
+  - -3415.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e6
+  port_type: electrical_dc
+  center:
+  - -3115.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e7
+  port_type: electrical_dc
+  center:
+  - -2815.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e8
+  port_type: electrical_dc
+  center:
+  - -2515.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: s_e9
+  port_type: electrical_dc
+  center:
+  - -2215.0
+  - -2200.0
+  orientation: 90
+  cross_section: dc
+- name: w_o1
+  port_type: optical
+  center:
+  - -4922.173
+  - 1650.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o10
+  port_type: optical
+  center:
+  - -4922.173
+  - -600.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o11
+  port_type: optical
+  center:
+  - -4922.173
+  - -850.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o12
+  port_type: optical
+  center:
+  - -4922.173
+  - -1100.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o13
+  port_type: optical
+  center:
+  - -4922.173
+  - -1350.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o14
+  port_type: optical
+  center:
+  - -4922.173
+  - -1600.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o2
+  port_type: optical
+  center:
+  - -4922.173
+  - 1400.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o3
+  port_type: optical
+  center:
+  - -4922.173
+  - 1150.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o4
+  port_type: optical
+  center:
+  - -4922.173
+  - 900.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o5
+  port_type: optical
+  center:
+  - -4922.173
+  - 650.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o6
+  port_type: optical
+  center:
+  - -4922.173
+  - 400.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o7
+  port_type: optical
+  center:
+  - -4922.173
+  - 150.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o8
+  port_type: optical
+  center:
+  - -4922.173
+  - -100.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_o9
+  port_type: optical
+  center:
+  - -4922.173
+  - -350.0
+  orientation: 0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: w_vertical_te1
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 1650.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te10
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -600.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te11
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -850.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te12
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -1100.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te13
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -1350.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te14
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -1600.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te2
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 1400.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te3
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 1150.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te4
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 900.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te5
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 650.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te6
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 400.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te7
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 150.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te8
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -100.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te9
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -350.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te_lb1
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - 1900.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: w_vertical_te_lb2
+  port_type: vertical_te
+  center:
+  - -5290.0
+  - -1850.0
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550

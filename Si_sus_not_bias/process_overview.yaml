@@ -1,0 +1,46 @@
+process_name: Si_sus_not_bias
+foundry: CORNERSTONE
+description: Suspended Si platform for 3800nm wavelength. Biased - will NOT be biased by CORNERSTONE team.
+material: Susp-Si
+is_public: true
+gds_type: only_real_gds
+includes_heaters: false
+includes_rf_layers: false
+has_a_no_metals_option: true
+gds_layers:
+  - name: Si_Etch1_300nm_DF
+    layer: [404, 0]
+    description: Partial Si etch for gratings and waveguides. Layer will be etched. Islands <20um are not permitted.
+    drc: { min_feature_size: 0.2, min_gap: 0.25}
+    alias: wg_df
+  - name: Si_Etch2_LF_200nm_to_BOX
+    layer: [405, 0]
+    description: Layer to define rib waveguides. Protected during 200nm etch to BOX.
+    drc: { min_feature_size: 0.2, min_gap: 0.25}
+    alias: rib_slab
+  - name: Floorplan
+    layer: [99, 0]
+    is_info_only: true
+    description: Cell outline
+  - name: Label_Etch_DF
+    layer: [100, 0]
+    description: Labels (dark), will be etched. Islands <20um are not permitted.
+    drc: { min_feature_size: 0.25, min_gap: 0.25 }
+layer_stack:
+  - name: BOX
+    description: BOX - buried oxide. Will be undercut by 8um after HF etch.
+    material: SiO2
+    thickness: { value: 3.0 }
+    gds_layer: not rib_slab
+  - name: Waveguide
+    description: Fully etched Si layer
+    material: Si
+    thickness: { value: 0.45, tol: 0.02 }
+    gds_layer: not wg_df and not rib_slab
+  - name: Slab
+    description: Slab Si layer, part of the rib waveguide
+    material: Si
+    thickness: { value: 0.15, tol: 0.02 }
+    gds_layer: rib_slab
+
+

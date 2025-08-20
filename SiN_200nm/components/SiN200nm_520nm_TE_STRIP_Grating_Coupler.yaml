@@ -1,0 +1,28 @@
+name: SiN200nm_520nm_TE_STRIP_Grating_Coupler
+component_type: GratingCoupler1D
+ports:
+  - center:
+    - 0.0
+    - 0.0
+    name: o1
+    orientation: 180
+    port_type: optical
+    cross_section: strip_520nm
+    modes:
+    - mode_numbers:
+      - 0
+      - 0
+      polarisation: TE
+      wavelength: 520
+  - center:
+    - 159.1
+    - 0.0
+    name: vertical_te
+    orientation: 0.0
+    port_type: vertical_te
+    width: 10.0
+    coupling_angle_cladding: 14.7977
+    fibre_modes:
+    - fibre_type: S405-XP
+      wavelength: 520
+

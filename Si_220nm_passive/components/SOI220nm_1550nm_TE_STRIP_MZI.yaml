@@ -1,0 +1,56 @@
+name: SOI220nm_1550nm_TE_STRIP_MZI
+component_type: MZM
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+ports:
+- name: e1
+  port_type: electrical_dc
+  center:
+  - -75.17500
+  - -236.86300
+  orientation: 90
+  cross_section: dc
+- name: e2
+  port_type: electrical_dc
+  center:
+  - 144.82500
+  - -236.86300
+  orientation: 90
+  cross_section: dc
+- name: vertical_te_w1
+  port_type: vertical_te
+  center:
+  - -220.508
+  - 49.638
+  orientation: 180
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0
+- name: vertical_te_w2
+  port_type: vertical_te
+  center:
+  - -220.508
+  - 102.638
+  orientation: 180
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0  
+- name: vertical_te_e1
+  port_type: vertical_te
+  center:
+  - 210.157
+  - 221.138
+  orientation: 0
+  width: 10
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0

@@ -1,0 +1,49 @@
+process_name: Ge_on_Si
+foundry: CORNERSTONE
+description: Germanium on Silicon Platform for Mid-IR wavelengths 
+material: Ge-on-Si
+is_public: true
+gds_type: only_real_gds
+includes_heaters: false
+includes_rf_layers: false
+has_a_no_metals_option: true
+gds_layers:
+
+  - name: Ge_Etch1_LF
+    layer: [303, 0]
+    description: 1.8 um+-200nm Ge etch to define rib waveguides. Layer will be protected.
+    drc: { min_feature_size: 0.7, min_gap: 0.7 }
+    alias: wg_lf
+  - name: Ge_Etch1_DF
+    layer: [304, 0]
+    description: 1.8 um+-200nm Ge etch to define rib waveguides. Layer will be etched
+    drc: { min_feature_size: 0.7, min_gap: 0.7 }
+    alias: wg_df
+  - name: Bleed
+    layer: [98, 0]
+    description: 35-um-wide area at the edges of the design area for dicing streets.
+    drc: { min_feature_size: 35, min_gap: 35 }
+  - name: Floorplan
+    layer: [99, 0]
+    is_info_only: true
+    description: Cell outline
+  - name: Label
+    layer: [100, 0]
+    description: Labels (dark)
+    drc: { min_feature_size: 0.7, min_gap: 0.7 }
+layer_stack:
+  - name: Si_Substrate
+    description: Si substrate
+    material: Si
+    thickness: { value: 500.0 }
+    gds_layer: null
+  - name: Slab
+    description: Slab part of Ge waveguides
+    material: Ge
+    thickness: { value: 1.2, tol: 0.2 }
+    gds_layer: null
+  - name: Waveguide
+    description: Rib part of Ge waveguides. 
+    material: Ge
+    thickness: { value: 1.8, tol: 0.2 }
+    gds_layer: wg_lf or not wg_df

@@ -1,0 +1,23 @@
+name: Suspendedsilicon500nm_3800nm_TE_90_DegreeBend
+component_type: Bend
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 4.215
+  - 0.0
+  orientation: 270
+  cross_section: sus_si_not_bias
+- name: o2
+  port_type: optical
+  center:
+  - 44.93
+  - 40.715
+  orientation: 0
+  cross_section: sus_si_not_bias

@@ -1,0 +1,79 @@
+- name: strip_780nm
+  xs_type: strip
+  width: 0.5
+  materials: SiN
+  minimum_bend_radius: 60
+  layers:
+  - layer:
+    - 203
+    - 0
+    offset: 0
+    width: 0.5
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 780
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 780
+- name: strip_638nm
+  xs_type: strip
+  width: 0.36
+  materials: SiN
+  minimum_bend_radius: 40
+  layers:
+  - layer:
+    - 203
+    - 0
+    offset: 0
+    width: 0.36
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 638
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 638
+- name: strip_520nm
+  xs_type: strip
+  width: 0.27
+  materials: SiN
+  minimum_bend_radius: 30
+  layers:
+  - layer:
+    - 203
+    - 0
+    offset: 0
+    width: 0.27
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 520
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 520
+- name: dc
+  xs_type: dc
+  width: 80
+  materials: metal2
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 41
+    - 0
+    offset: 0
+    width: 80
+
+

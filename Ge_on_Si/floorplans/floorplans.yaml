@@ -1,0 +1,8 @@
+- name: Cell0_Ge_on_Si_Institution_Name
+  design_area:
+  - 11.47
+  - 15.45
+  final_chip_size:
+  - 11.4
+  - 16.50
+  abbreviation: "F"

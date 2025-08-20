@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category>drc</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
+ <text>#CORNERSTONE Proprietary
+#Released: 03/03/25
+#Version: 3.1
+#Author:Shengqi Yin, Emre Kaplan
+#Report any issue to cornerstone@soton.ac.uk
+#Technology Platform: All Passive active Silicon on Insulator platforms with Heaters and p-n junction
+#Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
+
+
+#############################
+# Use a tile size of 20mm
+tiles(20.mm)
+
+
+#Hierachical
+deep
+
+# Use 4 CPU cores
+threads(4)
+verbose(true)
+
+#Manufacture grid
+design_grid = 0.001
+
+angle_lim = 45
+
+block_size=1   # Select 1 for Full block and 0 for Half block
+if block_size==1
+design_area = 4900.0.um*11470.0.um
+else
+design_area = 4900.0.um*5500.0.um
+end
+
+report ('DRC_SOI')
+
+# layers definitions
+###################################
+soi_etch1_dark_layer = input(6,0) #SOI Etch 1 - Dark field (GDS 6)
+soi_etch2_light_layer = polygons(3, 0) #SOI Etch 2 - Light field (GDS 3)
+soi_etch2_dark_layer = input(4, 0) #SOI Etch 2 - Dark field (GDS 4)
+soi_etch3_light_layer = input(5, 0)#SOI Etch 3 - Light field (GDS 5)
+fil= input(39, 0) #Heater Filaments (GDS 39)
+iso = input(46, 0) #Heater isolation trench(GDS 46)
+pad = input(41, 0) #Heater Contact Pads (GDS 41)
+label =input(100,0) #Label (GDS 100)
+cell = input(99, 0) #Cell Outline (Design area) (GDS 99)
+
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}# check grid alignment 
+cell.without_area(design_area).output("Correct desing area violation") #check cell footprint
+
+
+info ("DRC section")
+
+def check_minimum_feature(layer,max_width,max_feature_perimeter,max_feature_area)
+  layer_feature_area = layer.width(max_width,euclidian).polygons.with_area(max_feature_area,nil)
+  layer_feature_perimeter = layer.width(max_width,euclidian).polygons.with_perimeter(max_feature_perimeter,nil)
+  layer_min_feature = layer_feature_area.or(layer_feature_perimeter)
+return layer_min_feature
+end
+def check_minimum_gap_feature(layer,max_gap_perimeter,max_gap_area)
+  layer_feature_area = layer.space(0.35,euclidian).polygons.with_area(max_gap_area,nil)
+  layer_feature_perimeter = layer.space(0.35,euclidian).polygons.with_perimeter(max_gap_perimeter,nil)
+  layer_min_feature = layer_feature_area.and(layer_feature_perimeter)
+return layer_min_feature
+end
+
+
+
+min_feature_width=0.25.um
+min_gap_width = 0.35.um
+max_feature_length=20.001.um
+min_ebeam_width = 0.06.um
+feature_margin = -0.001.um
+
+max_feature_perimeter=2*(min_feature_width+max_feature_length)
+max_gap_perimeter= 2*(min_gap_width+max_feature_length)
+max_feature_area = min_feature_width*max_feature_length
+max_ebeam_perimeter=2*(min_ebeam_width+max_feature_length)
+max_ebeam_area = min_ebeam_width*max_feature_length
+
+
+# soi_etch1_dark_layer
+soi_etch1_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS6&lt; 200nm)') # minimum width 
+soi_etch1_dark_layer_feature = check_minimum_gap_feature(soi_etch1_dark_layer,max_gap_perimeter,max_feature_area)
+soi_etch1_dark_layer_feature.output('Minimum feature size violation (GDS6&lt; 350nm and short than max feature length)')# maximum length of minimum feature size
+soi_etch1_dark_layer.space(0.25.um+feature_margin, angle_limit(angle_lim)).output('Minimum gap violation (GDS6 &lt; 250 nm)')
+(soi_etch1_dark_layer.not_outside(soi_etch2_light_layer)&amp;&amp;soi_etch1_dark_layer.inside(soi_etch2_light_layer.raw.sized(0.2.um))).output('Minimum overlap violation (GDS6 in GDS3 &lt;200nm)')#minimum overlap
+soi_etch1_dark_layer.overlapping(fil).output('aviode overlapping GDS6 and GDS39')
+soi_etch1_dark_layer.overlapping(pad).output('aviode overlapping GDS6 and GDS41')
+
+
+# soi_etch2_light_layer
+soi_etch2_light_layer.width(0.35.um+feature_margin, angle_limit(angle_lim)).output('Minimum feature size violation (GDS3&lt; 350nm)') # minimum width
+soi_etch2_light_layer.space(0.20.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS3&lt;200nm)') # minimum space
+
+
+# soi_etch2_dark_layer
+soi_etch2_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS4&lt; 200nm)') # minimum width
+soi_etch2_dark_layer.space(0.35.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS4&lt;350nm)') # minimum space
+ 
+# soi_etch3_light_layer
+soi_etch3_light_layer.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS5&lt; 250nm)') # minimum width
+soi_etch3_light_layer.space(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS5&lt;250nm)') # minimum space
+   
+## heater filaments 
+fil.width(0.6.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS39&lt;600nm)') # minimum width
+fil.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS39&lt;10micro)') # minimum space
+
+# heater contact pad
+pad.width(2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS41&lt;2micro)') # minimum width
+pad.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS41&lt;10micro)') # minimum space
+
+# isolation rules
+iso.width(5.0, angle_limit(angle_lim)).output("Minimum width violation (GDS46 &lt; 5 um)")
+iso.space(2.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS46 &lt; 2 um)")
+# Overlap check between GDS 39 &amp; GDS46
+iso.overlapping(fil).output("Overlapping violation (GDS46 &amp; GDS39")
+# Overlap check between GDS 41 &amp; GDS46
+iso.overlapping(pad).output("Overlapping violation (GDS46 &amp; GDS39")
+
+#labels
+label.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS100&lt;250nm)') # minimum width
+label.space(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS100&lt;250nm)') # minimum space
+
+</text>
+</klayout-macro>

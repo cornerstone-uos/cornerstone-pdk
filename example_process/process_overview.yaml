@@ -2,7 +2,11 @@ process_name: SOI_220nm
 foundry: FOUNDRYX
 description: An SOI platform with doped layers. Starting thickness is 220 nm. Standard MPW process.
 material: SOI
+is_public: true
+gds_type: only_real_gds
 includes_heaters: true
+includes_rf_layers: true
+has_a_no_metals_option: true
 gds_layers:
   - name: SiEtch1
     layer: [60, 0]

@@ -1,0 +1,82 @@
+process_name: Si_500nm
+foundry: CORNERSTONE
+description: SOI 500nm passive process with heaters. All waveguides are ribs.
+material: SOI
+is_public: true
+gds_type: only_real_gds
+includes_heaters: true
+includes_rf_layers: false
+has_a_no_metals_option: true
+gds_layers:
+  - name: Si_Etch1_Grating_DF
+    layer: [6, 0]
+    description: DUV-defined grating couplers. Layer will be etched (160+-15nm). No feature size limit for gaps >0.35
+    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
+    drc: 
+    - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
+    - { min_feature_size: 0.2, min_gap: 0.35}
+    alias: grating
+  - name: Si_Etch2_LF_300nm
+    layer: [3, 0]
+    description: Waveguide layer, will be protected. Reflects the rib part of a rib waveguide.
+    drc: { min_feature_size: 0.35, min_gap: 0.2}
+    alias: wg_lf
+  - name: Si_Etch2_DF_300nm
+    layer: [4, 0]
+    description: Waveguide layer, will be etched (300+-20nm)
+    drc: { min_feature_size: 0.2, min_gap: 0.35}
+    alias: wg_df
+  - name: Heat_Fil_LF
+    layer: [39, 0]
+    description: Heater filaments (light), layer will become metal.
+    drc: { min_feature_size: 0.6, min_gap: 10.0 }
+  - name: Heat_CP_LF
+    layer: [41, 0]
+    description: Heater contact pads (light), layer will become metal.
+    drc: { min_feature_size: 2.0, min_gap: 10.0 }
+  - name: Floorplan
+    layer: [99, 0]
+    is_info_only: true
+    description: Cell outline
+  - name: Label_Etch_DF
+    layer: [100, 0]
+    description: Labels (dark), will be etched, will not be checked in DRC
+    drc: { min_feature_size: 0.25, min_gap: 0.25 }
+layer_stack:
+  - name: BOX
+    description: BOX - buried oxide
+    material: SiO2
+    thickness: { value: 3.0 }
+    gds_layer: null
+  - name: Slab
+    description: Slab Si layer, part of the rib waveguide
+    material: Si
+    thickness: { value: 0.2, tol: 0.02 }
+    gds_layer: null
+  - name: Waveguide
+    description: Rib waveguide
+    material: Si
+    thickness: { value: 0.3, tol: 0.02 }
+    gds_layer: (wg_lf or not wg_df) and not grating
+  - name: grating_trench
+    description: trenches of the gratings
+    material: Si
+    thickness: { value: 0.14, tol: 0.015 }
+    gds_layer: (wg_lf or not wg_df) and grating
+  - name: TOX
+    description: Top cladding layer
+    material: SiO2
+    thickness: { value: 2.0, tol: 0.2 }
+    gds_layer: null
+  - name: Heater_filament
+    description: Heater filament layer (TiN)
+    material: metal1
+    is_metal_layer: true
+    thickness: { value: 0.15, tol: 0.01}
+    gds_layer: Heat_Fil_LF
+  - name: Contact_pads
+    description: Al layer for contact pads and electrical routing
+    material: metal2
+    is_metal_layer: true
+    thickness: { value: 0.22, tol: 0.01}
+    gds_layer: Heat_CP_LF

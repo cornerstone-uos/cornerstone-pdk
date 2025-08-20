@@ -1,0 +1,31 @@
+name: SOI220nm_1550nm_TE_RIB_2x1_MMI
+component_type: MMI1x2
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0
+  - 0.0
+  orientation: 180
+  cross_section: rib_1550nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - 92.7
+  - 1.57
+  orientation: 0
+  cross_section: rib_1550nm_TE
+- name: o3
+  port_type: optical
+  center:
+  - 92.7
+  - -1.57
+  orientation: 0
+  cross_section: rib_1550nm_TE
+  

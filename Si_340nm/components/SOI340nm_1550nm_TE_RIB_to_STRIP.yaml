@@ -1,0 +1,30 @@
+name: SOI340nm_1550nm_TE_RIB_to_STRIP
+component_type: WaveguideConverter
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o2
+  port_type: optical
+  center:
+  - 200.01300
+  - 0
+  orientation: 0
+  cross_section: strip_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+

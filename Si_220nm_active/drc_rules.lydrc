@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category>drc</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+  <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
+ <text>#CORNERSTONE Proprietary
+#Released: 02/05/2024
+#Version: 2.0
+#Author: Emre Kaplan
+#Report any issue to cornerstone@soton.ac.uk
+#Technology Platform: All Passive active Silicon on Insulator platforms with Heaters and p-n junction
+#Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
+
+
+# Use a tile size of 20mm
+tiles(20.mm)
+# Use 4 threads
+threads(4)
+
+block_size=1   # Select 1 for Full block and 0 for Half block
+
+
+if block_size==1
+design_area = 4900.0.um*11470.0.um
+else
+design_area = 4900.0.um*5500.0.um
+end
+
+max_feature_length_etch1 = 20.01.um
+min_feature_size_etch1_dark = 0.25.um
+min_feature_size_etch2_light = 0.35.um
+min_feature_size_etch2_dark = 0.20.um
+min_feature_size_etch3_light = 0.25.um
+
+
+max_area_etch1 = max_feature_length_etch1*min_feature_size_etch1_dark.um2
+
+
+angle_lim= 1
+
+report ('DRC_SOI')
+
+
+#GDS layers 
+
+#SOI Etch 1 - Dark field (GDS 6)
+soi_etch1_dark_layer = input(6,0)
+
+#SOI Etch 2 - Light field (GDS 3)
+soi_etch2_light_layer = input(3, 0)
+
+#SOI Etch 2 - Dark field (GDS 4)
+soi_etch2_dark_layer = input(4, 0)
+
+#SOI Etch 3 - Light field (GDS 5)
+soi_etch3_light_layer = input(5, 0)
+
+#Heater Filaments (GDS 39) - Replaced with Active analogues
+
+
+#Heater Contact Pads (GDS 41) - Replaced with Active batch analogues
+
+
+#Label (GDS 100)
+label =input(100,0)
+
+#Cell Outline (Design area) (GDS 99)
+cell = input(99, 0)
+
+#####Active Run Layers####
+
+
+#Low dose p-type implant - Dark field (GDS 7)
+soi_p_low_implant_layer = input(7,0)
+#Low dose n-type implant - Dark field (GDS 8)
+soi_n_low_implant_layer = input(8,0)
+#High dose p-type implant - Dark field (GDS 9)
+soi_p_high_implant_layer = input(9,0)
+#High dose n-type implant - Dark field (GDS 11)
+soi_n_high_implant_layer = input(11,0)
+#Vias - Dark field (GDS 12)
+soi_vias_layer = input(12,0)
+#Electrodes - Light field (GDS 13)
+soi_electrodes_layer = input(13,0)
+#Defect implant window - Dark field (GDS 23)
+soi_defect_layer = input(23,0)
+
+#####Active Run Layers####
+
+design_grid = 0.001
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}
+
+
+#Check correct design area is used
+cell.without_area(design_area).output("Correct desing area violation")
+
+
+# Minimum feature size etch1 for dark field
+soi_etch1_dark_layer.width(0.20, angle_limit(angle_lim)).output("Minimum feature size violation (GDS6 &lt; 200 nm)")
+
+
+# Minimum feature size etch2 for light field
+soi_etch2_light_layer.width(0.35, angle_limit(angle_lim)).output("Minimum feature size violation (GDS3 &lt; 350 nm)")
+
+# Minimum feature size etch2 for dark field
+soi_etch2_dark_layer.width(0.20, angle_limit(angle_lim)).output("Minimum feature size violation (GDS4 &lt; 200 nm)")
+
+# Minimum feature size etch3 for light field
+soi_etch3_light_layer.width(0.25, angle_limit(angle_lim)).output("Minimum feature size violation (GDS5 &lt; 250 nm)")
+
+
+# Minimum gap for etch1 for dark field
+soi_etch1_dark_layer.space(0.35, angle_limit(angle_lim)).without_area(0.0.um2..max_area_etch1).output("Minimum gap violation (GDS6 &lt; 350 nm and shorter than &lt; max. length)")
+soi_etch1_dark_layer.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS6 &lt; 250 nm)")
+
+
+# Minimum gap for etch2 for light field
+soi_etch2_light_layer.space(0.20, angle_limit(angle_lim)).output("Minimum gap violation (GDS3 &lt; 200 nm)")
+
+# Minimum gap for etch2 for dark field
+soi_etch2_dark_layer.space(0.35, angle_limit(angle_lim)).output("Minimum gap violation (GDS4 &lt; 350 nm)")
+
+
+# Minimum gap for etch3 for light field
+soi_etch3_light_layer.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS5 &lt; 250 nm)")
+
+
+# Minimum feature size for Heater Filaments - overriden in Active batch
+
+
+# Minimum gap for Heater Filaments - overriden in Active batch
+
+
+# Minimum feature size for Contact Pad - overriden in Active batch
+
+
+# Minimum gap for Contact Pad - Overriden in Active batch
+
+# Minimum feature size for Label
+label.width(0.25, angle_limit(angle_lim)).output("Minimum width violation (GDS100 &lt; 250 nm)")
+
+# Minimum feature size for Label
+label.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS100 &lt; 250 nm)")
+
+
+
+#####Active Run Layers####
+
+# Minimum feature size for Low dose p type implant
+soi_p_low_implant_layer.width(0.5, angle_limit(angle_lim)).output("Minimum width violation (GDS7 &lt; 500 nm)")
+# Minimum gap for Low dose p type implant
+soi_p_low_implant_layer.space(0.5, angle_limit(angle_lim)).output("Minimum gap violation (GDS7 &lt; 500 nm)")
+
+# Minimum feature size for Low dose n type implant
+soi_n_low_implant_layer.width(0.5, angle_limit(angle_lim)).output("Minimum width violation (GDS8 &lt; 500 nm)")
+# Minimum gap for Low dose n type implant
+soi_n_low_implant_layer.space(0.5, angle_limit(angle_lim)).output("Minimum gap violation (GDS8 &lt; 500 nm)")
+
+# Minimum feature size for high dose p type implant
+soi_p_high_implant_layer.width(0.5, angle_limit(angle_lim)).output("Minimum width violation (GDS9 &lt; 500 nm)")
+# Minimum gap for high dose p type implant
+soi_p_high_implant_layer.space(0.5, angle_limit(angle_lim)).output("Minimum gap violation (GDS9 &lt; 500 nm)")
+
+# Minimum feature size for high dose n type implant
+soi_n_high_implant_layer.width(0.5, angle_limit(angle_lim)).output("Minimum width violation (GDS11 &lt; 500 nm)")
+# Minimum gap for high dose n type implant
+soi_n_high_implant_layer.space(0.5, angle_limit(angle_lim)).output("Minimum gap violation (GDS11 &lt; 500 nm)")
+
+# Minimum feature size for Vias
+soi_vias_layer.width(3.0, angle_limit(angle_lim)).output("Minimum width violation (GDS12 &lt; 3 um)")
+# Minimum gap for Vias
+soi_vias_layer.space(5.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS12 &lt; 5 um)")
+
+# Minimum feature size for Electrodes - Light Field
+soi_electrodes_layer.width(6.0, angle_limit(angle_lim)).output("Minimum width violation (GDS13 &lt; 6 um)")
+# Minimum gap for Electrodes
+soi_electrodes_layer.space(4.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS13 &lt; 4 um)")
+
+# Minimum feature size for defect implant window
+soi_defect_layer.width(5.0, angle_limit(angle_lim)).output("Minimum width violation (GDS23 &lt; 5 um)")
+# Minimum gap for for defect implant window
+soi_defect_layer.space(5.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS23 &lt; 5 um)")
+
+#####Active Run Layers####
+
+
+
+
+
+
+
+
+
+
+
+
+
+</text>
+</klayout-macro>

@@ -1,0 +1,42 @@
+name: SiN200nm_638nm_TE_STRIP_2x2_MMI
+component_type: MMI2x2
+modes:
+- mode_numbers:
+  - 0
+  - 0
+  polarisation: TE
+  wavelength: 638
+ports:
+
+  - center:
+    - 0
+    - -0.875
+    name: o1
+    orientation: 180
+    port_type: optical
+    cross_section: strip_638nm
+
+  - center:
+    - 0
+    - 0.875
+    name: o2
+    orientation: 180
+    port_type: optical
+    cross_section: strip_638nm
+
+  - center:
+    - 161.6
+    - 0.875
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    cross_section: strip_638nm
+
+  - center:
+    - 161.6
+    - -0.875
+    name: o4
+    orientation: 0.0
+    port_type: optical
+    cross_section: strip_638nm
+

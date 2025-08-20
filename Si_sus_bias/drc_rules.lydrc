@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category>drc</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
+ <text>#CORNERSTONE Proprietary
+#Released: 07/09/2024
+#Version: 3.0
+#Author: Emre Kaplan
+#Report any issue to cornerstone@soton.ac.uk
+#Technology Platform: All Passive active Silicon on Insulator platforms with Heaters and p-n junction
+#Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
+
+
+# Use a tile size of 20mm
+tiles(20.mm)
+# Use 4 threads
+threads(4)
+
+block_size=1   # Select 1 for Full block and 0 for Half block
+
+
+if block_size==1
+design_area = 4900.0.um*11470.0.um
+else
+design_area = 4900.0.um*5500.0.um
+end
+
+max_feature_length_etch1 = 20.01.um
+min_feature_size_etch1_dark = 0.25.um
+min_feature_size_etch2_light = 0.35.um
+min_feature_size_etch2_dark = 0.20.um
+min_feature_size_etch3_light = 0.25.um
+
+
+max_area_etch1 = max_feature_length_etch1*min_feature_size_etch1_dark.um2
+
+
+angle_lim= 1
+
+report ('DRC_SOI')
+
+
+#Label (GDS 100)
+label = input(100,0)
+
+#Cell Outline (Design area) (GDS 99)
+cell = input(99, 0)
+
+
+####Suspended-Silicon layers####
+
+soi_etch1_dark_Sus = input(404, 0)
+soi_etch2_light_Sus = input(405, 0)
+
+####Suspended-Silicon layers####
+
+
+design_grid = 0.001
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}
+
+
+#Check correct design area is used
+cell.without_area(design_area).output("Correct desing area violation")
+
+
+
+
+
+
+# Minimum feature size for Labels
+label.width(0.25, angle_limit(angle_lim)).output("Minimum width violation (GDS100 &lt; 250 nm)")
+
+# Minimum gap for Labels
+label.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS100 &lt; 250 nm)")
+
+
+# Minimum feature size for Suspended-Si etch 1 
+soi_etch1_dark_Sus.width(0.27, angle_limit(angle_lim)).output("Minimum width violation (GDS404 &lt; 270 nm)")
+
+# Minimum gap for Suspended-Si etch 1 
+soi_etch1_dark_Sus.space(0.18, angle_limit(angle_lim)).output("Minimum gap violation (GDS404 &lt; 180 nm)")
+
+
+
+# Minimum feature size for Suspended-Si etch 2
+soi_etch2_light_Sus.width(0.20, angle_limit(angle_lim)).output("Minimum width violation (GDS405 &lt; 200 nm)")
+
+# Minimum gap for Suspended-Si etch 2 
+soi_etch2_light_Sus.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS405 &lt; 250 nm)")
+
+
+
+
+
+
+
+
+
+
+
+
+</text>
+</klayout-macro>

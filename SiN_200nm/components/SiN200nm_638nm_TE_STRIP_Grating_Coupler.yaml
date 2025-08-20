@@ -1,0 +1,29 @@
+name: SiN200nm_638nm_TE_STRIP_Grating_Coupler
+component_type: GratingCoupler1D
+ports:
+  - center:
+    - 0.0
+    - 0.0
+    name: o1
+    orientation: 180
+    port_type: optical
+    cross_section: strip_638nm
+    modes:
+    - mode_numbers:
+      - 0
+      - 0
+      polarisation: TE
+      wavelength: 638
+
+  - center:
+    - 160.965
+    - 0
+    name: vertical_te
+    port_type: vertical_te
+    orientation: 0.0
+    width:  10.0
+    coupling_angle_cladding: 12.201
+    fibre_modes:
+    - fibre_type: S405-XP
+      wavelength: 638
+

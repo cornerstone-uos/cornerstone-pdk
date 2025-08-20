@@ -5,6 +5,7 @@
   final_chip_size:
   - 10
   - 5
+  abbreviation: "F"
 - name: floorplan2
   design_area:
   - 4.5
@@ -12,3 +13,4 @@
   final_chip_size:
   - 5
   - 5
+  abbreviation: H

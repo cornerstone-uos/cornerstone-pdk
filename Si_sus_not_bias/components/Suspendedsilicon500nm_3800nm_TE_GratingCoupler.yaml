@@ -1,0 +1,27 @@
+name: Suspendedsilicon500nm_3800nm_TE_GratingCoupler
+component_type: GratingCoupler1D
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 3800
+  cross_section: sus_si_not_bias
+- name: vertical_te
+  port_type: vertical_te
+  center:
+  - 331.134
+  - 0.0
+  orientation: 0.0
+  width: 20
+  coupling_angle_cladding: 19
+  fibre_modes:
+  - fibre_type: IRZS23
+    wavelength: 3800

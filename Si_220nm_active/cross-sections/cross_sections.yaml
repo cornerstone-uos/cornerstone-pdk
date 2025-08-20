@@ -1,0 +1,132 @@
+- name: strip_1310nm
+  xs_type: strip
+  width: 0.4
+  materials: Si
+  minimum_bend_radius: 10
+  layers:
+  - layer:
+    - 3
+    - 0
+    offset: 0
+    width: 0.4
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1310
+- name: rib_1310nm_TE
+  xs_type: rib
+  width: 10.4
+  materials: Si
+  minimum_bend_radius: 25
+  layers:
+  - layer:
+    - 3
+    - 0
+    offset: 0
+    width: 0.4
+  - layer:
+    - 5
+    - 0
+    offset: 0
+    width: 10.4
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
+- name: strip_1550nm
+  xs_type: strip
+  width: 0.45
+  materials: Si
+  minimum_bend_radius: 10
+  layers:
+  - layer:
+    - 3
+    - 0
+    offset: 0
+    width: 0.45
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1550
+- name: rib_1550nm_TE
+  xs_type: rib
+  width: 10.45
+  materials: Si
+  minimum_bend_radius: 25
+  layers:
+  - layer:
+    - 3
+    - 0
+    offset: 0
+    width: 0.45
+  - layer:
+    - 5
+    - 0
+    offset: 0
+    width: 10.45
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: dc
+  xs_type: dc
+  width: 80
+  materials: metal1
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 13
+    - 0
+    offset: 0
+    width: 80
+- name: detector
+  xs_type: dc
+  width: 100
+  materials: metal1
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 13
+    - 0
+    offset: 0
+    width: 100
+- name: modulator_tri
+  xs_type: png
+  width: 269
+  materials: metal1
+  minimum_bend_radius: 0
+  layers:
+  - layer:
+    - 13
+    - 0
+    offset: -100
+    width: 69
+  - layer:
+    - 13
+    - 0
+    offset: 0
+    width: 69
+  - layer:
+    - 13
+    - 0
+    offset: 100
+    width: 69
+
