@@ -18,7 +18,15 @@
  <text>
 # Read about DRC scripts in the KLayout User Manual in "Design Rule Check (DRC)"
 
-report("FOUNDRYX_SOI_220nm DRC")
+# To support running KLayout in UI and batch mode.
+if $input
+  source($input)
+end
+if $report
+  report("FOUNDRYX_SOI_220nm DRC", $report)
+else
+  report("FOUNDRYX_SOI_220nm DRC")
+end
 time_start = Time.now
 
 threads(4)
