@@ -14,7 +14,7 @@ ports:
     orientation: 180
     port_type: optical
     cross_section: strip_520nm
-  
+
   - center:
     - 440
     - 0.0

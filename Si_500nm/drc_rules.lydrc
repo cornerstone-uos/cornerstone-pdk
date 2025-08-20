@@ -60,7 +60,7 @@ else
 end
 
 
-#GDS layers 
+#GDS layers
 
 #SOI Etch 1 - Dark field (GDS 6)
 soi_etch1_dark_layer = input(6,0)
@@ -92,7 +92,7 @@ layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} gr
 
 
 #Check correct design area is used
-cell.without_area(design_area).output("Correct desing area violation")
+cell.without_area(design_area).output("Correct design area violation")
 
 
 # Minimum feature size etch1 for dark fields

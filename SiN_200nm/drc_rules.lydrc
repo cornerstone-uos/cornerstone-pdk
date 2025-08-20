@@ -34,7 +34,7 @@ end
 
 
 
-#GDS layers 
+#GDS layers
 
 #SiN Etch 1 - Light field (GDS 203)
 sin_light_layer = input(203,0)
@@ -64,7 +64,7 @@ layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} gr
 
 #Check correct design area is used
 design_area = 15450.0.um*11470.0.um
-cell.without_area(design_area).output("Correct desing area violation")
+cell.without_area(design_area).output("Correct design area violation")
 
 
 

@@ -7,11 +7,11 @@ gds_type: only_real_gds
 includes_heaters: true
 includes_rf_layers: true
 has_a_no_metals_option: false
-gds_layers:  
+gds_layers:
   - name: Si_Etch1_DUV_DF_70nm
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched.
-    drc: 
+    drc:
     - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
     - { min_feature_size: 0.2, min_gap: 0.35}
     alias: grating_duv
@@ -29,7 +29,7 @@ gds_layers:
     layer: [5, 0]
     description: Rib protect layer. Layer will be protected.
     drc: { min_feature_size: 0.25, min_gap: 0.25}
-    alias: rib_slab    
+    alias: rib_slab
   - name: P_Implant_Low_DF
     layer: [7, 0]
     description: Background low-dose p-type implant. Layer will be implanted with 5.7e17cm-3 dose.
@@ -37,7 +37,7 @@ gds_layers:
   - name: N_Implant_Low_DF
     layer: [8, 0]
     description: Background low-dose n-type implant. Layer will be implanted with 1.1e18cm-3 dose.
-    drc: { min_feature_size: 0.5, min_gap: 0.5 }  
+    drc: { min_feature_size: 0.5, min_gap: 0.5 }
   - name: P_Implant_Hi_DF
     layer: [9, 0]
     description: Hi-dose p regions for ohmic Si contacts. Layer will be implanted with 1e20cm-3 dose.
@@ -45,7 +45,7 @@ gds_layers:
   - name: N_Implant_Hi_DF
     layer: [11, 0]
     description: Hi-dose n regions for ohmic Si contacts. Layer will be implanted with 1e20cm-3 dose.
-    drc: { min_feature_size: 0.5, min_gap: 0.5 } 
+    drc: { min_feature_size: 0.5, min_gap: 0.5 }
   - name: Via_DF
     layer: [12, 0]
     description: Via for ohmic contacts. Layer will be metallicized
@@ -103,4 +103,3 @@ layer_stack:
     is_metal_layer: true
     thickness: { value: 1.6, tol: 0.01}
     gds_layer: Electrode_LF
-

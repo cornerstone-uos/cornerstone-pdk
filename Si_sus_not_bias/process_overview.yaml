@@ -42,5 +42,3 @@ layer_stack:
     material: Si
     thickness: { value: 0.15, tol: 0.02 }
     gds_layer: rib_slab
-
-

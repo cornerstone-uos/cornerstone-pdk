@@ -39,7 +39,7 @@ threads(4)
 
 
 min_feature_size = 0.70.um
-min_gap = 0.70.um 
+min_gap = 0.70.um
 
 
 design_area = 15450.0.um*11470.0.um
@@ -47,7 +47,7 @@ design_area = 15450.0.um*11470.0.um
 angle_lim= 45
 
 
-#GDS layers 
+#GDS layers
 
 #GeoSi Etch 1 - Light field (GDS 303)
 geosi_light_layer = input(303,0)
@@ -68,7 +68,7 @@ layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} gr
 
 #Check correct design area is used
 
-cell.without_area(design_area).output("Correct desing area violation")
+cell.without_area(design_area).output("Correct design area violation")
 
 
 # Use a tile size of 1mm

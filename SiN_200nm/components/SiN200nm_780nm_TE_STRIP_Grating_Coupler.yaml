@@ -26,4 +26,3 @@ ports:
     fibre_modes:
     - fibre_type: 780HP
       wavelength: 780
-
