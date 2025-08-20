@@ -49,7 +49,14 @@ max_area_etch1 = max_feature_length_etch1*min_feature_size_etch1_dark.um2
 
 angle_lim= 1
 
-report ('DRC_SOI')
+if $input
+  source($input)
+end
+if $report
+  report("DRC_SOI", $report)
+else
+  report("DRC_SOI")
+end
 
 
 #Label (GDS 100)

@@ -23,7 +23,14 @@
 #Technology Platform: Germanium on Silicon
 #Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
 
-report ("DRC GeoSi")
+if $input
+  source($input)
+end
+if $report
+  report("DRC GeoSi", $report)
+else
+  report("DRC GeoSi")
+end
 
 # Use a tile size of 20mm
 tiles(20.mm)

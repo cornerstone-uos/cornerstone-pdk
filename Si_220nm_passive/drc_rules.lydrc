@@ -48,7 +48,14 @@ else
 design_area = 4900.0.um*5500.0.um
 end
 
-report ('DRC_SOI')
+if $input
+  source($input)
+end
+if $report
+  report("DRC_SOI", $report)
+else
+  report("DRC_SOI")
+end
 
 # layers definitions
 ###################################

@@ -23,7 +23,14 @@
 #Technology Platform: Silicon Nitride
 #Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
 
-report ("DRC report")
+if $input
+  source($input)
+end
+if $report
+  report("DRC report", $report)
+else
+  report("DRC report")
+end
 
 # Use a tile size of 20mm
 tiles(20.mm)

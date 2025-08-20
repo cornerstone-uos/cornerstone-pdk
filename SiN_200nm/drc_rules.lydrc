@@ -23,7 +23,14 @@
 #Technology Platform: Silicon Nitride
 #Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
 
-report ("DRC SiN-vis")
+if $input
+  source($input)
+end
+if $report
+  report("DRC SiN-vis", $report)
+else
+  report("DRC SiN-vis")
+end
 
 
 
