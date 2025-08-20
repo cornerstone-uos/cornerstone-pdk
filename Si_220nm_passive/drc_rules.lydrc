@@ -29,7 +29,7 @@
 tiles(20.mm)
 
 
-#Hierachical
+#Hierarchical
 deep
 
 # Use 4 CPU cores
@@ -71,8 +71,8 @@ cell = input(99, 0) #Cell Outline (Design area) (GDS 99)
 
 
 
-layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}# check grid alignment 
-cell.without_area(design_area).output("Correct desing area violation") #check cell footprint
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}# check grid alignment
+cell.without_area(design_area).output("Correct design area violation") #check cell footprint
 
 
 info ("DRC section")
@@ -112,7 +112,7 @@ soi_etch_ebeam_layer.space(0.06.um+feature_margin, angle_limit(angle_lim)).witho
 soi_etch_ebeam_layer.inside(soi_etch2_light_layer.raw.sized(0.2.um)).output('Minimum overlap violation (GDS60 in GDS3 &lt;200nm)')#minimum overlap
 
 # soi_etch1_dark_layer
-soi_etch1_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS6&lt; 200nm)') # minimum width 
+soi_etch1_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS6&lt; 200nm)') # minimum width
 soi_etch1_dark_layer_feature = check_minimum_gap_feature(soi_etch1_dark_layer,max_gap_perimeter,max_feature_area)
 soi_etch1_dark_layer_feature.output('Minimum feature size violation (GDS6&lt; 350nm and short than max feature length)')# maximum length of minimum feature size
 soi_etch1_dark_layer.space(0.25.um+feature_margin, angle_limit(angle_lim)).output('Minimum gap violation (GDS6 &lt; 250 nm)')
@@ -129,12 +129,12 @@ soi_etch2_light_layer.space(0.20.um+feature_margin, angle_limit(angle_lim)).with
 # soi_etch2_dark_layer
 soi_etch2_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS4&lt; 200nm)') # minimum width
 soi_etch2_dark_layer.space(0.35.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS4&lt;350nm)') # minimum space
- 
+
 # soi_etch3_light_layer
 soi_etch3_light_layer.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS5&lt; 250nm)') # minimum width
 soi_etch3_light_layer.space(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS5&lt;250nm)') # minimum space
-   
-## heater filaments 
+
+## heater filaments
 fil.width(0.6.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS39&lt;600nm)') # minimum width
 fil.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS39&lt;10micro)') # minimum space
 

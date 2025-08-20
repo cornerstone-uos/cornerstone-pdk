@@ -25,4 +25,3 @@ ports:
     fibre_modes:
     - fibre_type: S405-XP
       wavelength: 520
-

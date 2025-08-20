@@ -35,7 +35,7 @@
     - 98
     - 0
     offset: 0
-    width: 51  
+    width: 51
   modes:
   - mode_numbers:
     - 0
@@ -47,5 +47,3 @@
     - 0
     polarisation: TM
     wavelength: 3800
-
-

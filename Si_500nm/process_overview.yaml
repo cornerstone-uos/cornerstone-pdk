@@ -11,8 +11,7 @@ gds_layers:
   - name: Si_Etch1_Grating_DF
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched (160+-15nm). No feature size limit for gaps >0.35
-    drc: { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
-    drc: 
+    drc:
     - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
     - { min_feature_size: 0.2, min_gap: 0.35}
     alias: grating

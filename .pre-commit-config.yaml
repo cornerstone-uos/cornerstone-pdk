@@ -29,7 +29,7 @@ repos:
     rev: v2.3.0
     hooks:
       - id: codespell
-        args: ["--skip=*.il", "-L TE,TE/TM,te,ba,FPR,fpr_spacing,ro,donot,grat,synopsys"]
+        args: ["--skip=*.il", "-L TE,TE/TM,te,ba,FPR,fpr_spacing,ro,donot,grat,synopsys,euclidian"]
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.10.0.1

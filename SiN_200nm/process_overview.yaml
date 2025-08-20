@@ -11,14 +11,14 @@ gds_layers:
   - name: SiN_Etch1_LF_200nm
     layer: [203, 0]
     description: Full SiN etch to BOX (light) for waveguides, layer will be protected. No max feature length @0.35um features.
-    drc: 
+    drc:
     - { min_feature_size: 0.20, min_gap: 0.20, max_feature_length: 20.0 }
     - { min_feature_size: 0.35, min_gap: 0.25}
     alias: wg_lf
   - name: SiN_Etch1_DF_200nm
     layer: [204, 0]
     description: Full SiN etch to BOX (dark) for waveguides, layer will be etched. No max feature length @0.35um gaps
-    drc: 
+    drc:
     - { min_feature_size: 0.20, min_gap: 0.20, max_feature_length: 20.0 }
     - { min_feature_size: 0.25, min_gap: 0.35}
     alias: wg_df
@@ -32,7 +32,7 @@ gds_layers:
     drc: { min_feature_size: 2.0, min_gap: 10.0 }
   - name: Clad_Open_DF
     layer: [22, 0]
-    description: Area for oxide etching (dark), layer will be etched. 
+    description: Area for oxide etching (dark), layer will be etched.
     drc: { min_feature_size: 20.0, min_gap: 20.0 }
   - name: Floorplan
     layer: [99, 0]

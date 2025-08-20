@@ -60,7 +60,7 @@ else
 end
 
 
-#GDS layers 
+#GDS layers
 
 #SOI Etch 1 - Dark field (GDS 6)
 soi_etch1_dark_layer = input(6,0)
@@ -111,7 +111,7 @@ layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} gr
 
 
 #Check correct design area is used
-cell.without_area(design_area).output("Correct desing area violation")
+cell.without_area(design_area).output("Correct design area violation")
 
 
 # Minimum feature size etch1 for dark field
@@ -144,16 +144,16 @@ soi_etch2_dark_layer.space(0.35, angle_limit(angle_lim)).output("Minimum gap vio
 soi_etch3_light_layer.space(0.25, angle_limit(angle_lim)).output("Minimum gap violation (GDS5 &lt; 250 nm)")
 
 
-# Minimum feature size for Heater Filaments - overriden in Active batch
+# Minimum feature size for Heater Filaments - overridden in Active batch
 
 
-# Minimum gap for Heater Filaments - overriden in Active batch
+# Minimum gap for Heater Filaments - overridden in Active batch
 
 
-# Minimum feature size for Contact Pad - overriden in Active batch
+# Minimum feature size for Contact Pad - overridden in Active batch
 
 
-# Minimum gap for Contact Pad - Overriden in Active batch
+# Minimum gap for Contact Pad - overridden in Active batch
 
 # Minimum feature size for Label
 label.width(0.25, angle_limit(angle_lim)).output("Minimum width violation (GDS100 &lt; 250 nm)")

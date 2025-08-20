@@ -11,12 +11,12 @@ gds_layers:
   - name: Si_Etch0_EBL_DF_94nm
     layer: [60, 0]
     description: EBL-defined grating couplers. Layer will be etched. For gaps > 0.35, there is no max feature size.
-    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }    
+    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }
     alias: grating_ebl
   - name: Si_Etch1_DUV_DF_70nm
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched.
-    drc: 
+    drc:
     - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
     - { min_feature_size: 0.2, min_gap: 0.35}
     alias: grating_duv
@@ -79,7 +79,7 @@ layer_stack:
     material: Si
     thickness: { value: 0.15, tol: 0.01 }
     gds_layer: (wg_lf or not wg_df) and grating_duv
-  - name: TOX   
+  - name: TOX
     description: Top cladding layer
     material: SiO2
     thickness: { value: 2.0, tol: 0.2 }

@@ -21,7 +21,7 @@ gds_layers:
   - name: Si_Etch1_Grating_DF
     layer: [6, 0]
     description: Shallow etch to define gratings. Same etch depth as Si_Etch1s (140nm).
-    drc: 
+    drc:
     - { min_feature_size: 0.2, min_gap: 0.25, max_feature_length: 20.0 }
     - { min_feature_size: 0.2, min_gap: 0.35}
     alias: grating_duv
@@ -29,7 +29,7 @@ gds_layers:
     layer: [5, 0]
     description: Rib protect layer. Layer will be protected.
     drc: { min_feature_size: 0.35, min_gap: 0.20}
-    alias: rib_slab    
+    alias: rib_slab
   - name: Heat_Fil_LF
     layer: [39, 0]
     description: Heater filaments (light), layer will become metal.
