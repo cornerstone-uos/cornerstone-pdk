@@ -9,10 +9,10 @@ Please use the following structure in the repo (unless otherwise specified all l
     2.  A .lyp file: layer file used by KLayout
     3.  A .lydrc file: a DRC file for automated DRC checking using KLayout
     4.  A "materials" folder: to contain refractive index data on the materials used in your process layer-stack.
-    4.  An layerstack cross-section image to show the order of layers.
-    4.  A "floorplans" folder to give information on standard die sizes for your process
-    5.  A waveguide "cross-sections" folder: To make routing between components in the layout tools easier we would like to know about the standard cross-sections you use with the components in your PDK.
-    6. The PDK components themselves and their metadata should be placed in the "components" folder.
+    5.  A layerstack cross-section image to show the order of layers.
+    6.  A "floorplans" folder to give information on standard die sizes for your process
+    7.  A waveguide "cross-sections" folder: To make routing between components in the layout tools easier we would like to know about the standard cross-sections you use with the components in your PDK.
+    8. The PDK components themselves and their metadata should be placed in the "components" folder.
 
 *__Note: For some example files, please have a look in the "example_process" folder.__*
 
@@ -107,7 +107,7 @@ For every component, please add a gds file and a yaml file with the same filenam
 - `publications`: (optional) if the component has been featured in any publications, you can add a link to this publication here if you want.
 - `modes`: (somewhat optional) please specify the modes if the component only works for a specific set of optical modes, including the `mode_numbers`, `polarisation` and `wavelength` (in nm) for each mode that the component works for. If the different optical ports work with different optical modes, e.g. for a mode converter, please specify the modes at each port instead. `modes` must be specified here when the component only has fibre ports. For generic components that only contain electrical ports, such as a heater without a waveguide, the modes do not have to be specified.
 - `ports`: for every optical or electrical port of the component, please give the following information:
-  - `name`: for in-plane optical ports, we usually use `o1`, `o2`, etc. For electrical ports we generally use `e1`, `e2` etc. for  For (out-of-plane) fibre ports we use `vertical_te1`, `vertical_te2`, etc (or `_tm` for TM grating couplers) and for edge couplers we use `edge1`, `edge2`, etc.
+  - `name`: for in-plane optical ports, we usually use `o1`, `o2`, etc. For electrical ports we generally use `e1`, `e2` etc. for  For (out-of-plane) fibre ports we use `vertical_te1`, `vertical_te2`, etc (or `_tm` for TM grating couplers) and for edge couplers we use `edge1`, `edge2`, etc. We strongly encourage you to use the same port ordering for all components. This will make it much easier to interpret and compare S-parameters for different components of the same type. The specific ordering you use is not terribly important, it's most important to be consistent. As an example: for the components in PDKs designed by Wave Photonics we start at bottom left and then number going clockwise.
   - `port_type`: please choose between `optical` (in-plane optical port), `electrical_dc` or `electrical_rf` (DC and RF ports), `vertical_te` or `vertical_tm` for grating coupler fibre ports and `edge` for edge coupler ports.
   - `center`: please give the x and y coordinate of the center of the port.
   - `width`: (optional) For electrical ports, if you do not specify a cross-section, please specify a width of the port here.
@@ -119,7 +119,7 @@ For every component, please add a gds file and a yaml file with the same filenam
 
 
 ## Changelog
-For every PDK, please maintain a changelog in CHANGELOG.md. This file should get an entry for every version of the PDK, so when you create a new PDK, there will be one entry in this file. However, if you make changes and start a pull request to main, you should add a new entry for this update. For every entry, we need
+For every PDK, please maintain a changelog in CHANGELOG.md. This file should get an entry for every generated version of the PDK, so when you create a completely new PDK, there will be one entry in this file. However, if you make changes and start a pull request to main, you should add a new entry for this update. For every entry, we need
 
 - a version: an entry in the form `## 1.0`
 - a short description of what changed underneath that (at least 5 characters long, at most a few lines)
