@@ -1,0 +1,33 @@
+name: Data Verification
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv and hatch
+        run: |
+          pip install uv hatch
+
+      - name: Install dependencies with uv
+        run: |
+          uv pip install -r pyproject.toml --system
+          # Or: uv pip install -e .[dev]  (if you want dev deps too)
+
+      - name: Run pytest with hatch
+        run: |
+          hatch run pytest -n auto -vv --durations=0 --durations-min=1.0
