@@ -26,4 +26,4 @@ jobs:
         run: uv pip install -r pyproject.toml --system
 
       - name: Run pytest
-        run: pytest -n auto -vv --durations=0 --durations-min=1.0
+        run: pytest -vv --durations=0
