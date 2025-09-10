@@ -80,10 +80,11 @@ This folder should contain a "floorplans.yaml" file that gives a list of floorpl
 - `design_area`: size of design area (size in x and y)
 - `final_chip_size`: size of chip after dicing (size in x and y). Can be either be a single size entry or may be a list of them if multiple final chip sizes are possible.
 - `abbreviation`: a 1-3 character long, unique abbreviation for the floorplan size.
-
+- `edge_coupler_edges`: (optional) a list to indicate the edges at which edge couplers can be placed. Choose from `west`, `east`, `north` and `south`.
 
 You can (optionally) also include gds files with the floorplans here (one gds file per floorplan). In this case, please ensure that the gds file name corresponds to a floorplan name in the yaml as well, giving the corresponding design area and final chip sizes.
 
+Note: floorplans are used to indicate the design size and optionally the final chip size. You can add areas with markers that you use and other set elements that every design should contain. For anything beyond that, e.g. adding standardised coupler locations or electrical pads for testing or packaging, please add this as a packaging template to the components folder instead. The floorplans are not expected to contain any elements which require ports.
 
 ## Cross-Sections
 Please list all standard waveguide cross-sections in the "cross_sections.yaml" yaml file in the "cross-sections" folder and add an example GDS file for this cross-section into the folder, too. For the GDS examples please create a waveguide using this cross-section going from west to east with a length of 50 um. The GDS filename should correspond to the `name` listed in the cross-sections yaml. In the yaml you should  include the following information for every cross-section:
@@ -116,6 +117,13 @@ For every component, please add a gds file and a yaml file with the same filenam
   - `modes`: (optional) if the optical modes differ between ports, please add the modes relevant to the component port here instead of specifying the modes for the component in general. Please include the `mode_numbers`, `polarisation` and `wavelength` (in nm) for each mode at each port in this case.
   - `fibre_modes`: (only needed for fibre ports) if you're adding a fibre port, please specify the `fibre_type` and `wavelength` for this port. For the fibre type, please choose from the following: 'SM300', 'S405-XP', 'SM400', 'SM450', '460HP', 'SM600', 'S630-HP', '630HP', '780HP', 'HI780', 'SM800-5.6-125', 'SM800G80', 'SM980-5.8-125', 'SM980G80','1060XP', '980HP', 'HI1060', 'SMF-28', 'CCC1310', '1310BHP', 'SM1550P', 'SM1250G80', '1550BHP', 'SM1500G80', 'DCF4', 'SM1950' or 'IRZS23'. If your fibre type is not represented here, please contact us and we'll add it to the list.
   - `coupling_angle_cladding`: for vertically coupled fibre ports, i.e. grating coupler fibre ports, please also specify the coupling angle IN CLADDING. Important: we require the angle of light in the top cladding layer, not in air, unless the structure is air-clad.
+
+## Other folders
+There are three other subfolders that can be added to a PDK folder. These are optional and, as of yet, have no further requirements on their contents. We are currently not processing these, but they may be useful to keep track of for your own organisational purposes.
+
+- "docs": a folder to add other documentation files, such as design manuals.
+- "experimental": a folder to add any experimental data you have on the components in the PDK.
+- "sparams": a folder containing sparams for your components. Note: we also offer an S-params generation service as part of our paid PDK management service. These are separate from the S-params provided here, and will appear in the generated PDK packages on our portal instead.
 
 
 ## Changelog
@@ -153,5 +161,8 @@ Please read through the messages in the table to see what you need to fix, do th
 
 <!-- Adding some CSS
 <style type="text/css">
-    ol ol { list-style-type: lower-alpha; }
+    ol {list-style-type: decimal;}
+    ol ol {list-style-type: lower-alpha;}
+    ul {list-style-type: disc;}
+    ul ul {list-style-type: circle;}
 </style> -->
