@@ -5,7 +5,7 @@ description = "Template for PDK data repos"
 requires-python = ">=3.12"
 dependencies = [
     "ipykernel>=6.29.5",
-    "pdk-data-verifier>=0.6.4",
+    "pdk-data-verifier>=0.8.0",
     "pre-commit>=4.2.0",
     "pytest>=8.3.5",
 ]
