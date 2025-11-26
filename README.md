@@ -3,7 +3,7 @@ To keep track of the CORNERSTONE PDK and allow Wave Photonics to create PDK pack
 
 Please use the following structure in the repo (unless otherwise specified all length values should be given in um):
 
-1. Add a new folder for every separate process you offer. E.g. one for SOI 220nm, one from SiN 850nm, one for SiN on SOI, etc.
+1. Add a new folder for every separate process you offer. E.g. one for SOI 220nm, one from SiN 300nm, one for SiN on SOI, etc.
 2. For every process we would like the following information (for details on what to include in these files and folders see the sub-sections below):
     1.  A process overview yaml, that gives the general information on the process, such as the name and layers.
     2.  A .lyp file: layer file used by KLayout
