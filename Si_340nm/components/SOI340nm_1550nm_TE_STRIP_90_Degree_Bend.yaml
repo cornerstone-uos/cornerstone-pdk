@@ -1,0 +1,23 @@
+name: SOI340nm_1550nm_TE_STRIP_90_Degree_Bend
+component_type: Bend
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.225
+  - 0.0
+  orientation: 270
+  cross_section: strip_1550nm
+- name: o2
+  port_type: optical
+  center:
+  - 10.225
+  - 10
+  orientation: 0
+  cross_section: strip_1550nm

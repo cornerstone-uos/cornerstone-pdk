@@ -1,0 +1,27 @@
+name: SOI220nm_1550nm_TE_RIB_EBL_Apodised_Grating_Coupler
+component_type: GratingCoupler1D
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0
+  - 0.0
+  orientation: 180
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: vertical_te
+  port_type: vertical_te
+  center:
+  - 34.886
+  - 0.0
+  orientation: 0
+  width: 16
+  coupling_angle_cladding: 6.886
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550.0

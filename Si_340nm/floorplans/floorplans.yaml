@@ -1,4 +1,4 @@
-- name: Cell0_SOI_Full_Institution
+- name: Cell0_SOI_Full_Institution_Name
   design_area:
   - 11.47
   - 4.9
@@ -8,7 +8,7 @@
   - - 12.5
     - 5.6
   abbreviation: "F"
-- name: Cell0_SOI_Half_Institution
+- name: Cell0_SOI_Half_Institution_Name
   design_area:
   - 5.5
   - 4.9

@@ -1,0 +1,23 @@
+name: SOI220nm_1310nm_TE_RIB_90_Degree_Bend
+component_type: Bend
+modes:
+- mode_numbers:
+  - 0
+  - 0
+  polarisation: TE
+  wavelength: 1310
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 5.2
+  - 0
+  orientation: 270
+  cross_section: rib_1310nm_TE
+- name: o2
+  port_type: optical
+  center:
+  - 30.2
+  - 25.0
+  orientation: 0
+  cross_section: rib_1310nm_TE

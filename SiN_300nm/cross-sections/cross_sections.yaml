@@ -44,7 +44,7 @@
     wavelength: 1310
 - name: dc
   xs_type: dc
-  width: 100
+  width: 80
   materials: metal2
   minimum_bend_radius: 0
   layers:
@@ -52,4 +52,4 @@
     - 41
     - 0
     offset: 0
-    width: 100
+    width: 80
