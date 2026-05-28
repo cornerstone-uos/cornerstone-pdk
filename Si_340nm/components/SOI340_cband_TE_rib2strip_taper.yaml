@@ -1,0 +1,29 @@
+name: SOI340_cband_TE_rib2strip_taper
+component_type: WaveguideConverter
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180.0
+  cross_section: strip_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o2
+  port_type: optical
+  center:
+  - 210.0
+  - 0.0
+  orientation: 0.0
+  cross_section: strip_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550

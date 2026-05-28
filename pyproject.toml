@@ -10,6 +10,13 @@ dependencies = [
     "pytest>=8.3.5",
 ]
 
+[project.optional-dependencies]
+useful-deps= [
+    "matplotlib>=3.10.7",
+    "klayout>=0.30.4",
+]
+
+
 [[tool.uv.index]]
 name = "wp-public"
 url = "https://dl.cloudsmith.io/basic/wave-photonics/wp-public/python/simple/"

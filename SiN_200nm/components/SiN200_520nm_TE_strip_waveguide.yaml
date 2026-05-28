@@ -1,0 +1,29 @@
+name: SiN200_520nm_TE_strip_waveguide
+component_type: Waveguide
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180.0
+  cross_section: strip_520nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 520
+- name: o2
+  port_type: optical
+  center:
+  - 100.0
+  - 0.0
+  orientation: 0.0
+  cross_section: strip_520nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 520

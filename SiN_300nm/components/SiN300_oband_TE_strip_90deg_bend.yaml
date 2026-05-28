@@ -1,0 +1,29 @@
+name: SiN300_oband_TE_strip_90deg_bend
+component_type: Bend
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180.0
+  cross_section: strip_1310nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
+- name: o2
+  port_type: optical
+  center:
+  - 60.0
+  - 60.0
+  orientation: 90.0
+  cross_section: strip_1310nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
