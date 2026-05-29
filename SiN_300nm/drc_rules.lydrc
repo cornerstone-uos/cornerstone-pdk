@@ -16,11 +16,11 @@
  <interpreter>dsl</interpreter>
  <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
  <text>#CORNERSTONE Proprietary
-#Released: 10/05/2024
-#Version: 2.1
-#Author: Emre Kaplan
+#Released: 29/05/2026
+#Version: 4.0
+#Author: Shengqi Yin, Emre Kaplan, Bilge Yagci
 #Report any issue to cornerstone@soton.ac.uk
-#Technology Platform: Silicon Nitride
+#Technology Platform: Silicon Nitride 300nm
 #Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
 
 if $input
