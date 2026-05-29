@@ -1,0 +1,55 @@
+name: StudentSOI_1550nm_TE_rib_2x2_MMI
+component_type: MMI2x2
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - -20.0
+  - 1.015
+  orientation: 180.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o2
+  port_type: optical
+  center:
+  - -20.0
+  - -1.015
+  orientation: 180.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o3
+  port_type: optical
+  center:
+  - 64.8
+  - 1.015
+  orientation: 0.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o4
+  port_type: optical
+  center:
+  - 64.8
+  - -1.015
+  orientation: 0.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550

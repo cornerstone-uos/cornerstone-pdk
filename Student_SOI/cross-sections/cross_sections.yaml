@@ -1,0 +1,23 @@
+- name: rib_1550nm_TE
+  xs_type: rib
+  width: 10.45
+  materials: Si
+  minimum_bend_radius: 25
+  layers:
+  - layer:
+    - 3
+    - 0
+    offset: 0
+    width: 0.45
+  - layer:
+    - 5
+    - 0
+    offset: 0
+    width: 10.45
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+

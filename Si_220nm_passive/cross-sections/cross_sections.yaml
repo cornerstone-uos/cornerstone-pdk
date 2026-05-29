@@ -97,3 +97,25 @@
     - 0
     offset: 0
     width: 80
+- name: strip_1550nm_MM
+  xs_type: strip
+  width: 10
+  materials: Si
+  minimum_bend_radius: 10
+  layers:
+  - layer:
+    - 3
+    - 0
+    offset: 0
+    width: 10
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1550

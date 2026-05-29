@@ -1,4 +1,4 @@
-- name: Cell0_SOI_Full_Institution_Name
+- name: Cell0_SOI_Full_Institution
   design_area:
   - 11.47
   - 4.9
@@ -8,7 +8,17 @@
   - - 12.5
     - 5.6
   abbreviation: "F"
-- name: Cell0_SOI_Half_Institution_Name
+- name: Cell0_SOI220_1550nm_TE_Full_Packaging_Template
+  design_area:
+  - 11.47
+  - 4.9
+  final_chip_size:
+  - - 12.5
+    - 5.3
+  - - 12.5
+    - 5.6
+  abbreviation: "PACK"
+- name: Cell0_SOI_Half_Institution
   design_area:
   - 5.5
   - 4.9
