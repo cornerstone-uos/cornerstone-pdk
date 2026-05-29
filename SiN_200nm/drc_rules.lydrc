@@ -149,7 +149,7 @@ sin_clado_layer.width(20.0, angle_limit(angle_lim)).output("Minimum width violat
 # Minimum gap for cladding opening
 sin_clado_layer.space(20.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS22 &lt; 20um)")
 
-# Warning checks in cladding-overlapped SOI regions
+# Warning checks in cladding-overlapped SiN regions
 sin_light_overlapped_by_clad = sin_light_layer.and(sin_clado_layer)
 sin_light_overlapped_by_clad.space(0.4+feature_margin, angle_limit(angle_lim)).without_area(0).output("WARNING: Pinhole-induced undercut notice in GDS203 (GDS203 in overlap with GDS22 &lt; 400nm)")
 
