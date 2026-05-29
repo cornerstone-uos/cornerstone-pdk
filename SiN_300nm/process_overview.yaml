@@ -42,6 +42,18 @@ gds_layers:
     layer: [100, 0]
     description: Labels (dark), will be etched, will not be checked in DRC
     drc: { min_feature_size: 0.25, min_gap: 0.25 }
+  - name: PD_BBox
+    layer: [140, 1]
+    description: PD bounding box
+    is_info_only: true
+  - name: PD_Active
+    layer: [147, 1]
+    description: active area for photodetector
+    is_info_only: true
+  - name: PD_Excl
+    layer: [150, 1]
+    description: PD Exclusion area
+    is_info_only: true
 layer_stack:
   - name: BOX
     description: BOX - buried oxide

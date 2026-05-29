@@ -127,7 +127,7 @@ fil.width(0.6, angle_limit(angle_lim)).output("Minimum width violation (GDS39 &l
 
 
 # Minimum gap for Heater Filaments
-fil.space(10.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS39 &lt; 10um)")
+fil.space(5.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS39 &lt; 5um)")
 
 
 # Minimum feature size for Contact Pad
@@ -135,7 +135,7 @@ pad.width(2.0, angle_limit(angle_lim)).output("Minimum width violation (GDS41 &l
 
 
 # Minimum gap for Contact Pad
-pad.space(10.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS41 &lt; 10um)")
+pad.space(5.0, angle_limit(angle_lim)).output("Minimum gap violation (GDS41 &lt; 5um)")
 
 # Minimum feature size for Label
 label.width(0.25, angle_limit(angle_lim)).output("Minimum width violation (GDS100 &lt; 250nm)")

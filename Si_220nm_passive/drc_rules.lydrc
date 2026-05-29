@@ -130,11 +130,11 @@ soi_etch3_light_layer.space(0.25.um+feature_margin, angle_limit(angle_lim)).with
 
 ## heater filaments
 fil.width(0.6.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS39&lt;600nm)') # minimum width
-fil.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS39&lt;10micro)') # minimum space
+fil.space(5.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS39&lt;5um)') # minimum space
 
 # heater contact pad
-pad.width(2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS41&lt;2micro)') # minimum width
-pad.space(10.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS41&lt;10micro)') # minimum space
+pad.width(2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS41&lt;2um)') # minimum width
+pad.space(5.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violate (GDS41&lt;5um)') # minimum space
 
 #labels
 label.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violate (GDS100&lt;250nm)') # minimum width
