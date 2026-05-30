@@ -8,11 +8,6 @@ includes_heaters: true
 includes_rf_layers: false
 has_a_no_metals_option: true
 gds_layers:
-  - name: Si_Etch0_EBL_DF_94nm
-    layer: [60, 0]
-    description: EBL-defined grating couplers. Layer will be etched. For gaps > 0.35, there is no max feature size.
-    drc: { min_feature_size: 0.06, min_gap: 0.06, max_feature_length: 20.0 }
-    alias: grating_ebl
   - name: Si_Etch1_DUV_DF_70nm
     layer: [6, 0]
     description: DUV-defined grating couplers. Layer will be etched.
@@ -53,11 +48,11 @@ gds_layers:
     layer: [100, 0]
     description: Labels (dark), will be etched, will not be checked in DRC
     drc: { min_feature_size: 0.25, min_gap: 0.25 }
-  - name: Laser_Trench
+  - name: LD_Trench
     layer: [47, 2]
     description: Packaging - laser slot definition for laser integration (etch till Si substrate + 5um Si etch) (darkfield).
     is_info_only: true
-  - name: Laser_BottomContacts
+  - name: LD_BottomContacts
     layer: [43, 2]
     description: Packaging - bottom contacts for laser integration within the laser slot (lightfield)
     is_info_only: true
@@ -69,7 +64,7 @@ gds_layers:
     layer: [143, 1]
     description: laser die bounding box
     is_info_only: true
-  - name: laser_wg
+  - name: LD_Waveguide
     layer: [144, 1]
     description: laser waveguide overlay
     is_info_only: true
@@ -77,11 +72,11 @@ gds_layers:
     layer: [147, 1]
     description: active area for photodetector
     is_info_only: true
-  - name: PD_Excl
+  - name: PD_Exclusion
     layer: [150, 1]
     description: PD Exclusion area
     is_info_only: true
-  - name: LD_Excl
+  - name: LD_Exclusion
     layer: [151, 1]
     description: laser die exclusion area
     is_info_only: true    
