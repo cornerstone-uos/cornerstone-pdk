@@ -1,0 +1,39 @@
+name: SOI340_1550nm_TE_strip_waveguide
+component_type: Waveguide
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180.0
+  cross_section: strip_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1550
+- name: o2
+  port_type: optical
+  center:
+  - 100.0
+  - 0.0
+  orientation: 0.0
+  cross_section: strip_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TM
+    wavelength: 1550

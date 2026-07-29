@@ -1,6 +1,6 @@
 - name: rib_1550nm_TE
   xs_type: rib
-  width: 10.45
+  width: 0.45
   materials: Si
   minimum_bend_radius: 25
   layers:
@@ -9,11 +9,6 @@
     - 0
     offset: 0
     width: 0.45
-  - layer:
-    - 5
-    - 0
-    offset: 0
-    width: 10.45
   modes:
   - mode_numbers:
     - 0

@@ -1,0 +1,45 @@
+name: SOI220_1310nm_TE_rib_Defect_Detector
+component_type: Photodiode
+modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
+ports:
+- name: e1
+  port_type: electrical_dc
+  center:
+  - -205.0
+  - -142.5
+  orientation: 270.0
+  cross_section: dc
+- name: e2
+  port_type: electrical_dc
+  center:
+  - -55.0
+  - -142.5
+  orientation: 270.0
+  cross_section: dc
+- name: vertical_1
+  port_type: vertical_te
+  center:
+  - -711.875
+  - 0.0
+  orientation: 180.0
+  width: 10.0
+  coupling_angle_cladding: 6.9
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1310
+- name: vertical_2
+  port_type: vertical_te
+  center:
+  - 1961.875
+  - 0.0
+  orientation: 0.0
+  width: 10.0
+  coupling_angle_cladding: 6.9
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1310

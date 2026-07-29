@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-properties>
  <properties>
-  <expanded>false</expanded>
-  <frame-color>#8000ff</frame-color>
-  <fill-color>#8000ff</fill-color>
-  <frame-brightness>0</frame-brightness>
-  <fill-brightness>0</fill-brightness>
-  <dither-pattern>I1</dither-pattern>
-  <line-style/>
-  <valid>true</valid>
-  <visible>true</visible>
-  <transparent>false</transparent>
-  <width>3</width>
-  <marked>false</marked>
-  <xfill>false</xfill>
-  <animation>0</animation>
-  <name>Label_Etch_DF</name>
-  <source>100/0@1</source>
- </properties>
- <properties>
   <expanded>true</expanded>
   <frame-color/>
   <fill-color/>
   <frame-brightness>0</frame-brightness>
   <fill-brightness>0</fill-brightness>
-  <dither-pattern/>
+  <dither-pattern>I4</dither-pattern>
   <line-style/>
   <valid>true</valid>
   <visible>true</visible>
@@ -33,12 +15,12 @@
   <marked>false</marked>
   <xfill>false</xfill>
   <animation>0</animation>
-  <name>Waveguides</name>
+  <name>CS_Waveguides</name>
   <source>*/*@*</source>
   <group-members>
    <expanded>false</expanded>
-   <frame-color>#ff80a8</frame-color>
-   <fill-color>#ff80a8</fill-color>
+   <frame-color>#9580ff</frame-color>
+   <fill-color>#9580ff</fill-color>
    <frame-brightness>0</frame-brightness>
    <fill-brightness>0</fill-brightness>
    <dither-pattern>I6</dither-pattern>
@@ -55,8 +37,8 @@
   </group-members>
   <group-members>
    <expanded>false</expanded>
-   <frame-color>#8183ff</frame-color>
-   <fill-color>#8183ff</fill-color>
+   <frame-color>#0000ff</frame-color>
+   <fill-color>#0000ff</fill-color>
    <frame-brightness>0</frame-brightness>
    <fill-brightness>0</fill-brightness>
    <dither-pattern>I6</dither-pattern>
@@ -71,26 +53,43 @@
    <name>Si_Etch1_DF_120nm</name>
    <source>4/0@1</source>
   </group-members>
-  <group-members>
-   <expanded>false</expanded>
-   <frame-color>#80a8ff</frame-color>
-   <fill-color>#80a8ff</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I6</dither-pattern>
-   <line-style/>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>false</transparent>
-   <width>1</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>Si_Etch3_LF_100nm_to_BOX</name>
-   <source>5/0@1</source>
-  </group-members>
  </properties>
- 
+ <properties>
+  <expanded>true</expanded>
+  <frame-color>#004080</frame-color>
+  <fill-color>#004080</fill-color>
+  <frame-brightness>0</frame-brightness>
+  <fill-brightness>0</fill-brightness>
+  <dither-pattern>I9</dither-pattern>
+  <line-style/>
+  <valid>true</valid>
+  <visible>true</visible>
+  <transparent>false</transparent>
+  <width>1</width>
+  <marked>false</marked>
+  <xfill>false</xfill>
+  <animation>0</animation>
+  <name>Label_Etch_DF</name>
+  <source>100/0@1</source>
+ </properties>
+ <properties>
+  <expanded>false</expanded>
+  <frame-color>#0080ff</frame-color>
+  <fill-color>#0080ff</fill-color>
+  <frame-brightness>0</frame-brightness>
+  <fill-brightness>0</fill-brightness>
+  <dither-pattern>I3</dither-pattern>
+  <line-style>I1</line-style>
+  <valid>true</valid>
+  <visible>true</visible>
+  <transparent>false</transparent>
+  <width>2</width>
+  <marked>false</marked>
+  <xfill>false</xfill>
+  <animation>0</animation>
+  <name>PHIX_GC_Epoxy</name>
+  <source>2015/75@1</source>
+ </properties>
  <properties>
   <expanded>true</expanded>
   <frame-color/>
@@ -270,24 +269,6 @@
    <name>Errors</name>
    <source>999/0@1</source>
   </group-members>
-  <group-members>
-   <expanded>false</expanded>
-   <frame-color>#0080ff</frame-color>
-   <fill-color>#0080ff</fill-color>
-   <frame-brightness>0</frame-brightness>
-   <fill-brightness>0</fill-brightness>
-   <dither-pattern>I3</dither-pattern>
-   <line-style>I1</line-style>
-   <valid>true</valid>
-   <visible>true</visible>
-   <transparent>false</transparent>
-   <width>2</width>
-   <marked>false</marked>
-   <xfill>false</xfill>
-   <animation>0</animation>
-   <name>PHIX_GC_Epoxy</name>
-   <source>2015/75@1</source>
-  </group-members>
  </properties>
- <name>CORNERSTONE_Student_MPW</name>
+ <name>CORNERSTONE_StudentSOI</name>
 </layer-properties>
