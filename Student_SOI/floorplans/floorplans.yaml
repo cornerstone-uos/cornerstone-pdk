@@ -1,0 +1,8 @@
+- name: Cell0_StudentSOI_Full_Institution
+  design_area:
+  - 6.0
+  - 3.0
+  final_chip_size:
+  - - 25.0
+    - 33.0
+  abbreviation: "F"

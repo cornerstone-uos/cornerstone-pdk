@@ -1,0 +1,27 @@
+name: SOI220_Half_LD_DC1550HP01_Integrated_or_GC
+component_type: DFBLaser
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - -471.39
+  - 0.0
+  orientation: 0.0
+  cross_section: strip_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: vertical_1
+  port_type: vertical_te
+  center:
+  - -974.098
+  - 0.0
+  orientation: 180.0
+  width: 12.466
+  coupling_angle_cladding: 6.9
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
