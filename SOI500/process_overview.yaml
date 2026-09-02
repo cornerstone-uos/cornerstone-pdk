@@ -33,7 +33,7 @@ gds_layers:
     layer: [41, 0]
     description: Heater contact pads (light), layer will become metal.
     drc: { min_feature_size: 2.0, min_gap: 10.0 }
-  - name: Floorplan
+  - name: FloorPlan
     layer: [99, 0]
     is_info_only: true
     description: Cell outline
