@@ -1,0 +1,27 @@
+name: SiN200_780nm_TE_strip_GC
+component_type: GratingCoupler1D
+ports:
+- name: vertical_1
+  port_type: vertical_te
+  center:
+  - -203.594
+  - 0.0
+  orientation: 180.0
+  width: 6.0
+  coupling_angle_cladding: 12.4
+  fibre_modes:
+  - fibre_type: 780HP
+    wavelength: 780
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 0.0
+  cross_section: strip_780nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 780

@@ -1,0 +1,16 @@
+name: SOI500_PD_FCI300B1_Integrated
+component_type: Photodiode
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 537.0
+  - 0.0
+  orientation: 0.0
+  cross_section: rib_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550

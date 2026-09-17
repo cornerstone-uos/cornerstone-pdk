@@ -1,0 +1,29 @@
+name: StudentSOI_1550nm_TE_rib_waveguide
+component_type: Waveguide
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 180.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o2
+  port_type: optical
+  center:
+  - 100.0
+  - 0.0
+  orientation: 0.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550

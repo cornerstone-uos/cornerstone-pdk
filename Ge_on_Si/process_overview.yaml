@@ -19,7 +19,7 @@ gds_layers:
     description: 1.8 um+-200nm Ge etch to define rib waveguides. Layer will be etched
     drc: { min_feature_size: 0.7, min_gap: 0.7 }
     alias: wg_df
-  - name: Bleed
+  - name: Bleed_DF
     layer: [98, 0]
     description: 35-um-wide area at the edges of the design area for dicing streets.
     drc: { min_feature_size: 35, min_gap: 35 }
@@ -27,7 +27,7 @@ gds_layers:
     layer: [99, 0]
     is_info_only: true
     description: Cell outline
-  - name: Label
+  - name: Label_DF
     layer: [100, 0]
     description: Labels (dark)
     drc: { min_feature_size: 0.7, min_gap: 0.7 }

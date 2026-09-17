@@ -1,0 +1,27 @@
+name: SiN300_1550nm_TE_strip_GC
+component_type: GratingCoupler1D
+ports:
+- name: vertical_1
+  port_type: vertical_te
+  center:
+  - -200.342
+  - 0.0
+  orientation: 180.0
+  width: 10.0
+  coupling_angle_cladding: 13.7
+  fibre_modes:
+  - fibre_type: SMF-28
+    wavelength: 1550
+- name: o1
+  port_type: optical
+  center:
+  - 0.0
+  - 0.0
+  orientation: 0.0
+  cross_section: strip_1550nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
