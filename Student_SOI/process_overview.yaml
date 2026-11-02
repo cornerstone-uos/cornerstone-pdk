@@ -32,16 +32,16 @@ layer_stack:
     material: SiO2
     thickness: { value: 3.0 }
     gds_layer: null
-  - name: Waveguide
-    description: Waveguides (rib/strip)
-    material: Si
-    thickness: { value: 0.12, tol: 0.02 }
-    gds_layer: (wg_lf or not wg_df)
   - name: Rib_Slab
     description: Slab portion of the rib waveguide
     material: Si
     thickness: { value: 0.1, tol: 0.02 }
     gds_layer: null
+  - name: Waveguide
+    description: Waveguides (rib/strip)
+    material: Si
+    thickness: { value: 0.12, tol: 0.02 }
+    gds_layer: (wg_lf or not wg_df)
   - name: TOX
     description: Top cladding layer
     material: SiO2

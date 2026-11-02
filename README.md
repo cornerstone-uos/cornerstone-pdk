@@ -8,12 +8,17 @@ We currently offer these platforms as part of our MPW service:
 
 - SOI 220nm Active
 - SOI 220nm Passive
+- SOI 220nm Student
 - SOI 340nm
-- SOI 500nm
 - Ge-on-Si
-- Suspended Si 
 - SiN 300nm
 - SiN 200nm Visible
+
+These platforms are no longer offered within the MPW services, but they are still maintained and offered as part of our Bespoke service:
+
+- Suspended Si 
+- SOI 500nm
+
 
 We currently have two versions of Suspended Si (biased/unbiased), please communicate with us the version you chose during submission.
 
@@ -21,7 +26,7 @@ For custom materials and topologies, please contact us at [cornerstone@soton.ac.
 
 ## Overview of the repository structure
 
-- `SiN_300nm/`, `Si_220nm_active/`, &c: Folders for platforms that CORNERSTONE offers.
+- `SiN300/`, `SOI220A/`, &c: Folders for platforms that CORNERSTONE offers.
 - `<PlatformFolder>/components/`: Contains components for the said platform.
 - `<PlatformFolder>/cross-sections/`: Contains cross-sections defined within the platform.
 - `<PlatformFolder>/floorplans/`: Contains the floorplans/design areas for the offered tiers of service, specific to the platform.

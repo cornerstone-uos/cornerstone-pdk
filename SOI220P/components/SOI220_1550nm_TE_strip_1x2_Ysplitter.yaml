@@ -1,5 +1,5 @@
 name: SOI220_1550nm_TE_strip_1x2_Ysplitter
-component_type: Waveguide
+component_type: MMI1x2
 ports:
 - name: o1
   port_type: optical
