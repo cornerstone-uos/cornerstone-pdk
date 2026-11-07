@@ -1,0 +1,55 @@
+name: StudentSOI_1550nm_TE_rib_crossing
+component_type: Crossing
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - -4.62
+  - 0.0
+  orientation: 180.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o2
+  port_type: optical
+  center:
+  - 0.0
+  - 4.62
+  orientation: 90.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o3
+  port_type: optical
+  center:
+  - 4.62
+  - 0.0
+  orientation: 0.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550
+- name: o4
+  port_type: optical
+  center:
+  - 0.0
+  - -4.62
+  orientation: 270.0
+  cross_section: rib_1550nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1550

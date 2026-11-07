@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category>drc</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>drc_scripts</group-name>
+ <menu-path>tools_menu.drc.end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>drc-dsl-xml</dsl-interpreter-name>
+ <text>#CORNERSTONE Proprietary
+#Released: 03/03/25
+#Version: 3.1
+#Author:Shengqi Yin, Emre Kaplan, Bilge Yagci
+#Report any issue to cornerstone@soton.ac.uk
+#Technology Platform: All Passive active Silicon on Insulator platforms with Heaters and p-n junction
+#Note: This script performs a pre-DRC run. A full DRC run will be performed by CORNERSTONE Team
+
+
+#############################
+# Use a tile size of 20mm
+tiles(20.mm)
+
+
+#Hierarchical
+deep
+
+# Use 4 CPU cores
+threads(4)
+verbose(true)
+
+#Manufacture grid
+design_grid = 0.001
+
+angle_lim = 45
+
+
+design_area = 6000.0.um*3000.0.um
+
+
+if $input
+  source($input)
+end
+if $report
+  report("DRC_StudentSOI", $report)
+else
+  report("DRC_StudentSOI")
+end
+
+# layers definitions
+###################################
+soi_etch1_light_layer = polygons(3, 0) #SOI Etch 1 - Light field (GDS 3)
+soi_etch1_dark_layer = input(4, 0) #SOI Etch 1 - Dark field (GDS 4)
+label =input(100,0) #Label (GDS 100)
+cell = input(99, 0) #Cell Outline (Design area) (GDS 99)
+
+
+
+layers.each { |layer|  input(layer).ongrid(design_grid).output("#{layer.to_s} grid violations")}# check grid alignment
+cell.without_area(design_area).output("Correct design area violation") #check cell footprint
+
+
+info ("DRC section")
+
+def check_minimum_feature(layer,max_width,max_feature_perimeter,max_feature_area)
+  layer_feature_area = layer.width(max_width,euclidian).polygons.with_area(max_feature_area,nil)
+  layer_feature_perimeter = layer.width(max_width,euclidian).polygons.with_perimeter(max_feature_perimeter,nil)
+  layer_min_feature = layer_feature_area.or(layer_feature_perimeter)
+return layer_min_feature
+end
+def check_minimum_gap_feature(layer,max_width,max_gap_perimeter,max_gap_area)
+  layer_feature_area = layer.space(max_width,euclidian).polygons.with_area(max_gap_area,nil)
+  layer_feature_perimeter = layer.space(max_width,euclidian).polygons.with_perimeter(max_gap_perimeter,nil)
+  layer_min_feature = layer_feature_area.or(layer_feature_perimeter)
+return layer_min_feature
+end
+
+
+
+feature_length_limit=20.001.um
+feature_margin = -0.001.um
+
+gds3_conditional_feature_width = 0.3.um
+gds4_conditional_gap_width = 0.3.um
+
+gds3_max_feature_perimeter = 2*(gds3_conditional_feature_width+feature_length_limit)
+gds3_max_feature_area = gds3_conditional_feature_width*feature_length_limit
+gds4_max_gap_perimeter = 2*(gds4_conditional_gap_width+feature_length_limit)
+gds4_max_gap_area = gds4_conditional_gap_width*feature_length_limit
+
+# soi_etch1_light_layer
+soi_etch1_light_layer.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS3&lt;250nm)') # absolute minimum width
+check_minimum_feature(soi_etch1_light_layer,gds3_conditional_feature_width+feature_margin,gds3_max_feature_perimeter,gds3_max_feature_area).without_area(0).output('Minimum feature size violation (GDS3&lt;300nm for features &gt;=20um)') # conditional width rule
+soi_etch1_light_layer.space(0.20.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS3&lt;200nm)') # minimum space
+
+
+# soi_etch1_dark_layer
+soi_etch1_dark_layer.width(0.2.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS4&lt; 200nm)') # minimum width
+soi_etch1_dark_layer.space(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS4&lt;250nm)') # absolute minimum gap
+check_minimum_gap_feature(soi_etch1_dark_layer,gds4_conditional_gap_width+feature_margin,gds4_max_gap_perimeter,gds4_max_gap_area).without_area(0).output('Minimum gap violation (GDS4&lt;300nm for gaps &gt;=20um)') # conditional gap rule
+
+#labels
+label.width(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum feature size violation (GDS100&lt;250nm)') # minimum width
+label.space(0.25.um+feature_margin, angle_limit(angle_lim)).without_area(0).output('Minimum gap violation (GDS100&lt;250nm)') # minimum space
+
+
+</text>
+</klayout-macro>

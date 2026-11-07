@@ -1,5 +1,5 @@
 name: Suspendedsilicon500nm_3800nm_TE_SBend
-component_type: Bend
+component_type: SBend
 modes:
   - mode_numbers:
     - 0
