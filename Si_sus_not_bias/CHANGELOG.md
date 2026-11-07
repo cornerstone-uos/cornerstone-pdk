@@ -2,7 +2,7 @@
 
 ## 1.0.1
 2026/10/25
-Suspended Si (biased) PDK has been removed from MPW portfolio; the PDK is displayed for Bespoke services.
+Suspended Si (unbiased) PDK has been removed from MPW portfolio; the PDK is displayed for Bespoke services.
 - Component 'Suspendedsilicon500nm_3800nm_TE_SBend'
 - - 'component_type' changed to "SBend"
 

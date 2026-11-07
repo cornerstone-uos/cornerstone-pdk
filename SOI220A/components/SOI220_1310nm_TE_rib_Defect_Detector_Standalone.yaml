@@ -21,7 +21,7 @@ ports:
   - -355.0
   - 0.0
   orientation: 180.0
-  cross_section: detector
+  cross_section: rib_1310nm_TE
   modes:
   - mode_numbers:
     - 0
@@ -34,7 +34,7 @@ ports:
   - 1605.0
   - 0.0
   orientation: 0.0
-  cross_section: detector
+  cross_section: rib_1310nm_TE
   modes:
   - mode_numbers:
     - 0

@@ -68,7 +68,7 @@
   xs_type: strip
   width: 10
   materials: Si
-  minimum_bend_radius: 200 #arbitrary value - bends should not be used with this xsection at all
+  minimum_bend_radius: 999 #arbitrary value - bends should not be used with this xsection at all
   layers:
   - layer:
     - 3
@@ -112,7 +112,7 @@
   xs_type: rib
   width: 20
   materials: Si
-  minimum_bend_radius: 200 # not to be used within bends
+  minimum_bend_radius: 999 # not to be used within bends
   layers:
   - layer:
     - 3

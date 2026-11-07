@@ -91,17 +91,12 @@ layer_stack:
     description: Waveguides (rib/strip)
     material: Si
     thickness: { value: 0.22, tol: 0.02 }
-    gds_layer: (wg_lf or not wg_df) and not (grating_ebl or grating_duv)
+    gds_layer: (wg_lf or not wg_df) and not grating_duv
   - name: Rib_Slab
     description: Slab portion of the rib waveguide
     material: Si
     thickness: { value: 0.1, tol: 0.02 }
     gds_layer: rib_slab
-  - name: ebeam_gratings
-    description: Etched portion of ebeam gratings
-    material: Si
-    thickness: { value: 0.125, tol: 0.01 }
-    gds_layer: (wg_lf or not wg_df) and grating_ebl
   - name: duv_gratings
     description: Etched portion of DUV gratings
     material: Si
