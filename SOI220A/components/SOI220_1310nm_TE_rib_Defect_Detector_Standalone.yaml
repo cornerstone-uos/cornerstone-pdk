@@ -1,0 +1,43 @@
+name: SOI220_1310nm_TE_rib_Defect_Detector_Standalone
+component_type: Photodiode
+ports:
+- name: e1
+  port_type: electrical_dc
+  center:
+  - -205.0
+  - -142.5
+  orientation: 270.0
+  cross_section: detector
+- name: e2
+  port_type: electrical_dc
+  center:
+  - -55.0
+  - -142.5
+  orientation: 270.0
+  cross_section: detector
+- name: o1
+  port_type: optical
+  center:
+  - -355.0
+  - 0.0
+  orientation: 180.0
+  cross_section: rib_1310nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310
+- name: o2
+  port_type: optical
+  center:
+  - 1605.0
+  - 0.0
+  orientation: 0.0
+  cross_section: rib_1310nm_TE
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 1310

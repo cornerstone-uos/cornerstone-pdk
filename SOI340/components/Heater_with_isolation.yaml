@@ -1,0 +1,17 @@
+name: Heater_with_isolation
+component_type: TOPM
+ports:
+- name: e1
+  port_type: electrical_dc
+  center:
+  - 160.0
+  - 181.0
+  orientation: 90.0
+  cross_section: dc
+- name: e2
+  port_type: electrical_dc
+  center:
+  - 40.0
+  - 181.0
+  orientation: 90.0
+  cross_section: dc

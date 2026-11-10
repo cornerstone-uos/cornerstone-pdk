@@ -1,0 +1,55 @@
+name: SiN200_780nm_TE_strip_2x2_MMI
+component_type: MMI2x2
+ports:
+- name: o1
+  port_type: optical
+  center:
+  - -40.0
+  - 1.075
+  orientation: 180.0
+  cross_section: strip_780nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 780
+- name: o2
+  port_type: optical
+  center:
+  - -40.0
+  - -1.075
+  orientation: 180.0
+  cross_section: strip_780nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 780
+- name: o3
+  port_type: optical
+  center:
+  - 128.0
+  - 1.075
+  orientation: 0.0
+  cross_section: strip_780nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 780
+- name: o4
+  port_type: optical
+  center:
+  - 128.0
+  - -1.075
+  orientation: 0.0
+  cross_section: strip_780nm
+  modes:
+  - mode_numbers:
+    - 0
+    - 0
+    polarisation: TE
+    wavelength: 780

@@ -1,5 +1,5 @@
 name: Ge_on_Si_3800nm_TE_RIB_90_Degree_Bend
-component_type: Waveguide
+component_type: Bend
 modes:
   - mode_numbers:
     - 0

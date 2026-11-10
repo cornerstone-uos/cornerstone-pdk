@@ -51,7 +51,7 @@
     <marked>false</marked>
     <xfill>false</xfill>
     <animation>0</animation>
-    <name>Bleed</name>
+    <name>Bleed_DF</name>
     <source>98/0@1</source>
  </properties>
  <properties>
@@ -69,134 +69,26 @@
     <marked>false</marked>
     <xfill>false</xfill>
     <animation>0</animation>
-    <name>Label</name>
+    <name>Label_DF</name>
     <source>100/0@1</source>
  </properties>
  <properties>
-    <expanded>false</expanded>
-    <frame-color>#ddff00</frame-color>
-    <fill-color>#ddff00</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I5</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>Floorplan</name>
-    <source>99/0@1</source>
- </properties>
- <properties>
-    <expanded>false</expanded>
-    <frame-color>#ddff00</frame-color>
-    <fill-color>#ddff00</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I1</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>FinalChipSize</name>
-    <source>99/1@1</source>
- </properties>
- <properties>
-    <expanded>false</expanded>
-    <frame-color>#008080</frame-color>
-    <fill-color>#008080</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I9</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>Text</name>
-    <source>66/0@1</source>
- </properties>
- <properties>
-    <expanded>false</expanded>
-    <frame-color>#008000</frame-color>
-    <fill-color>#008000</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I5</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>DevRec</name>
-    <source>68/0@1</source>
- </properties>
- <properties>
-    <expanded>false</expanded>
-    <frame-color>#ff80a8</frame-color>
-    <fill-color>#ff80a8</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I9</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>PinRec</name>
-    <source>1/10@1</source>
- </properties>
- <properties>
-    <expanded>false</expanded>
-    <frame-color>#ff80a8</frame-color>
-    <fill-color>#ff80a8</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I5</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>PinRecM</name>
-    <source>1/11@1</source>
- </properties>
- <properties>
-    <expanded>false</expanded>
-    <frame-color>#8000ff</frame-color>
-    <fill-color>#8000ff</fill-color>
-    <frame-brightness>0</frame-brightness>
-    <fill-brightness>0</fill-brightness>
-    <dither-pattern>I9</dither-pattern>
-    <line-style/>
-    <valid>true</valid>
-    <visible>true</visible>
-    <transparent>false</transparent>
-    <width>1</width>
-    <marked>false</marked>
-    <xfill>false</xfill>
-    <animation>0</animation>
-    <name>FbrTgt</name>
-    <source>81/0@1</source>
+  <expanded>false</expanded>
+  <frame-color>#f3ff80</frame-color>
+  <fill-color>#f3ff80</fill-color>
+   <frame-brightness>0</frame-brightness>
+   <fill-brightness>0</fill-brightness>
+   <dither-pattern>I1</dither-pattern>
+   <line-style/>
+   <valid>true</valid>
+   <visible>true</visible>
+   <transparent>false</transparent>
+   <width>3</width>
+   <marked>false</marked>
+   <xfill>false</xfill>
+   <animation>0</animation>
+   <name>Floorplan</name>
+   <source>99/0@1</source>
  </properties>
  <name>CORNERSTONE_Ge-on-Si</name>
 </layer-properties>
